@@ -1,0 +1,107 @@
+.offreContainer {
+  display: flex;
+  flex-direction: column;
+  // width: 370px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 2px #f6f7f8 solid;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.56);
+  }
+
+  .offreDescription {
+    font-family: "Ubuntu", sans-serif;
+    padding: 15px 15px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      .title {
+        span {
+          color: #abb0b9;
+          font-size: 12px;
+          font-weight: 400;
+          padding-bottom: 105px;
+        }
+        h2 {
+          margin-bottom: 10px;
+          font-weight: 700;
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      // line-height: 20px;
+    }
+
+    .conditions {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: "Ubuntu", sans-serif;
+      .condition {
+        margin-right: 50px;
+        text-align: center;
+        h4 {
+          font-size: 13px;
+          text-transform: uppercase;
+          color: #a9a9a9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 5px;
+          font-weight: 700;
+          .icon {
+            margin-right: 5px;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 13px;
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px #f6f7f8 solid;
+
+    .tag {
+      display: flex;
+      align-items: center;
+      p {
+        font-family: "Ubuntu", sans-serif;
+        padding: 5px 10px;
+        background-color: #f6f7f8;
+        margin: 5px;
+        border-radius: 10px;
+        font-size: 13px;
+      }
+    }
+
+    .detail {
+      color: #0c97b4;
+      display: flex;
+      align-items: center;
+      font-family: "Ubuntu", sans-serif;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline #0c97b4;
+      }
+    }
+  }
+}

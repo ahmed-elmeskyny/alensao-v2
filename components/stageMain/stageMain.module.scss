@@ -1,0 +1,55 @@
+.stageContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .main {
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    // justify-content: space-evenly;
+
+    .leftside {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 100%;
+      margin-top: 20px;
+      // position: relative;
+      // top: -41px;
+      .search {
+        display: flex;
+        margin-bottom: 20px;
+        input {
+          outline: none;
+          width: 250px;
+          padding: 8px 5px;
+          border: lightgray solid 1px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          font-family: "Ubuntu", sans-serif;
+          &::placeholder {
+            font-family: "Ubuntu", sans-serif;
+          }
+        }
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #0c97b4;
+          width: 50px;
+          font-size: 20px;
+          color: white;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+
+    .offres {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

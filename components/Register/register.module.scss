@@ -1,0 +1,90 @@
+.registerFormContainer {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 10s ease;
+
+  .filter {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 350px;
+    .logo {
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-bottom: 2px solid #f6f7f8;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        padding-left: 10px;
+      }
+      .icon {
+        font-size: 20px;
+        position: relative;
+        top: -18px;
+        right: -100px;
+        cursor: pointer;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      input {
+        width: 290px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: #0c97b4 solid 2px;
+        outline: none;
+        font-family: "Ubuntu", sans-serif;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      label {
+        font-family: "Ubuntu", sans-serif;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: rgba($color: #0c97b4, $alpha: 0.5);
+        cursor: pointer;
+      }
+      .enabled {
+        background-color: #0c97b4;
+      }
+    }
+    .reset {
+      cursor: pointer;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      border-top: #f6f7f8 2px solid;
+    }
+  }
+}
