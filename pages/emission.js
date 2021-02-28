@@ -5,6 +5,7 @@ import styles from "../styles/emission.module.scss";
 
 //components
 import Layout from "../components/Layout/layout";
+import EmissionMain from "../components/emissionMain/emissionMain";
 
 
 
@@ -24,6 +25,7 @@ export default function Emission() {
           </div>
         </div>
 
+        <EmissionMain ></EmissionMain>
       </Layout>
 
     </div>

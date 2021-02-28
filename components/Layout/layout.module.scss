@@ -1,1 +1,8 @@
-
+.menu {
+  padding: 10px 20px;
+  font-size: 30px;
+  display: none;
+  @media (max-width: 900px) {
+    display: flex;
+  }
+}

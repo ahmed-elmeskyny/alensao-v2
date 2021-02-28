@@ -7,6 +7,7 @@ import styles from "./header.module.scss";
 import {MdPowerSettingsNew} from "react-icons/md";
 import {RiUserSettingsFill} from "react-icons/ri";
 
+
 //components
 import Login from "../Login/login";
 import { useState } from "react";
@@ -15,7 +16,6 @@ import Register from "../Register/register";
 const Header  = () => {
     const [openLogin , setOpenLogin ] = useState(false);
     const [openRegister , setOpenRegister] = useState(false);
-    const [user , setUser] =useState(true);
 
     return (
         <div className={styles.hero}>
@@ -28,7 +28,7 @@ const Header  = () => {
                      <RiUserSettingsFill className={styles.icon}></RiUserSettingsFill>
                      <p>s'inscrire</p>
                 </div>
-                 <div className={styles.info} style={{margin:"0"}} onClick={()=> setOpenLogin(true)}>
+                 <div className={styles.info} style={{marginLeft:"10px"}} onClick={()=> setOpenLogin(true)}>
                     <MdPowerSettingsNew className={styles.icon}></MdPowerSettingsNew>
                     <p>Se connecter</p>
                 </div>

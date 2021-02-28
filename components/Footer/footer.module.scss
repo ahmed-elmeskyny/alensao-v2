@@ -29,12 +29,23 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
     .link {
       width: 100%;
       display: flex;
       justify-content: space-around;
+      @media (max-width: 900px) {
+        flex-wrap: wrap;
+      }
+
       .block {
         margin-top: 10px;
+        @media (max-width: 900px) {
+          width: 300px;
+          margin-bottom: 15px;
+        }
         h4 {
           color: white;
           font-weight: 700;
@@ -95,9 +106,16 @@
     justify-content: space-between;
     font-weight: 100;
     font-size: 14px;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     p {
       display: flex;
       align-items: center;
+      @media (max-width: 900px) {
+        margin-bottom: 10px;
+      }
       .icon {
         margin: 0px 5px;
       }

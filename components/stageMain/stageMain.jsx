@@ -26,7 +26,9 @@ const StageMain = () => {
                     </div>
                 </div>
                 <Calendars></Calendars>
-
+                <div className={styles.ad}>
+                     <h2>AD</h2>
+                </div>
             </div>
             <div className={styles.offres}>
                 <Offre 

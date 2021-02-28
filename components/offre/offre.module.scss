@@ -9,6 +9,9 @@
   overflow: hidden;
   transition: all 0.3s ease;
   cursor: pointer;
+  @media (max-width: 900px) {
+    margin-left: 0;
+  }
   &:hover {
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.56);
     -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.56);
@@ -42,14 +45,21 @@
 
     .conditions {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 20px;
       margin-bottom: 20px;
       align-items: center;
       justify-content: flex-start;
       font-family: "Ubuntu", sans-serif;
+      @media (max-width: 900px) {
+        justify-content: space-around;
+      }
       .condition {
         margin-right: 50px;
         text-align: center;
+        @media (max-width: 900px) {
+          margin-bottom: 20px;
+        }
         h4 {
           font-size: 13px;
           text-transform: uppercase;
@@ -74,11 +84,16 @@
 
   .details {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 10px 15px;
     align-items: center;
     justify-content: space-between;
     border-top: 2px #f6f7f8 solid;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .tag {
       display: flex;
@@ -99,6 +114,9 @@
       align-items: center;
       font-family: "Ubuntu", sans-serif;
       cursor: pointer;
+      @media (max-width: 900px) {
+        margin-top: 15px;
+      }
       &:hover {
         text-decoration: underline #0c97b4;
       }

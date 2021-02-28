@@ -50,7 +50,7 @@ const Offre = ({ text , title , tags, start , duree , postuler , lieu , isNew}) 
             </div>
             <div className={styles.details}>
                 <div className={styles.tag}>
-                   {tags.map(tag => <p>{tag}</p>)}
+                   {tags.map(tag => <p key={tag}>{tag}</p>)}
                 </div>
                 <div className={styles.detail}>
                     <span>voir les détails</span>

@@ -49,6 +49,27 @@ const Register = ({open,setOpen}) => {
                        placeholder="Prenom"
                        ref={register({ required : true})}
                      />
+                      <label>age</label>
+                      <input 
+                       name="age" 
+                       type="text" 
+                       placeholder="votre age"
+                       ref={register({ required : true})}
+                     />
+                     <label>Votre Domaine</label>
+                      <input 
+                       name="domaine" 
+                       type="text" 
+                       placeholder="génie informatique..."
+                       ref={register({ required : true})}
+                     />
+                      <label>société de travail où liue de travail</label>
+                      <input 
+                       name="travail" 
+                       type="text" 
+                       placeholder="soft innovation...."
+                       ref={register({ required : true})}
+                     />
                      <label>email</label>
                      <input 
                        name="email" 
@@ -72,7 +93,7 @@ const Register = ({open,setOpen}) => {
                        name="password" 
                        type="password" 
                        placeholder="password"
-                       required
+                       ref={register({ required : true})}
                      />
                      <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><RiUserSettingsFill style={{fontSize:"20px", marginRight:"5px"}}></RiUserSettingsFill>S'inscrire </button>
                 </form>

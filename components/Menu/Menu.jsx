@@ -1,5 +1,6 @@
-//next
+//next - react
 import Image from "next/image";
+import React, {useState , useEffect} from "react";
 
 //style
 import styles from "./Menu.module.scss";
@@ -19,11 +20,30 @@ import {FaLinkedin} from "react-icons/fa";
 import {FaTwitter} from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
 import {CgScreen} from "react-icons/cg";
+import {RiDeleteBack2Fill} from "react-icons/ri";
+import {AiFillHeart} from "react-icons/ai";
+import {FaRegCopyright} from "react-icons/fa";
 
-const SideMenu = () => {
+const SideMenu = ({width , setwidth}) => {
+    const [Fixed  , setFixed] = useState(false);
+
+    const handleScroll = ()=> {
+        const offset= window.scrollY;
+        if(offset > 50 ){
+          setFixed(true);
+        }
+        else{
+          setFixed(false);
+        }
+      }
+    useEffect(() => {
+        window.addEventListener('scroll',handleScroll)
+      })
+
 
     return (
-        <div className={styles.menuContainer}>
+        <>
+        <div className={Fixed ?styles.fixedMenuContainer : styles.menuContainer}>
                 <ul>
                     <li>
                         <ActiveLink href="/" activeClassName={styles.activeLink}>
@@ -42,7 +62,7 @@ const SideMenu = () => {
                     </li>
                     <li>
                         <ActiveLink href="/myspace" activeClassName={styles.activeLink}>
-                            <a  className={styles.space}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Evénement </a>
+                            <a  className={styles.space}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Gallerie </a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -66,9 +86,63 @@ const SideMenu = () => {
                     <FaLinkedin className={styles.icon} ></FaLinkedin>
                     <FaTwitter className={styles.icon} ></FaTwitter>
                     <AiFillInstagram className={styles.icon} ></AiFillInstagram>
-                </div>
-            
+                </div>            
         </div>
+        <div className={styles.filter} style={{width: width}}>
+          <div className={styles.mobileMenu}>
+            <RiDeleteBack2Fill className={styles.iconDelete} onClick={()=> setwidth("0%")}></RiDeleteBack2Fill>
+                <ul>
+                    <li>
+                        <ActiveLink href="/" activeClassName={styles.activeLink}>
+                            <a className={styles.acceuil} onClick={()=> setwidth("0%")}><RiDashboardFill style={{fontSize:"23px" , marginRight:"5px"}}></RiDashboardFill>Acceuil</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/about" activeClassName={styles.activeLink}>
+                            <a  className={styles.about} onClick={()=> setwidth("0%")}><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>À propos</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/stage" activeClassName={styles.activeLink}>
+                            <a  className={styles.blog} onClick={()=> setwidth("0%")}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offre de Stage </a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/myspace" activeClassName={styles.activeLink}>
+                            <a  className={styles.space} onClick={()=> setwidth("0%")}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Gallerie </a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/emission" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-Lam 2.0</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/faqs" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ADE</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/contact" activeClassName={styles.activeLink}>
+                            <a  className={styles.contact} onClick={()=> setwidth("0%")}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Contact</a>
+                        </ActiveLink>
+                    </li>
+                </ul>
+                <div>
+                <div className={styles.social}>
+                    <FaFacebookSquare className={styles.icon}></FaFacebookSquare>
+                    <FaLinkedin className={styles.icon} ></FaLinkedin>
+                    <FaTwitter className={styles.icon} ></FaTwitter>
+                    <AiFillInstagram className={styles.icon} ></AiFillInstagram>
+                </div>
+                <div className={styles.copyRight}>
+                    <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
+                    <p>Crée avec <AiFillHeart className={styles.icon} style={{color:"red"}}></AiFillHeart> par <span>Ahmed El meskyny</span></p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </>
     )
 };
 

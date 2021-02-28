@@ -23,8 +23,8 @@ export default function Stage() {
       <Layout>
         <div className={styles.stageHeader}>
           <div className={styles.filter}>
-          <h1> Offre de Stage </h1>
-          <p>Acceuil / offre de stage </p>
+             <h1> Offre de Stage </h1>
+             <p>Acceuil / offre de stage </p>
           </div>
         </div>
         <StageMain></StageMain>
