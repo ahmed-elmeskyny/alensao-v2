@@ -6,7 +6,9 @@ import { useState } from "react";
 import styles from "./login.module.scss";
 
 //react-hook-form
-import {useForm} from "react-hook-form"
+import {useForm} from "react-hook-form";
+
+
 
 
 //react-icons
@@ -19,6 +21,8 @@ const Login = ({open , setOpen}) => {
     const [email , setEmail] = useState("");
     const [password , setPassword] = useState("");
     const [notification , setNotification]= useState(false);
+
+    
     const Submit = (data) => {
         console.log(data)
         setEmail("");
@@ -28,7 +32,10 @@ const Login = ({open , setOpen}) => {
         setTimeout(() => setNotification(false), 3000);    
     }
 
+
     return (
+        
+    
       open  ? <div className={styles.loginFormContainer} >
             <div className={styles.filter}>
                 <div className={styles.logo}>
@@ -64,5 +71,6 @@ const Login = ({open , setOpen}) => {
             </div>
         </div> : null
     )
+    
 };
 export default Login;

@@ -1,21 +1,19 @@
 //next
 import Image from "next/image";
+import { useRouter} from "next/router";
 //style
 import styles from "./header.module.scss";
 
 //react-icons
 import {MdPowerSettingsNew} from "react-icons/md";
 import {RiUserSettingsFill} from "react-icons/ri";
+import {BsFillPersonFill} from "react-icons/bs";
 
 
-//components
-import Login from "../Login/login";
-import { useState } from "react";
-import Register from "../Register/register";
 
-const Header  = () => {
-    const [openLogin , setOpenLogin ] = useState(false);
-    const [openRegister , setOpenRegister] = useState(false);
+
+const Header  = ({setOpenLogin , setOpenRegister }) => {
+    const router = useRouter();
 
     return (
         <div className={styles.hero}>
@@ -24,7 +22,7 @@ const Header  = () => {
                 <h3>ALENSAO</h3>
             </div>
             <div className={styles.infoContainer}>
-                <div className={styles.info} onClick={()=> setOpenRegister(true)}>
+               <div className={styles.info} onClick={()=> setOpenRegister(true)}>
                      <RiUserSettingsFill className={styles.icon}></RiUserSettingsFill>
                      <p>s'inscrire</p>
                 </div>
@@ -32,9 +30,11 @@ const Header  = () => {
                     <MdPowerSettingsNew className={styles.icon}></MdPowerSettingsNew>
                     <p>Se connecter</p>
                 </div>
+                <div className={styles.info} onClick={()=> router.push("/myspace")}>
+                     <BsFillPersonFill className={styles.icon}></BsFillPersonFill>
+                     <p>Espace Lauréat</p>
+                </div>
             </div>
-            <Login open={openLogin} setOpen={setOpenLogin}></Login>
-            <Register open={openRegister} setOpen={setOpenRegister}></Register>
         </div>
     )
 };

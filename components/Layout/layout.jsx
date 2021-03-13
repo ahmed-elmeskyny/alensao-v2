@@ -14,17 +14,17 @@ import {HiMenuAlt1} from "react-icons/hi"
 
 
 
-const Layout = ({children}) => {
+const Layout = (props) => {
     const [width , setwidth] = useState("0%");
 
     return (
         <div className={styles.container}> 
-             <Header></Header>          
+             <Header setOpenLogin={props.setOpenLogin} setOpenRegister={props.setOpenRegister}></Header>          
              <Menu width={width} setwidth={setwidth}></Menu> 
              <div className={styles.menu}>
                 <HiMenuAlt1 onClick={()=> setwidth("100%")}></HiMenuAlt1>
             </div>
-             {children}
+             {props.children}
              <Footer></Footer>
         </div>
     )

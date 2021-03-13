@@ -1,9 +1,11 @@
 //next - react
-import Image from "next/image";
+import Head from "next/head";
 import React, {useState , useEffect} from "react";
+import Router from "next/router";
 
 //style
 import styles from "./Menu.module.scss";
+
 
 //components
 import ActiveLink from "../ActiveLink/activeLink";
@@ -24,9 +26,20 @@ import {RiDeleteBack2Fill} from "react-icons/ri";
 import {AiFillHeart} from "react-icons/ai";
 import {FaRegCopyright} from "react-icons/fa";
 
+//nprogress
+import NProgress from "nprogress";
+
+
 const SideMenu = ({width , setwidth}) => {
     const [Fixed  , setFixed] = useState(false);
+    // Router.events.on("routeChangeStart" , (url)=> NProgress.start());
 
+    Router.onRouteChangeStart = () => {
+        NProgress.start()
+    }
+    Router.onRouteChangeComplete = () => {
+        NProgress.done()
+    }
     const handleScroll = ()=> {
         const offset= window.scrollY;
         if(offset > 50 ){
@@ -43,6 +56,9 @@ const SideMenu = ({width , setwidth}) => {
 
     return (
         <>
+        <Head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css" ></link>
+        </Head>
         <div className={Fixed ?styles.fixedMenuContainer : styles.menuContainer}>
                 <ul>
                     <li>
@@ -61,8 +77,13 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/myspace" activeClassName={styles.activeLink}>
+                        <ActiveLink href="/gallerie" activeClassName={styles.activeLink}>
                             <a  className={styles.space}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Gallerie </a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/stage" activeClassName={styles.activeLink}>
+                            <a  className={styles.blog}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Biblio </a>
                         </ActiveLink>
                     </li>
                     <li>

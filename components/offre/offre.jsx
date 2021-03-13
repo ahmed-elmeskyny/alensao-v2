@@ -1,5 +1,7 @@
 //next
 import Image from "next/image"
+import {useRouter} from "next/router";
+
 //style
 import styles from "./offre.module.scss";
 
@@ -9,14 +11,18 @@ import {IoIosArrowForward} from "react-icons/io";
 import {FaHourglassStart} from "react-icons/fa";
 import {ImLocation} from "react-icons/im";
 import {BiCalendarMinus} from "react-icons/bi";
+import {AiFillDelete} from "react-icons/ai";
 
-const Offre = ({ text , title , tags, start , duree , postuler , lieu , isNew}) => {
+
+const Offre = ({ text , title , tags, start , duree , postuler , lieu , isNew , isLaureat}) => {
     const date = new Date();
+    const router = useRouter();
 
     return (
 
-        <div className={styles.offreContainer}>
+        <div className={styles.offreContainer} style={isLaureat ? {margin: "0" ,width : "100%"} : null}>
             <div className={styles.offreDescription}>
+            { isLaureat ?    <AiFillDelete style={{color:"red", fontSize:"20px" , cursor:"pointer" , display:"flex" }}></AiFillDelete> : null }
                 <div className={styles.header}>
                     <div className={styles.title}>
                         <span> {isNew} -  {date.toDateString()}</span>
@@ -52,7 +58,7 @@ const Offre = ({ text , title , tags, start , duree , postuler , lieu , isNew}) 
                 <div className={styles.tag}>
                    {tags.map(tag => <p key={tag}>{tag}</p>)}
                 </div>
-                <div className={styles.detail}>
+                <div className={styles.detail} onClick={ () => router.push("stage/hehe")}>
                     <span>voir les détails</span>
                     <IoIosArrowForward></IoIosArrowForward>
                 </div>

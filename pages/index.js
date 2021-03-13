@@ -8,10 +8,18 @@ import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout/layout";
 import Slider from "../components/Slider/slider";
 
+import Login from "../components/Login/login";
+import { useState } from "react";
+import Register from "../components/Register/register";
+
 
 
 
 export default function Home() {
+  const [openLogin , setOpenLogin ] = useState(false);
+  const [openRegister , setOpenRegister] = useState(false);
+
+  
   return (
     <div >
       <Head>
@@ -19,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+      <Layout openLogin={openLogin} setOpenLogin={setOpenLogin} setOpenRegister={setOpenRegister} >
         <Slider></Slider>
         <div className={styles.speachContainer}>
           <h1>Mot du Président d' ALENSAO  </h1>
@@ -29,6 +37,8 @@ export default function Home() {
           </div>
 
         </div>
+        <Login open={openLogin} setOpen={setOpenLogin}></Login>
+         <Register open={openRegister} setOpen={setOpenRegister}></Register>
       </Layout>
 
     </div>
