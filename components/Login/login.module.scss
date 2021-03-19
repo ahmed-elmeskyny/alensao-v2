@@ -69,8 +69,10 @@
         border: none;
         color: white;
         background-color: rgba($color: #0c97b4, $alpha: 0.5);
+        cursor: pointer;
       }
       .enabled {
+        cursor: pointer;
         background-color: #0c97b4;
       }
     }

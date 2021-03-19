@@ -8,12 +8,18 @@ import styles from "./header.module.scss";
 import {MdPowerSettingsNew} from "react-icons/md";
 import {RiUserSettingsFill} from "react-icons/ri";
 import {BsFillPersonFill} from "react-icons/bs";
+import {BsBoxArrowRight} from "react-icons/bs";
+
+//firebase
+import {auth } from "../../config/utils";
+
+//redux
+import {connect } from "react-redux";
 
 
-
-
-const Header  = ({setOpenLogin , setOpenRegister }) => {
-    const router = useRouter();
+const Header  = ({setOpenLogin , setOpenRegister , user  }) => {
+    const router = useRouter()
+    console.log(user);
 
     return (
         <div className={styles.hero}>
@@ -22,21 +28,34 @@ const Header  = ({setOpenLogin , setOpenRegister }) => {
                 <h3>ALENSAO</h3>
             </div>
             <div className={styles.infoContainer}>
-               <div className={styles.info} onClick={()=> setOpenRegister(true)}>
-                     <RiUserSettingsFill className={styles.icon}></RiUserSettingsFill>
-                     <p>s'inscrire</p>
-                </div>
-                 <div className={styles.info} style={{marginLeft:"10px"}} onClick={()=> setOpenLogin(true)}>
-                    <MdPowerSettingsNew className={styles.icon}></MdPowerSettingsNew>
-                    <p>Se connecter</p>
-                </div>
+              {  user ?
+                <>
                 <div className={styles.info} onClick={()=> router.push("/myspace")}>
                      <BsFillPersonFill className={styles.icon}></BsFillPersonFill>
                      <p>Espace Lauréat</p>
                 </div>
+                <div className={styles.info} onClick={()=> {auth.signOut(); router.push("/") }}>
+                     <BsBoxArrowRight className={styles.icon}></BsBoxArrowRight>
+                     <p>se deconnecter</p>
+                </div>
+                </>:
+                <>
+                <div className={styles.info} onClick={()=> setOpenRegister(true)}>
+                    <RiUserSettingsFill className={styles.icon}></RiUserSettingsFill>
+                     <p>s'inscrire</p>
+                </div>
+                <div className={styles.info} style={{marginLeft:"10px"}} onClick={()=> setOpenLogin(true)}>
+                    <MdPowerSettingsNew className={styles.icon}></MdPowerSettingsNew>
+                    <p>Se connecter</p>
+                </div>
+                </>
+                }
             </div>
         </div>
     )
 };
 
-export default Header;
+const mapStateToProps = (state) => ({
+    user : state.user.CurrentUser,
+})
+export default connect(mapStateToProps)(Header); 

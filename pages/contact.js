@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Image from "next/image";
-
+import {useState} from "react";
 //styles 
 import styles from "../styles/contact.module.scss";
 
@@ -14,6 +13,11 @@ import {FaPhoneAlt} from "react-icons/fa";
 
 
 export default function About() {
+
+  const [openLogin , setOpenLogin ] = useState(false);
+  const [openRegister , setOpenRegister] = useState(false);
+
+
   return (
     <div >
       <Head>
@@ -21,7 +25,12 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+   <Layout 
+        openLogin={openLogin}
+        setOpenLogin={setOpenLogin} 
+        setOpenRegister={setOpenRegister} 
+        openRegister={openRegister}
+        >
         <div className={styles.contactHeader}>
           <div className={styles.filter}>
              <h1> Nous-Contactez </h1>

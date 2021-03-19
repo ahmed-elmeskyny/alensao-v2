@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Image from "next/image";
+import {useState} from "react"
+
 
 //style 
 import styles from "../styles/Home.module.scss";
@@ -8,16 +9,17 @@ import styles from "../styles/Home.module.scss";
 import Layout from "../components/Layout/layout";
 import Slider from "../components/Slider/slider";
 
-import Login from "../components/Login/login";
-import { useState } from "react";
-import Register from "../components/Register/register";
 
 
 
+//redux
+import {connect} from "react-redux";
+import {setCurrentUser} from "../redux/uerReducer/user-action";
 
-export default function Home() {
+function  Home(props) {
   const [openLogin , setOpenLogin ] = useState(false);
   const [openRegister , setOpenRegister] = useState(false);
+
 
   
   return (
@@ -27,7 +29,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout openLogin={openLogin} setOpenLogin={setOpenLogin} setOpenRegister={setOpenRegister} >
+      <Layout 
+        openLogin={openLogin}
+        setOpenLogin={setOpenLogin} 
+        setOpenRegister={setOpenRegister} 
+        openRegister={openRegister}
+        >
         <Slider></Slider>
         <div className={styles.speachContainer}>
           <h1>Mot du Président d' ALENSAO  </h1>
@@ -37,10 +44,15 @@ export default function Home() {
           </div>
 
         </div>
-        <Login open={openLogin} setOpen={setOpenLogin}></Login>
-         <Register open={openRegister} setOpen={setOpenRegister}></Register>
       </Layout>
 
     </div>
   )
 };
+
+
+const mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user )=> dispatch(setCurrentUser(user))
+});
+
+export default connect(null,mapDispatchToProps)(Home);

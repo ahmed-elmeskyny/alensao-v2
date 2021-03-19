@@ -1,17 +1,17 @@
 .offreContainer {
   display: flex;
   flex-direction: column;
-  width: 850px;
-  margin-left: 20px;
+  width: 100%;
+  margin-left: 10px;
   margin-top: 20px;
   border-radius: 7px;
   border: 2px #f6f7f8 solid;
   overflow: hidden;
   transition: all 0.3s ease;
+  // height: 300px;
   cursor: pointer;
   @media (max-width: 900px) {
     margin-left: 0;
-    width: 100%;
   }
   &:hover {
     -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.56);
@@ -35,13 +35,21 @@
         h2 {
           margin-bottom: 10px;
           font-weight: 700;
+          text-transform: uppercase;
         }
       }
     }
-    p {
+    .descriptiontext {
       font-size: 14px;
       font-weight: 400;
-      // line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 400px;
+      height: 45 px;
+      @media (max-width: 900px) {
+        width: 300px;
+      }
     }
 
     .conditions {

@@ -11,7 +11,7 @@
   .mySpace {
     border: 3px #f6f7f8 solid;
     border-radius: 10px;
-    width: 25%;
+    width: 30%;
     height: 400px;
     text-align: left;
     display: flex;
@@ -27,7 +27,7 @@
       width: 130px;
       height: 130px;
       border-radius: 100px;
-      background-image: url("../public/president.jpeg");
+      background-image: url("../public/blank.jpg");
       background-size: cover;
       background-position: center;
     }
@@ -64,7 +64,7 @@
     }
   }
 
-  .offreFormContainer {
+  .publications {
     margin-left: 10px;
     width: 100%;
     display: flex;
@@ -72,89 +72,141 @@
     h1 {
       margin: 5px 0px;
     }
-    .formContainer {
-      position: fixed;
-      z-index: 10000;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($color: #000000, $alpha: 0.5);
+    .empty {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: all 10s ease;
-      form {
-        width: 60%;
-        height: 570px;
-        border: 2px #abb0b9 dotted;
-        background-color: #f1f4ff;
-        padding: 15px 20px;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow-y: scroll;
-        .icon {
-          font-size: 40px;
-          cursor: pointer;
-        }
+      padding-top: 15%;
+      color: #abb0b9;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 20px;
+    }
+  }
+}
 
-        .container {
-          display: flex;
-          align-items: center;
+.loaderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.offreFormContainer {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  .filter {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+
+    // width: 350px;
+
+    .logo {
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-bottom: 2px solid #f6f7f8;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        padding-left: 10px;
+      }
+      .icon {
+        font-size: 20px;
+        position: relative;
+        top: -18px;
+        right: -540px;
+        cursor: pointer;
+        @media (max-width: 900px) {
+          right: -90px;
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-y: scroll;
+      height: 470px;
+      @media (max-width: 900px) {
+        height: 650px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 5px; /* width of the entire scrollbar */
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #abb0b9; /* color of the scroll thumb */
+        border-radius: 20px; /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
+      }
+
+      input {
+        width: 290px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: #0c97b4 solid 2px;
+        outline: none;
+        font-family: "Ubuntu", sans-serif;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        @media (max-width: 900px) {
           width: 100%;
-
-          @media (max-width: 900px) {
-            flex-wrap: wrap;
-          }
-
-          label {
-            width: 130px;
-            font-family: "Ubuntu", sans-serif;
-          }
-          input {
-            outline: none;
-            width: 300px;
-            // margin-right: 10px;
-            height: 40px;
-            padding: 10px;
-            border: 2px solid #0c97b4;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            @media (max-width: 900px) {
-              width: 100%;
-              margin-bottom: 10px;
-            }
-          }
         }
-        .file {
-          height: 100px;
-          border-radius: 20px;
+      }
+      label {
+        font-family: "Ubuntu", sans-serif;
+        display: flex;
+        align-items: center;
+      }
+      .description {
+        padding: 20px;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+        label {
+          margin-bottom: 5px;
         }
         textarea {
-          width: 99%;
-          height: 200px;
+          width: 100%;
+          height: 100%;
           padding: 10px;
-          border: 2px solid #0c97b4;
           border-radius: 5px;
+          border: #0c97b4 solid 2px;
           outline: none;
         }
-        .info {
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-        button {
-          margin-top: 10px;
-          padding: 10px 20px;
-          background-color: rgba($color: #0c97b4, $alpha: 0.9);
-          border: transparent;
-          border-radius: 10px;
-          color: white;
-          cursor: pointer;
-        }
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: #0c97b4;
+        cursor: pointer;
       }
     }
   }

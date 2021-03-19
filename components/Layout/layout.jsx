@@ -12,7 +12,8 @@ import Footer from "../Footer/footer";
 
 import {HiMenuAlt1} from "react-icons/hi"
 
-
+import Login from "../Login/login"
+import Register from "../Register/register";
 
 const Layout = (props) => {
     const [width , setwidth] = useState("0%");
@@ -26,6 +27,8 @@ const Layout = (props) => {
             </div>
              {props.children}
              <Footer></Footer>
+             <Login open={props.openLogin} setOpen={props.setOpenLogin}></Login>
+         <Register open={props.openRegister} setOpen={props.setOpenRegister} ></Register>
         </div>
     )
 };

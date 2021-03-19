@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from "next/image";
-import {useState} from "react";
+import React , {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
 //styles 
 import styles from "../styles/myspace.module.scss";
@@ -17,163 +17,301 @@ import {BsFillPeopleFill} from "react-icons/bs";
 import {FaNetworkWired} from "react-icons/fa";
 import {AiFillCheckCircle} from "react-icons/ai";
 import {TiDelete} from "react-icons/ti";
+import {BsCheckAll} from "react-icons/bs";
+import {VscEmptyWindow} from "react-icons/vsc";
 
+//redux
+import {connect} from "react-redux";
 
+//loader
+import{ Loader} from "../components/Loader/Loader";
 
-export default function About() {
+//notif
+import Notification from "../components/Notification/notification";
 
-    const {register , handleSubmit , errors } = useForm();
-    const [open , setOpen] = useState(false);
-    const [email , setEmail] = useState("");
-    const [password , setPassword] = useState("");
-    const Submit = (data) => {
-        console.log(data)
-        setEmail("");
-        setPassword("");
-        setOpen(false);
+//firebase
+import {createUserOffre, createOffre ,db, storage} from "../config/utils"
+import { AddOffre } from '../redux/offreReducer/offre-action';
+
+ function MySpace(props) {
+
+  const {register , handleSubmit} = useForm()
+  const [open , setOpen ]= useState(false);
+  const [message , setMessage]= useState("");
+  const [loader , isLoader]= useState(false);
+  const [notif , setNotif]=useState(false);
+  const [erreur , setErreur]=useState(false);
+  const [fileURL , setFileURL]=useState(null);
+  // const [offres , setOffres] = useState([]);
+    
+  const [openLogin , setOpenLogin ] = useState(false);
+  const [openRegister , setOpenRegister] = useState(false);
+
   
-    }
+  const onFileChange = async (e) => {
+    const file = e.target.files[0];
+    const storageRef = storage.ref();
+    const fileRef = storageRef.child(file.name)
+    await fileRef.put(file)
+    setFileURL(await fileRef.getDownloadURL())
+  }
 
+  const submit =async (data) => {
+    isLoader(true);
+    setErreur(false);
+
+    const {id} = props.user;
+    try { 
+
+  const offreId=  await createUserOffre(id  , data , fileURL);
+    await createOffre(offreId,data,fileURL);
+
+    props.AddOffre({
+      ...data,
+      fileURL:fileURL,
+      id:offreId
+    })
+    isLoader(false);
+    setOpen(false);
+    setMessage("Votre offre a été publiée");
+    setNotif(true) 
+    setOpen(false);
+    isLoader(false);
+    setTimeout( ()=> {
+      setNotif(false);
+    }, 8000)
+    } catch  (error){
+      isLoader(false);
+      setErreur(true);
+      setMessage(error.message);
+      setNotif(true);
+      setTimeout(
+        ()=> {
+          setNotif(false);
+        }
+     , 8000 )
+    }
+    
+  }
+
+
+  useEffect(
+   async ()=> {
+      if(props.user){ 
+    await  db.collection("users")
+      .doc(`${props.user.id}`)
+      .collection("offre")
+      .get().then(
+        snap => {
+        
+        snap.docs.map( doc => {
+            if(doc.exists){
+              props.AddOffre({  id:doc.id,  ...doc.data() });
+            }
+          })
+        }
+      )
+    }
+    }
+  ,[props.user])
+
+console.log(props.offres)
   return (
     <div >
       <Head>
-        <title>Alensao || A propos</title>
+        <title>Alensao || My Space</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
-          <div className={styles.mySpaceContainer}>
+      <Layout 
+        openLogin={openLogin}
+        setOpenLogin={setOpenLogin} 
+        setOpenRegister={setOpenRegister} 
+        openRegister={openRegister}
+        >
+        {notif ? <Notification  erreur={erreur} >{message}</Notification>:null}
+        {props.user ?  
+        <>  <div className={styles.mySpaceContainer}>
               <div className={styles.mySpace}>
-                  <div className={styles.pdp}></div>
+                  <div className={styles.pdp} style={props.user.photoURL ?{ backgroundImage: `url(${props.user.photoURL})`} : null}></div>
                   <div className={styles.description}>
-                      <p><BsFillPersonFill className={styles.icon}></BsFillPersonFill>Ouassim Melhaoui</p>
-                      <p><HiOutlineMailOpen className={styles.icon} ></HiOutlineMailOpen> ouassimmelhaoui@gmail.com</p>
-                      <p><BsFillPeopleFill className={styles.icon}></BsFillPeopleFill> Soft Innovation</p>
-                      <p><FaNetworkWired className={styles.icon }></FaNetworkWired> Senior Consultant</p>
+                      <p><BsFillPersonFill className={styles.icon}></BsFillPersonFill>{props.user.firstname} {props.user.lastname}</p>
+                      <p><HiOutlineMailOpen className={styles.icon} ></HiOutlineMailOpen> {props.user.email} </p>
+                      <p><BsFillPeopleFill className={styles.icon}></BsFillPeopleFill> {props.user.promotion}</p>
+                     {props.user.verified? <p><BsCheckAll className={styles.icon } style={{color:"#32cd32"}}></BsCheckAll> email verifiee</p> :  <p><TiDelete className={styles.icon } style={{color:"#FF0000"}}></TiDelete> email non  verifiee</p>}
                       <p><BsFillBookmarkFill className={styles.icon}></BsFillBookmarkFill> Mes Offres</p>
                   </div>
                   <div onClick={() => setOpen(true)}>
                       <button><AiFillCheckCircle className={styles.icon} ></AiFillCheckCircle>Publiez une offre</button>
                   </div>
               </div>
-              <div className={styles.offreFormContainer}>
-              { open ?  
-                    <div className={styles.formContainer}>
-                         <form onSubmit={handleSubmit(Submit)}>
-                             <TiDelete className={styles.icon} onClick={() => setOpen(false)} ></TiDelete>
-                             <div className={styles.container} >
-                                 <label>nom de l'entreprise </label>
-                                 <input 
-                                    name="entreprise" 
-                                    type="text" 
-                                    placeholder="entreprise..."
-                                    ref={register({required : true})}
-                                 />
-                                 <label>Adresse</label>
-                                  <input 
-                                     name="adresse" 
-                                     type="text" 
-                                     placeholder="adresse..."
-                                     ref={register({ required : true})}
+              <div className={styles.publications}>
+                  <h1>Mes Offres</h1>
+                 { props.offres? 
+                    <div>
+                       {props.offres.map( 
+                         offre =>
+                          <Offre 
+                             isLaureat 
+                             UserId={props.user.id} 
+                             key={offre.id} 
+                             offre={offre}
+
+                             >
+                          </Offre>)
+                      }
+                   </div> 
+                   :
+                   <div className={styles.empty}>
+                        <VscEmptyWindow></VscEmptyWindow>
+                        <p>Vous n'avez publier aucune offre</p>
+                    </div> 
+                 }
+              </div>
+          </div></> : <div className={styles.loaderContainer}> <Loader></Loader> </div>}
+
+
+        {open? 
+         <div className={styles.offreFormContainer}>
+                  <div className={styles.filter}>
+                     <div className={styles.logo}>
+                         <Image alt="alensao logo" src="/logo1.png" width="25px" height="25px"></Image>
+                         <h3>ALENSAO</h3>
+                        <TiDelete className={styles.icon} onClick={()=> setOpen(false)}></TiDelete>
+                      </div> 
+                     { loader?<div className={styles.loaderContainer}> <Loader></Loader> </div> :<form  onSubmit= {handleSubmit(submit)}>
+                        <div>
+                           <label>nom de l'entreprise </label>
+                            <input 
+                                name="entreprise" 
+                                type="text" 
+                                placeholder="entreprise..."
+                                ref={register({required : true})}
+                            />
+
+                            <label>Adresse</label>
+                            <input 
+                                name="adresse" 
+                                type="text" 
+                                placeholder="adresse..."
+                                ref={register({required : true})}
                                   />
-                             </div>
-                            <div className={styles.container}  >
-                                  <label>Site Web</label>
-                                  <input 
-                                     name="website" 
-                                     type="text" 
-                                     placeholder="www.exemple.com"
-                                     ref={register({ required : true})}
+
+                             <label>Site Web</label>
+                              <input 
+                                  name="website" 
+                                  type="text" 
+                                  placeholder="www.exemple.com"
+                                  ref={register({required : true})}
                                   />
-                                  <label>E-mail</label>
+                                  </div>
+                                  <div>
+                              <label>E-mail</label>
                                   <input 
                                     name="email" 
                                     type="email" 
                                     placeholder="email..."
-                                    value={email}
-                                    onChange={(e)=> setEmail(e.target.value)}
                                     ref={register({required : true})}
                                   />
-                            </div>
-                            <div className={styles.container} >
                                   <label>Fonction</label>
                                   <input 
                                        name="fonction" 
                                        type="text" 
                                        placeholder="initulé du poste"
-                                      ref={register({ required : true})}
+                                       ref={register({required : true})}
                                   />
-                                 <label>Secteur d'activité</label>
+                                  <label>Secteur d'activité</label>
                                  <input 
                                      name="secteur" 
                                      type="text" 
                                      placeholder="domaine..."
                                      ref={register({required : true})}
-                  />
-</div>
-
-<div className={styles.container}  >
-    <label>Début de stage</label>
-    <input 
-       name="debut" 
-       type="text" 
-       placeholder="2 fev 2021 "
-
-      ref={register({required : true})}
-   />
-   <label>Fin de stage</label>
-    <input 
-       name="fin" 
-      type="text" 
-      placeholder="3 juin 2021"
-      ref={register({required : true})}
-   />
-</div>
-<div className={styles.container}  >
-    <label>Lieu</label>
+                                 />
+                                 </div>
+                                 <div>
+                                <label>Début de stage</label>
+                                 <input 
+                                    name="debut" 
+                                    type="text" 
+                                    placeholder="2 fev 2021 "
+                                    ref={register({required : true})}
+                                 />
+                                <label>Fin de stage</label>
+                                <input 
+                                   name="fin" 
+                                   type="text" 
+                                   placeholder="3 juin 2021"
+                                   ref={register({required : true})}
+                                 />
+   <label>Lieu</label>
      <input 
-       name="lieu " 
+       name="lieu" 
        type="text" 
        placeholder="Rabat Morocco"
-
        ref={register({required : true})}
     />
-   <label>Type de contrat</label>
+    </div>
+    <div>
+     <label>Type de contrat</label>
    <input 
       name="contrat" 
       type="text" 
       placeholder="stage / CDI / CDD ..."
-     ref={register({required : true})}
+      ref={register({required : true})}
    />
-</div>
-<label>Ajouté une offre PDF </label>
+        </div>
+        <div>
+   <label>Ajouté une offre PDF </label>
 <input 
   className={styles.file}
   name="upload" 
   type="file" 
-  ref={register({required : true})}
+  onChange={e => onFileChange(e)}
 />
+</div>
+<div>
+   <label>durée </label>
+<input 
+  name="durée" 
+  type="text"
+  placeholder="6mois ..." 
+  ref={register({required : true})}
+
+/>
+</div>
+<div>
+   <label>Postulez avant le : </label>
+<input 
+  name="postuler" 
+  type="text"
+  placeholder=" 1 janv 2021..." 
+  ref={register({required : true})}
+
+/>
+</div>
+<div className={styles.description}>
 <label>Description</label>
-<textarea type="text" placeholder="Missions / descriptif du profil recherché"></textarea>
-<button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><AiFillCheckCircle></AiFillCheckCircle> Publier </button>
-</form> 
-</div>: null }
-                  <h1>Mes Offres</h1>
-                  <Offre 
-                      isLaureat   
-                      isNew="nouveau"
-                      title="Stagiaire PFE en Développement informatique"
-                      text="od. Ut sagittis laoreet venenatis. Curabitur nulla orci, rhoncus sit amet quam eget, hendrerit ultricies nisi. Etiam sem nibh, ornare ut tortor scelerisque,"
-                      tags={["génie informatique", "stage", "developpement mobile"]}
-                      start="immédiatement"
-                      duree="6 mois"
-                      postuler="1 december 2021"
-                      lieu="Rabat">
-                  </Offre>             
-              </div>
-          </div>
+<textarea type="text"name="description" placeholder="Missions / descriptif du profil recherché" ref={register({required : true})}></textarea>
+</div>
+<button type="submit" ><AiFillCheckCircle></AiFillCheckCircle> Publier </button>
+
+                     </form> }
+                  </div>
+          </div>:null}
       </Layout>
 
     </div>
   )
 }
+
+
+const mapStateToProps = (state) => ({
+  user : state.user.CurrentUser,
+  offres : state.offres.offres,
+})
+
+const mapDispatch = (dispatch) => ({
+  AddOffre : (offre) => dispatch(AddOffre(offre))
+})
+
+export default connect(mapStateToProps , mapDispatch)(MySpace);

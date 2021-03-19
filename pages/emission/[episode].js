@@ -14,6 +14,7 @@ import { klam } from "../../db/dbklam";
 //react-player
 import React from "react";
 import ReactPlayer from "react-player/youtube";
+import {useState} from "react";
 
 
 
@@ -23,14 +24,24 @@ export default function Episode() {
   const { episode }= router.query;
   const guest = episode;
   const newKlam = klam.find( episode => episode.guest === guest );
-  console.log(newKlam)
+
+
+  
+  const [openLogin , setOpenLogin ] = useState(false);
+  const [openRegister , setOpenRegister] = useState(false);
+
   return (
     <div >
       <Head>
         <title>Alensao || Episode </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <Layout 
+        openLogin={openLogin}
+        setOpenLogin={setOpenLogin} 
+        setOpenRegister={setOpenRegister} 
+        openRegister={openRegister}
+        >
           <div className={styles.episodeHeader}>
               <div className={styles.filter}>
                   <h1>K-LAM 2.0</h1>

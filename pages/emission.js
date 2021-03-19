@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import {useState} from "react";
 
 //style
 import styles from "../styles/emission.module.scss";
@@ -10,6 +11,11 @@ import EmissionMain from "../components/emissionMain/emissionMain";
 
 
 export default function Emission() {
+
+  
+  const [openLogin , setOpenLogin ] = useState(false);
+  const [openRegister , setOpenRegister] = useState(false);
+
   return (
     <div >
       <Head>
@@ -17,7 +23,12 @@ export default function Emission() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+      <Layout 
+        openLogin={openLogin}
+        setOpenLogin={setOpenLogin} 
+        setOpenRegister={setOpenRegister} 
+        openRegister={openRegister}
+        >
         <div className={styles.emissionHeader}>
           <div className={styles.filter}>
               <h1>K-LAM 2.0 Ensao</h1>

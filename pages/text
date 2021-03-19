@@ -1,0 +1,101 @@
+{ open ?  
+                    <div className={styles.formContainer}>
+                         <form onSubmit={handleSubmit(Submit)}>
+                             <TiDelete className={styles.icon} onClick={() => setOpen(false)} ></TiDelete>
+                             <div className={styles.container} >
+                                 <label>nom de l'entreprise </label>
+                                 <input 
+                                    name="entreprise" 
+                                    type="text" 
+                                    placeholder="entreprise..."
+                                    ref={register({required : true})}
+                                 />
+                                 <label>Adresse</label>
+                                  <input 
+                                     name="adresse" 
+                                     type="text" 
+                                     placeholder="adresse..."
+                                     ref={register({ required : true})}
+                                  />
+                             </div>
+                            <div className={styles.container}  >
+                                  <label>Site Web</label>
+                                  <input 
+                                     name="website" 
+                                     type="text" 
+                                     placeholder="www.exemple.com"
+                                     ref={register({ required : true})}
+                                  />
+                                  <label>E-mail</label>
+                                  <input 
+                                    name="email" 
+                                    type="email" 
+                                    placeholder="email..."
+                                    value={email}
+                                    onChange={(e)=> setEmail(e.target.value)}
+                                    ref={register({required : true})}
+                                  />
+                            </div>
+                            <div className={styles.container} >
+                                  <label>Fonction</label>
+                                  <input 
+                                       name="fonction" 
+                                       type="text" 
+                                       placeholder="initulé du poste"
+                                      ref={register({ required : true})}
+                                  />
+                                 <label>Secteur d'activité</label>
+                                 <input 
+                                     name="secteur" 
+                                     type="text" 
+                                     placeholder="domaine..."
+                                     ref={register({required : true})}
+                  />
+</div>
+
+<div className={styles.container}  >
+    <label>Début de stage</label>
+    <input 
+       name="debut" 
+       type="text" 
+       placeholder="2 fev 2021 "
+
+      ref={register({required : true})}
+   />
+   <label>Fin de stage</label>
+    <input 
+       name="fin" 
+      type="text" 
+      placeholder="3 juin 2021"
+      ref={register({required : true})}
+   />
+</div>
+<div className={styles.container}  >
+    <label>Lieu</label>
+     <input 
+       name="lieu " 
+       type="text" 
+       placeholder="Rabat Morocco"
+
+       ref={register({required : true})}
+    />
+   <label>Type de contrat</label>
+   <input 
+      name="contrat" 
+      type="text" 
+      placeholder="stage / CDI / CDD ..."
+     ref={register({required : true})}
+   />
+</div>
+<label>Ajouté une offre PDF </label>
+<input 
+  className={styles.file}
+  name="upload" 
+  type="file" 
+  ref={register({required : true})}
+/>
+<label>Description</label>
+<textarea type="text" placeholder="Missions / descriptif du profil recherché"></textarea>
+<button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><AiFillCheckCircle></AiFillCheckCircle> Publier </button>
+</form> 
+</div>: null }

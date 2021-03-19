@@ -82,11 +82,6 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/stage" activeClassName={styles.activeLink}>
-                            <a  className={styles.blog}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Biblio </a>
-                        </ActiveLink>
-                    </li>
-                    <li>
                         <ActiveLink href="/emission" activeClassName={styles.activeLink}>
                             <a  className={styles.faq}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-Lam 2.0</a>
                         </ActiveLink>
