@@ -60,7 +60,7 @@ export default function Episode() {
                   <p><span>Description :</span> {newKlam.description}</p>
                   <p><span>Pilotage:</span> Mohammed-Ayoub  El Maftouhi  </p>
                   <p><span>Proposé par :</span> Ouassim Melhaoui  </p>
-                  <p><span>Présenté par :</span> Mohammed-Ayoub  El Maftouhi & Chaymae El Mansouri </p>
+                  <p><span>Présenté par :</span> Mohammed-Ayoub  El Maftouhi </p>
                   <p><span>Production:</span> Hicham Hajji & Ihab Biziz  </p>
                </div>
                <div className={styles.logos}>

@@ -70,7 +70,6 @@ const Submit = async (data)=> {
    const fileRef = storageRef.child(file.name)
    await fileRef.put(file)
    const fileURL = await fileRef.getDownloadURL();
-   console.log(fileURL)
 
   emailjs.send('service_6h9sktm', 'template_v806qbj',{  offre: offreDescription.entreprise,email: data.email ,cv : `${fileURL}}`},"user_sP8rfm3EkOE6Fwr1podrl")
   .then((res) => {
@@ -104,7 +103,7 @@ const Submit = async (data)=> {
     }
   , [])
 
-console.log(offreDescription)
+
 
   return (
     <div >
@@ -144,7 +143,7 @@ console.log(offreDescription)
                </div>
                <div className={styles.info}>
                  <h3><VscGlobe className={styles.icon}/>Site web  </h3>
-                <p> <a href={offreDescription.website}>{offreDescription.website}</a></p>
+                <p>{offreDescription.website}</p>
                </div>
                <div className={styles.info}>
                  <h3><VscDebugStart className={styles.icon}></VscDebugStart>Début periode de stage   </h3>

@@ -95,7 +95,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
     
   }
 
-console.log(props.offres)
+
   return (
     <div >
       <Head>
