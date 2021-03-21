@@ -39,7 +39,7 @@ function Ade() {
                <p>Acceuil / ADE</p>
             </div>
           </div>
-          <AboutDynamic title="à propos" img="/ade.png"  width="350px" height="200px"></AboutDynamic>
+          <AboutDynamic title="à propos" img="/ade.png"  width="200px" height="200px"></AboutDynamic>
           <Tree></Tree>
   
         </Layout>

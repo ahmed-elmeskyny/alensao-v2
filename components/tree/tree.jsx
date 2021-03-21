@@ -16,7 +16,7 @@ const Tree = ({name , stats , img}) => {
 
                      </div>
                      <div className={styles.name}>
-                         <h3>OUASSIM MELHAOUI</h3>
+                         <h3>Youssef Lbour</h3>
                          <p>president</p>
                      </div>
                 </div>
@@ -25,7 +25,7 @@ const Tree = ({name , stats , img}) => {
 
                      </div>
                      <div className={styles.name}>
-                         <h3>YOUSSEF LBOUR</h3>
+                         <h3>Jihane Benbrik</h3>
                          <p>Vice-President</p>
                      </div>
                 </div>
@@ -34,7 +34,7 @@ const Tree = ({name , stats , img}) => {
 
                      </div>
                      <div className={styles.name}>
-                         <h3>ISMAIL DINE</h3>
+                         <h3>Hadil mhamdi</h3>
                          <p>secretaire generale</p>
                      </div>
                 </div>
@@ -43,16 +43,16 @@ const Tree = ({name , stats , img}) => {
 
                      </div>
                      <div className={styles.name}>
-                         <h3>ADNANE ELKHATIB</h3>
+                         <h3>Youness benlachheb</h3>
                          <p>Trésorier</p>
                      </div>
                 </div>
-                <div className={styles.profile}>
+                {/* <div className={styles.profile}>
                      <div className={styles.pdp} style={{backgroundImage : "url(/pdp2.jpg)"}}>
 
                      </div>
                      <div className={styles.name}>
-                         <h3>FARID LAHBIL</h3>
+                         <h3>FARID L</h3>
                          <p>responsable</p>
                      </div>
                 </div>
@@ -64,7 +64,7 @@ const Tree = ({name , stats , img}) => {
                          <h3>SAMIR OUAMASSI</h3>
                          <p>responsable</p>
                      </div>
-                </div>
+                </div> */}
              </div>    
         </div>
     )

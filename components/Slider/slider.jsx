@@ -38,7 +38,6 @@ const  Slider = () => {
                             <p>Pour un Meilleur Future</p>
                             <h1>Association des lauréats se l' ENSAO </h1>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span>
-                            <Link href="/about" ><a className={styles.about} > à propos <BsBoxArrowInRight></BsBoxArrowInRight> </a></Link>
                         </div>
                     </div>
                 </div>
@@ -50,7 +49,6 @@ const  Slider = () => {
                             <p>en vedette</p>
                              <h1>l' assise entre l'Ade & l'ENSAO & Soft Innovation - paris </h1>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span>
-                            <Link href="/about" ><a className={styles.about} > Voir Plus ... <BsBoxArrowInRight></BsBoxArrowInRight> </a></Link>
                         </div>
                     </div>
                 </div>

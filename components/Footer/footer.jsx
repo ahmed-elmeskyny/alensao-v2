@@ -26,27 +26,25 @@ const Footer = () => {
                 <div className={styles.block}>
                     <h4>Alensao</h4>
                     <ul>
-                        <li><Link href="/"><a> À propos </a></Link></li>
-                        <li><Link href="/"><a> Trombinoscope </a></Link></li>
-                        <li><Link href="/"><a>Contactez-nous</a></Link></li>
-                        <li><Link href="/"><a> FAQs</a></Link></li>
+                        <li><Link href="/about"><a> À propos </a></Link></li>
+                        <li><Link href="/ade"><a> Trombinoscope </a></Link></li>
+                        <li><Link href="/contact"><a>Contactez-nous</a></Link></li>
                     </ul>
                 </div>
                 <div className={styles.block}>
                     <h4>Lien Rapid</h4>
                     <ul>
-                        <li><Link href="/"><a> Offre de Stage récent </a></Link></li>
-                        <li><Link href="/"><a>Evénement</a></Link></li>
-                        <li><Link href="/"><a> K-LAM 2.0</a></Link></li>
-                        <li><Link href="/"><a>Association des étudiants</a></Link></li>
+                        <li><Link href="/stage"><a> Offre de Stage récent </a></Link></li>
+                        <li><Link href="/emission"><a> K-LAM 2.0</a></Link></li>
+                        <li><Link href="/ade"><a>Association des étudiants</a></Link></li>
                     </ul>
                 </div>
                 <div className={styles.block}>
                     <h4>Evénement récent</h4>
                     <ul>
                         <li><Link href="/"><a> Assise entre l'ade et Alensao </a></Link></li>
-                        <li><Link href="/"><a> Séminaire DataProtect Ensa Oujda</a></Link></li>
-                        <li><Link href="/"><a> K-LAM 2.0 Teaser saison 1</a></Link></li>
+                        <li><Link href="/"><a> Gallerie</a></Link></li>
+                        <li><Link href="/emission/Abdelmalek el hebil"><a> K-LAM 2.0 episode2 saison 1</a></Link></li>
                     </ul>
                 </div>
                 </div>
@@ -55,17 +53,14 @@ const Footer = () => {
                         <p>(+212) 6825918261</p>
                         <p style={{color:"red"}}>alensao.association@gmail.com</p>
                         <div className={styles.social}>
-                         <FaFacebookSquare className={styles.icon}></FaFacebookSquare>
-                         <FaLinkedin className={styles.icon} ></FaLinkedin>
-                         <FaTwitter className={styles.icon} ></FaTwitter>
-                         <AiFillInstagram className={styles.icon} ></AiFillInstagram>
+                        <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
                     </div>
                     </div>
                 </div>
             </div>
             <div className={styles.copyRight}>
                 <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
-                <p>Crée avec <AiFillHeart className={styles.icon} style={{color:"red"}}></AiFillHeart> par <span>Ahmed El meskyny</span></p>
+                <p>Crée avec <AiFillHeart className={styles.icon} style={{color:"red"}}></AiFillHeart> par <span><a href="http://ahmed-elmeskyny.herokuapp.com/" target="_blank">Ahmed El meskyny</a></span></p>
             </div>
         </div>
     )

@@ -36,8 +36,7 @@ const EmissionMain= () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos ullam optio ipsa eligendi exercitationem vitae distinct
                     </p>
                     <div className={styles.social}>
-                        <AiFillYoutube style={{color:"#FF0000",marginRight:"10px" ,fontSize:"40px",cursor:"pointer"}}></AiFillYoutube>
-                        <FaFacebookSquare style={{color:"#097CEB" , cursor:"pointer"}}></FaFacebookSquare>
+                        <a href="https://www.youtube.com/channel/UCbBDkfV17rgQDyyJz-SxDfQ" target="_blank"><AiFillYoutube style={{color:"#FF0000",marginRight:"10px" ,fontSize:"40px",cursor:"pointer"}}></AiFillYoutube></a>
                     </div>
                 </div>
             </div>

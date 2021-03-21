@@ -98,10 +98,8 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                 </ul>
                 <div className={styles.social}>
-                    <FaFacebookSquare className={styles.icon}></FaFacebookSquare>
-                    <FaLinkedin className={styles.icon} ></FaLinkedin>
-                    <FaTwitter className={styles.icon} ></FaTwitter>
-                    <AiFillInstagram className={styles.icon} ></AiFillInstagram>
+                   <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
+
                 </div>            
         </div>
         <div className={styles.filter} style={{width: width}}>
@@ -146,10 +144,7 @@ const SideMenu = ({width , setwidth}) => {
                 </ul>
                 <div>
                 <div className={styles.social}>
-                    <FaFacebookSquare className={styles.icon}></FaFacebookSquare>
-                    <FaLinkedin className={styles.icon} ></FaLinkedin>
-                    <FaTwitter className={styles.icon} ></FaTwitter>
-                    <AiFillInstagram className={styles.icon} ></AiFillInstagram>
+                <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
                 </div>
                 <div className={styles.copyRight}>
                     <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
