@@ -14,6 +14,8 @@ import {auth} from "../../config/utils";
 //react-icons
 import {MdPowerSettingsNew} from "react-icons/md";
 import {TiDelete} from "react-icons/ti";
+import {AiFillEye} from "react-icons/ai";
+import {AiOutlineEyeInvisible} from "react-icons/ai";
 
 //Loader
 import{Loader}from "../Loader/Loader";
@@ -29,6 +31,7 @@ const Login = ({open , setOpen}) => {
     const [loader , isLoader]= useState(false);
     const [message , setMessage]= useState(false);
     const [erreur , setErreur]=useState(false);
+    const [type , setType] = useState("password");
 
     const [notif , setNotif]= useState(false);
     
@@ -69,7 +72,7 @@ const Login = ({open , setOpen}) => {
 
     return (
         <>
-     {notif ? <Notification erreur={erreur}> {message}</Notification>: null};
+     {notif ? <Notification erreur={erreur}> {message}</Notification>: null}
      { open  ? <div className={styles.loginFormContainer} >
             <div className={styles.filter}>
                 <div className={styles.logo}>
@@ -77,7 +80,7 @@ const Login = ({open , setOpen}) => {
                     <h3>ALENSAO</h3>
                     <TiDelete className={styles.icon} onClick={()=> setOpen(false)}></TiDelete>
                 </div>
-                {loader?<Loader></Loader> :<><form onSubmit={handleSubmit(Submit)}>
+                {loader?<Loader></Loader> :<><form onSubmit={handleSubmit(Submit)} autoComplete="off" >
                      <label>E-mail</label>
                      <input 
                        name="email" 
@@ -88,18 +91,21 @@ const Login = ({open , setOpen}) => {
                        ref={register({ required : true})}
                      />
                      <label>Mot de passe</label>
-                     <input 
+                     <div  className={styles.password}>
+                      <input 
                        name="password" 
-                       type="password" 
-                       placeholder="Mot de passe"
+                       type={type}
+                       placeholder="mot de passe..."
                        value={password}
                        onChange={(e)=> setPassword(e.target.value)}
                        ref={register({required : true})}
                      />
+                     { type == "password" ?<AiFillEye className={styles.icon} onClick={()=> setType("text")}></AiFillEye>: <AiOutlineEyeInvisible className={styles.icon} onClick={()=> setType("password")}></AiOutlineEyeInvisible>}
+                     </div>
                      <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><MdPowerSettingsNew style={{fontSize:"20px", marginRight:"5px"}}></MdPowerSettingsNew>Se Connecter </button>
                 </form>
                 <div className={styles.reset}>
-                    <p>Mot de passe Oublier ?</p>
+                    <a>Mot de passe Oublier ?</a>
                 </div></>}
             </div>
         </div> : null}

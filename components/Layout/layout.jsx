@@ -28,10 +28,10 @@ const Layout = (props) => {
              {props.children}
              <Footer></Footer>
              <Login open={props.openLogin} setOpen={props.setOpenLogin}></Login>
-         <Register open={props.openRegister} setOpen={props.setOpenRegister} ></Register>
+             <Register open={props.openRegister} setOpen={props.setOpenRegister} ></Register>
         </div>
     )
-};
+}
 
 
 export default Layout;

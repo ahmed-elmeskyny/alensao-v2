@@ -1,6 +1,7 @@
 //next
 import Image from "next/image"
 import {useRouter} from "next/router";
+import React , { useState} from "react";
 
 //style
 import styles from "./offre.module.scss";
@@ -11,7 +12,8 @@ import {IoIosArrowForward} from "react-icons/io";
 import {FaHourglassStart} from "react-icons/fa";
 import {ImLocation} from "react-icons/im";
 import {BiCalendarMinus} from "react-icons/bi";
-import {AiFillDelete, AiFillPropertySafety} from "react-icons/ai";
+import {AiFillDelete} from "react-icons/ai";
+import {TiDelete} from "react-icons/ti";
 
 //firebase
 import {db} from "../../config/utils";
@@ -24,7 +26,7 @@ import { DeleteOffre} from "../../redux/offreReducer/offre-action";
 const Offre = ({offre, isLaureat , DeleteOffre , UserId}) => {
     const router = useRouter();
     const { description , fonction , debut , durée , postuler , lieu , secteur ,createdAt} = offre;
-
+    const [confirm , setConfirm] = useState(false);
 
     const Delete= (id) => {
         DeleteOffre(id);
@@ -42,7 +44,7 @@ const Offre = ({offre, isLaureat , DeleteOffre , UserId}) => {
 
         <div className={styles.offreContainer} style={isLaureat ? {margin: "0",marginBottom:"15px" ,width : "100%"} : null}>
             <div className={styles.offreDescription}>
-            { isLaureat ?    <AiFillDelete style={{color:"red", fontSize:"20px" , cursor:"pointer" , display:"flex" }} onClick={()=> Delete(offre.id)}></AiFillDelete> : null }
+            { isLaureat ?    <AiFillDelete style={{color:"red", fontSize:"20px" , cursor:"pointer" , display:"flex" }} onClick={()=> setConfirm(true)}></AiFillDelete> : null }
                 <div className={styles.header}>
                     <div className={styles.title}>
                         <span> {createdAt}</span>
@@ -85,6 +87,29 @@ const Offre = ({offre, isLaureat , DeleteOffre , UserId}) => {
                     <IoIosArrowForward></IoIosArrowForward>
                 </div>
             </div>
+            {
+            confirm ?
+             <div className={styles.Confirm}>
+               <div className={styles.filter}>
+                  <div className={styles.logo}>
+                   <Image alt="alensao logo" src="/logo1.png" width="25px" height="25px"></Image>
+                   <h3>ALENSAO</h3>
+                  </div> 
+                  <div className={styles.text}>
+                    <p>Vous voulez supprimer cette offre ?</p>
+                  </div>
+                  <div className={styles.confirmer}>
+                  <button className={styles.pdf } onClick={() => setConfirm(false)}>Annluer</button>
+                  <button onClick= { 
+                      ()=> {
+                          Delete(offre.id);
+                          setConfirm(false);
+                      }
+                  }>Confirmer</button>
+                  </div>
+                </div>
+                </div>:null
+          }
         </div>
     )
 };

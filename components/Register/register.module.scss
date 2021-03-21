@@ -44,7 +44,7 @@
     form {
       display: flex;
       flex-direction: column;
-      margin-top: 20px;
+      margin-top: 10px;
       height: 450px;
       overflow-y: scroll;
       padding-right: 10px;
@@ -57,7 +57,38 @@
         background-color: #abb0b9; /* color of the scroll thumb */
         border-radius: 20px; /* roundness of the scroll thumb */ /* creates padding around scroll thumb */
       }
+      .password {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+          width: 250px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        .icon {
+          width: 40px;
+          padding: 8px;
+          color: white;
+          background-color: #0c97b4;
+          height: 40px;
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          cursor: pointer;
+        }
+      }
+
       input {
+        width: 290px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: #0c97b4 solid 2px;
+        outline: none;
+        font-family: "Ubuntu", sans-serif;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      select {
         width: 290px;
         padding: 10px 15px;
         border-radius: 5px;

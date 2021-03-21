@@ -57,6 +57,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
   }
 
   const submit =async (data) => {
+
     isLoader(true);
     setErreur(false);
 
@@ -93,27 +94,6 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
     }
     
   }
-
-
-  useEffect(
-   async ()=> {
-      if(props.user){ 
-    await  db.collection("users")
-      .doc(`${props.user.id}`)
-      .collection("offre")
-      .get().then(
-        snap => {
-        
-        snap.docs.map( doc => {
-            if(doc.exists){
-              props.AddOffre({  id:doc.id,  ...doc.data() });
-            }
-          })
-        }
-      )
-    }
-    }
-  ,[props.user])
 
 console.log(props.offres)
   return (
@@ -163,7 +143,7 @@ console.log(props.offres)
                    </div> 
                    :
                    <div className={styles.empty}>
-                        <VscEmptyWindow></VscEmptyWindow>
+                       <Image alt="no data" src="/noData.svg" width="100px" height="100px"></Image>
                         <p>Vous n'avez publier aucune offre</p>
                     </div> 
                  }
@@ -179,9 +159,9 @@ console.log(props.offres)
                          <h3>ALENSAO</h3>
                         <TiDelete className={styles.icon} onClick={()=> setOpen(false)}></TiDelete>
                       </div> 
-                     { loader?<div className={styles.loaderContainer}> <Loader></Loader> </div> :<form  onSubmit= {handleSubmit(submit)}>
+                     { loader?<div className={styles.loaderContainer}> <Loader></Loader> </div> :<form autoComplete="off" onSubmit= {handleSubmit(submit)}>
                         <div>
-                           <label>nom de l'entreprise </label>
+                           <label>nom de l'entreprise <span style={{color:"red"}}> * </span> </label>
                             <input 
                                 name="entreprise" 
                                 type="text" 
@@ -193,34 +173,34 @@ console.log(props.offres)
                             <input 
                                 name="adresse" 
                                 type="text" 
-                                placeholder="adresse..."
-                                ref={register({required : true})}
+                                placeholder="adresse / Non-défini..."
+                                ref={register({required:false})}
                                   />
 
                              <label>Site Web</label>
                               <input 
                                   name="website" 
                                   type="text" 
-                                  placeholder="www.exemple.com"
-                                  ref={register({required : true})}
+                                  placeholder="www.exemple.com / Non-défini..."
+                                  ref={register({required:false})}
                                   />
                                   </div>
                                   <div>
-                              <label>E-mail</label>
+                              <label>E-mail <span style={{color:"red"}}> * </span></label>
                                   <input 
                                     name="email" 
                                     type="email" 
                                     placeholder="email..."
                                     ref={register({required : true})}
                                   />
-                                  <label>Fonction</label>
+                                  <label>Fonction <span style={{color:"red"}}> * </span></label>
                                   <input 
                                        name="fonction" 
                                        type="text" 
                                        placeholder="initulé du poste"
                                        ref={register({required : true})}
                                   />
-                                  <label>Secteur d'activité</label>
+                                  <label>Secteur d'activité <span style={{color:"red"}}> * </span></label>
                                  <input 
                                      name="secteur" 
                                      type="text" 
@@ -229,68 +209,69 @@ console.log(props.offres)
                                  />
                                  </div>
                                  <div>
-                                <label>Début de stage</label>
+                                <label>Début de stage <span style={{color:"red"}}> * </span></label>
                                  <input 
                                     name="debut" 
-                                    type="text" 
-                                    placeholder="2 fev 2021 "
+                                    type="date" 
+                                    // placeholder="2 fev 2021 / Non-défini..."
                                     ref={register({required : true})}
                                  />
-                                <label>Fin de stage</label>
-                                <input 
-                                   name="fin" 
-                                   type="text" 
-                                   placeholder="3 juin 2021"
-                                   ref={register({required : true})}
-                                 />
-   <label>Lieu</label>
+                                
+   <label>Lieu <span style={{color:"red"}}> * </span></label>
      <input 
        name="lieu" 
        type="text" 
-       placeholder="Rabat Morocco"
+       placeholder="Rabat Morocco / Non-défini..."
        ref={register({required : true})}
     />
-    </div>
-    <div>
-     <label>Type de contrat</label>
+         <label>Type de contrat  <span style={{color:"red"}}> * </span> </label>
    <input 
       name="contrat" 
       type="text" 
-      placeholder="stage / CDI / CDD ..."
+      placeholder="stage / CDI / CDD / Non-défini ..."
       ref={register({required : true})}
    />
-        </div>
+    </div>
+
         <div>
-   <label>Ajouté une offre PDF </label>
+        <label>Fin de stage</label>
+                                 <input 
+                                    name="fin" 
+                                    type="date" 
+                                    // placeholder="2 fev 2021 / Non-défini..."
+                                    ref={register({required:false})}
+                                 />
+   <label>Ajouté l'offre PDF </label>
 <input 
   className={styles.file}
   name="upload" 
   type="file" 
+  placeholder="l'offre en pdf / Non-défini.."
   onChange={e => onFileChange(e)}
 />
 </div>
 <div>
-   <label>durée </label>
+   <label>durée  <span style={{color:"red"}}> * </span> </label>
 <input 
   name="durée" 
   type="text"
-  placeholder="6mois ..." 
+  placeholder="6mois / Non-défini ..." 
   ref={register({required : true})}
 
 />
 </div>
 <div>
-   <label>Postulez avant le : </label>
+   <label>Postulez avant le : <span style={{color:"red"}}> * </span> </label>
 <input 
   name="postuler" 
   type="text"
-  placeholder=" 1 janv 2021..." 
+  placeholder=" 1 janv 2021 / Non-défini ..." 
   ref={register({required : true})}
 
 />
 </div>
 <div className={styles.description}>
-<label>Description</label>
+<label>Description  <span style={{color:"red"}}> * </span> </label>
 <textarea type="text"name="description" placeholder="Missions / descriptif du profil recherché" ref={register({required : true})}></textarea>
 </div>
 <button type="submit" ><AiFillCheckCircle></AiFillCheckCircle> Publier </button>
@@ -298,6 +279,7 @@ console.log(props.offres)
                      </form> }
                   </div>
           </div>:null}
+
       </Layout>
 
     </div>

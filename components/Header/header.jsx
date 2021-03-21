@@ -19,7 +19,7 @@ import {connect } from "react-redux";
 
 const Header  = ({setOpenLogin , setOpenRegister , user  }) => {
     const router = useRouter()
-    console.log(user);
+
 
     return (
         <div className={styles.hero}>

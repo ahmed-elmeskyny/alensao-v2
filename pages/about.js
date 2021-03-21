@@ -42,7 +42,6 @@ function About() {
         </div>
         <AboutDynamic title="à propos" img="/logo.png"  width="350px" height="200px"></AboutDynamic>
         <AboutDynamic isInverse title="notre mission" img="/mission.png" width="220px" height="200px" ></AboutDynamic>
-        <Tree></Tree>
 
       </Layout>
 

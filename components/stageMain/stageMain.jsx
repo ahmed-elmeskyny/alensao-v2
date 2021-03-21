@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 //style
 import styles from "./stageMain.module.scss";
@@ -10,6 +10,7 @@ import {BiSearch} from "react-icons/bi";
 import Calendars from "../Calendar/Calendar";
 import Offre from "../offre/offre";
 import { useEffect, useState } from "react";
+import {Loader } from "../Loader/Loader";
 
 //firebase
 import {db } from "../../config/utils";
@@ -20,9 +21,11 @@ import { AddOffrePublic} from "../../redux/publicReducer/public-action";
 
 
 const StageMain = () => {
-    const [offres , setOffres] = useState(null);
+    const [offres , setOffres] = useState([]);
+
 
     useEffect( () => {
+
         db.collection("offre")
         .get().then(
             snap => {
@@ -31,8 +34,8 @@ const StageMain = () => {
             }
         )
 
-
     } , [])
+
 
 console.log(offres)
     return (
@@ -41,29 +44,26 @@ console.log(offres)
         <div className={styles.main}>
             <div className={styles.leftside}>
                 <div className={styles.search}>
-                    <input type="text" placeholder="search" ></input>
+                    <input type="text" placeholder="search" onChange ></input>
                     <div  className={styles.icon} >
                     <BiSearch></BiSearch>
                     </div>
                 </div>
                 <Calendars></Calendars>
-                <div className={styles.ad}>
+                {/* <div className={styles.ad}>
                      <h2>AD</h2>
-                </div>
+                </div> */}
             </div>
             <div className={styles.offres}>
-              {  offres ? offres.map( offre => <Offre  key={offre.id} offre={offre}></Offre>) : <p>nani</p>}
+              {  offres.length !=0 ? 
+              offres.map( 
+                  offre => <Offre  key={offre.id} offre={offre}></Offre>) 
+              :  <div className={styles.empty}><Image alt="no data" src="/noData.svg" width="100px" height="100px"></Image><p>Aucune offre n' a été publiée </p></div>}
             </div>
             </div>
         </div>
     )
 }
 
-const mapStateToProps = (state) => ({
-    offres : state.offresPublic.offresPublic
-  });
 
-const mapDispatchToProps = (dispatch) => ({
-    AddOffrePublic : (offre ) => dispatch(AddOffrePublic(offre)),
-  });
-export default connect(mapStateToProps, mapDispatchToProps)(StageMain);
+export default StageMain;

@@ -84,6 +84,19 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+      .empty {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Ubuntu", sans-serif;
+        p {
+          margin-top: 20px;
+        }
+      }
     }
   }
 }

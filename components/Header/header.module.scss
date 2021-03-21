@@ -5,7 +5,8 @@
   align-items: center;
   padding: 15px 35px;
   border-bottom: 3px #f6f7f8 solid;
-  @media (max-width: 900px) {
+  @media (max-width: 500px) {
+    align-items: center;
     justify-content: center;
   }
   .logo {
@@ -37,6 +38,7 @@
       cursor: pointer;
       @media (max-width: 900px) {
         background-color: #f6f7f8;
+        margin-right: 5px;
       }
       &:hover {
         background-color: #f6f7f8;

@@ -12,6 +12,8 @@ import {useForm} from "react-hook-form"
 //react-icons
 import {RiUserSettingsFill} from "react-icons/ri";
 import {TiDelete} from "react-icons/ti";
+import {AiFillEye} from "react-icons/ai";
+import {AiOutlineEyeInvisible} from "react-icons/ai";
 
 //firebase
 import {auth , storage} from "../../config/utils";
@@ -21,7 +23,7 @@ import {Loader} from "../Loader/Loader";
 import Notification from "../Notification/notification";
 
 const Register = ({open,setOpen }) => {
-    const {register , handleSubmit , errors } = useForm();
+    const {register , handleSubmit  } = useForm();
 
     const [email , setEmail] = useState("");
     const [password , setPassword] = useState("");
@@ -31,7 +33,8 @@ const Register = ({open,setOpen }) => {
     const [notif , setNotif]=useState(false);
     const [erreur , setErreur]=useState(false);
     const [fileURL , setFileURL]=useState(null);
-    // const [file , setFile] = useState(null);
+    const [type , setType] = useState("password");
+ 
 
 
     const onFileChange = async (e) => {
@@ -43,6 +46,7 @@ const Register = ({open,setOpen }) => {
     }
 
     const Submit = async (data) => {
+
       if (password !== confirmPassword) {
         setErreur(true)
         setMessage("veuillez confirme votre mot de passe");
@@ -92,7 +96,7 @@ const Register = ({open,setOpen }) => {
 
     return (
       <>
-      {notif ?<Notification erreur={erreur}>{message}</Notification> : null};
+      {notif ?<Notification erreur={erreur}>{message}</Notification> : null}
         {open? 
         <div className={styles.registerFormContainer}>
          <div className={styles.filter}>
@@ -101,36 +105,42 @@ const Register = ({open,setOpen }) => {
                     <h3>ALENSAO</h3>
                     <TiDelete className={styles.icon} onClick={()=> setOpen(false)}></TiDelete>
                 </div>
-               {loader? <Loader></Loader> :<form onSubmit={handleSubmit(Submit)}>
-                     <label>nom</label>
+               {loader? <Loader></Loader> :<form onSubmit={handleSubmit(Submit)} autoComplete="off">
+               <div style={{color:"red", marginTop:"10px", marginBottom:"10px"}}>
+                 <p> (*) Obligatoire </p> 
+                 <p> inscription juste pour lauréats</p>
+                </div>
+                     <label>nom <span style={{color:"red"}}> * </span></label>
                      <input 
                        name="firstname" 
                        type="text" 
                        placeholder="nom"
                        ref={register({required : true})}
                      />
-                     <label>Prenom</label>
+                     <label>Prenom <span style={{color:"red"}}> * </span></label>
                      <input 
                        name="lastname" 
                        type="text" 
                        placeholder="Prenom"
                        ref={register({ required : true})}
                      />
-                     <label>Spécialité</label>
-                      <input 
-                       name="domaine" 
-                       type="text" 
-                       placeholder="génie informatique..."
-                       ref={register({ required : true})}
-                     />
-                      <label>Promotion</label>
-                      <input 
-                       name="promotion" 
-                       type="text" 
-                       placeholder="2005...."
-                       ref={register({ required : true})}
-                     />
-                     <label>email</label>
+                     <label>Spécialité <span style={{color:"red"}}> * </span> </label>
+                     <select  name="domaine" placeholder="select" ref={register({required : true})}>
+                     <option disabled defaultValue selected value> -- sélectionner une option  -- </option>
+                          <option value="génie informatique">Génie informatique</option>
+                          <option value="cyber sécurité">Cyber sécurité</option>
+                          <option value="big data">Data science </option>
+                          <option value="génie civil">Génie civil</option>
+                          <option value="génie civil">Génie Electric</option>
+                          <option value="génie industriel">Génie industriel</option>
+                          <option value="génie télécommunication et réseaux">Génie télécommunication et réseaux</option>
+                          <option value="génie des systémes electronique , informatique et réseaux">Génie des systémes electronique , informatique et réseaux</option>
+                     </select>
+                      <label>Promotion <span style={{color:"red"}}> * </span> </label>
+                      <input type="number" name="promotion" min="2001" placeholder="2001" ref={register({required : true})}>
+
+                      </input>
+                     <label>email <span style={{color:"red"}}> * </span> </label>
                      <input 
                        name="email" 
                        type="email" 
@@ -139,6 +149,7 @@ const Register = ({open,setOpen }) => {
                        onChange={(e)=> setEmail(e.target.value)}
                        ref={register({required : true})}
                      />
+                     <div className={styles.fileArea}>
                      <label>Photo de profil</label>
                      <input
                      name="photo"
@@ -146,23 +157,26 @@ const Register = ({open,setOpen }) => {
                      placeholder="choisir une photo de profil"
                      onChange= { (e) => onFileChange(e)}
                      ></input>
-                     <label>Mot de passe</label>
+                     </div>
+                     <label>Mot de passe <span style={{color:"red"}}> * </span> </label>
+                     <div  className={styles.password}>
                       <input 
                        name="password" 
-                       type="password" 
-                       placeholder="mot de passe"
+                       type={type}
+                       placeholder="mot de passe..."
                        value={password}
                        onChange={(e)=> setPassword(e.target.value)}
                        ref={register({required : true})}
                      />
-                     <label>Confirmer voter mot de passe</label>
+                     { type == "password" ?<AiFillEye className={styles.icon} onClick={()=> setType("text")}></AiFillEye>: <AiOutlineEyeInvisible className={styles.icon} onClick={()=> setType("password")}></AiOutlineEyeInvisible>}
+                     </div>
+                     <label>Confirmer voter mot de passe <span style={{color:"red"}}> * </span></label>
                       <input 
                        name="password" 
-                       type="password" 
+                       type={type} 
                        placeholder="password"
                        value={confirmPassword}
                        onChange={ (e) => setConfirm(e.target.value)}
-                       ref={register({ required : true})}
                      />
                      <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><RiUserSettingsFill style={{fontSize:"20px", marginRight:"5px"}}></RiUserSettingsFill>S'inscrire </button>
                 </form>}
@@ -170,6 +184,6 @@ const Register = ({open,setOpen }) => {
         </div> 
         : null} </>
     )
-};
+}
 
 export default Register;

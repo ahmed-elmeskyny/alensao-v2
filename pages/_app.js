@@ -27,26 +27,32 @@ class MyApp extends App {
 
                     })
                 });
-               await db.collection("users")
+
+
+                              
+              await db.collection("users")
+              .doc(`${user.uid}`).get().then(
+                (snap)=> {
+                 if(snap.exists){
+                    db.collection("users").doc(`${user.uid}`).update({ verified : user.emailVerified});
+                 }
+                }
+              )
+
+
+                await  db.collection("users")
                 .doc(`${user.uid}`)
-                .update({ verified : user.emailVerified});
-
-                // db.collection("users")
-                // .doc(`${user.uid}`)
-                // .collection("offre")
-                // .get().then(
-                //   snap => {
-                //     snap.docs.map( doc => {
-                //       if(doc.exists){
-                //         console.log("its done")
-                //               this.props.AddOffre({  id:doc.id,  ...doc.data() })
-                //         }
-                //     })
-                //   }
-                // )
-
-                
-
+                .collection("offre")
+                .get().then(
+                  snap => {
+                  
+                  snap.docs.map( doc => {
+                      if(doc.exists){
+                        this.props.AddOffre({  id:doc.id,  ...doc.data() });
+                      }
+                    })
+                  }
+                )
 
               }else{
                this.props.setCurrentUser(null);
