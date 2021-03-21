@@ -2,7 +2,7 @@ import Head from 'next/head';
 import {useState} from "react";
 
 //style 
-import styles from "../styles/Stage.module.scss";
+import styles from "../styles/stage.module.scss";
 
 
 //components
