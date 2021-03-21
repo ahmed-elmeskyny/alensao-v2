@@ -12,11 +12,11 @@ import ReactPlayer from "react-player/youtube";
 
 //react-icons
 import {AiFillYoutube} from "react-icons/ai";
-import {FaFacebookSquare} from "react-icons/fa";
+
 
 //db
 import{ klam }from "../../db/dbklam";
-import { delBasePath } from "next/dist/next-server/lib/router/router"
+
 
 const EmissionMain= () => {
     const router = useRouter();
@@ -43,7 +43,8 @@ const EmissionMain= () => {
                 <div className={styles.episodes}>
                     {
                         klam.map( episode => {
-                            return (<div className={styles.episode} key={episode.id} onClick={() => router.push(`emission/${episode.guest}`)} >
+                            return (
+                            <div className={styles.episode} key={episode.id} onClick={() => router.push(`emission/${episode.guest}`)} >
                                 <div className={styles.img} style={{backgroundImage: `url(${episode.thumbnail})`}}></div>
                                 <p> {episode.episode } - {episode.guest}</p>
                             </div>)

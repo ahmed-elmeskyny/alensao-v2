@@ -11,12 +11,7 @@ import Slider from "../components/Slider/slider";
 
 
 
-
-//redux
-import {connect} from "react-redux";
-import {setCurrentUser} from "../redux/uerReducer/user-action";
-
-function  Home(props) {
+function  Home() {
   const [openLogin , setOpenLogin ] = useState(false);
   const [openRegister , setOpenRegister] = useState(false);
 
@@ -49,8 +44,5 @@ function  Home(props) {
 };
 
 
-const mapDispatchToProps = (dispatch) => ({
-  setCurrentUser: (user )=> dispatch(setCurrentUser(user))
-});
 
-export default connect(null,mapDispatchToProps)(Home);
+export default Home;

@@ -1,4 +1,8 @@
-import Image from "next/image"
+//next
+import Image from "next/image";
+
+//react
+import { useEffect, useState } from "react";
 
 //style
 import styles from "./stageMain.module.scss";
@@ -9,15 +13,13 @@ import {BiSearch} from "react-icons/bi";
 //components
 import Calendars from "../Calendar/Calendar";
 import Offre from "../offre/offre";
-import { useEffect, useState } from "react";
-import {Loader } from "../Loader/Loader";
+
+
 
 //firebase
 import {db } from "../../config/utils";
 
-//redux
-import {connect} from "react-redux";
-import { AddOffrePublic} from "../../redux/publicReducer/public-action";
+
 
 
 const StageMain = () => {
@@ -37,14 +39,14 @@ const StageMain = () => {
     } , [])
 
 
-console.log(offres)
+
     return (
         <div className={styles.stageContainer}>     
            <h1>Publiez votre CV - Postulez à des emplois depuis n'importe quel appareil</h1>      
         <div className={styles.main}>
             <div className={styles.leftside}>
                 <div className={styles.search}>
-                    <input type="text" placeholder="search" onChange ></input>
+                    <input type="text" placeholder="search" ></input>
                     <div  className={styles.icon} >
                     <BiSearch></BiSearch>
                     </div>

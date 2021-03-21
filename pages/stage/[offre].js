@@ -169,7 +169,7 @@ const Submit = async (data)=> {
              <div className={styles.descriptionContainer}>
                 <h2>Descriptif de la mission </h2>
                    <div className={styles.description} >
-                     {offreDescription.description}
+                     <div><p>{offreDescription.description}</p></div>
                    </div>
               </div>
               <div className={styles.postuler}>

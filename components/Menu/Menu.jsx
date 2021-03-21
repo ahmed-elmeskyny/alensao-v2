@@ -132,7 +132,7 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/faqs" activeClassName={styles.activeLink}>
+                        <ActiveLink href="/ade" activeClassName={styles.activeLink}>
                             <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ADE</a>
                         </ActiveLink>
                     </li>

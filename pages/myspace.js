@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from "next/image";
-import React , {useEffect, useState} from "react";
+import React , { useState} from "react";
 import {useForm} from "react-hook-form";
 //styles 
 import styles from "../styles/myspace.module.scss";
@@ -14,11 +14,10 @@ import {BsFillPersonFill} from "react-icons/bs";
 import {HiOutlineMailOpen} from "react-icons/hi";
 import {BsFillBookmarkFill} from "react-icons/bs";
 import {BsFillPeopleFill} from "react-icons/bs";
-import {FaNetworkWired} from "react-icons/fa";
 import {AiFillCheckCircle} from "react-icons/ai";
 import {TiDelete} from "react-icons/ti";
 import {BsCheckAll} from "react-icons/bs";
-import {VscEmptyWindow} from "react-icons/vsc";
+
 
 //redux
 import {connect} from "react-redux";
@@ -41,8 +40,8 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
   const [loader , isLoader]= useState(false);
   const [notif , setNotif]=useState(false);
   const [erreur , setErreur]=useState(false);
-  const [fileURL , setFileURL]=useState(null);
-  // const [offres , setOffres] = useState([]);
+
+
     
   const [openLogin , setOpenLogin ] = useState(false);
   const [openRegister , setOpenRegister] = useState(false);
@@ -63,6 +62,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
 
     const {id} = props.user;
     try { 
+
 
   const offreId=  await createUserOffre(id  , data , fileURL);
     await createOffre(offreId,data,fileURL);
@@ -159,7 +159,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
                          <h3>ALENSAO</h3>
                         <TiDelete className={styles.icon} onClick={()=> setOpen(false)}></TiDelete>
                       </div> 
-                     { loader?<div className={styles.loaderContainer}> <Loader></Loader> </div> :<form autoComplete="off" onSubmit= {handleSubmit(submit)}>
+                     { loader?<div className={styles.loaderContainer}> <Loader></Loader> </div> :<form  onSubmit= {handleSubmit(submit)}>
                         <div>
                            <label>nom de l'entreprise <span style={{color:"red"}}> * </span> </label>
                             <input 
@@ -213,7 +213,6 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
                                  <input 
                                     name="debut" 
                                     type="date" 
-                                    // placeholder="2 fev 2021 / Non-défini..."
                                     ref={register({required : true})}
                                  />
                                 
@@ -247,7 +246,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
   name="upload" 
   type="file" 
   placeholder="l'offre en pdf / Non-défini.."
-  onChange={e => onFileChange(e)}
+  onChange={ () => onFileChange(e)}
 />
 </div>
 <div>
@@ -264,8 +263,8 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
    <label>Postulez avant le : <span style={{color:"red"}}> * </span> </label>
 <input 
   name="postuler" 
-  type="text"
-  placeholder=" 1 janv 2021 / Non-défini ..." 
+  type="date"
+
   ref={register({required : true})}
 
 />

@@ -38,7 +38,6 @@ const Login = ({open , setOpen}) => {
     const Submit = async(data) => {
         isLoader(true);
         setErreur(false);
-        console.log(data);
 
             await auth.signInWithEmailAndPassword(data.email,data.password).then(
                 ()=> {

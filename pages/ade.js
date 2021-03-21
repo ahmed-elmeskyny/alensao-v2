@@ -6,8 +6,6 @@ import { useState} from "react";
 import styles from "../styles/ade.module.scss";
 
 
-
-
 //components
 import Layout from "../components/Layout/layout";
 import AboutDynamic from "../components/about/about";
