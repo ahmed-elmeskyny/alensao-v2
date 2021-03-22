@@ -24,7 +24,7 @@ const Footer = () => {
             <div className={styles.links}>
                 <div className={styles.link}>
                 <div className={styles.block}>
-                    <h4>Alensao</h4>
+                    <h4>ALENSAO</h4>
                     <ul>
                         <li><Link href="/about"><a> À propos </a></Link></li>
                         <li><Link href="/ade"><a> Trombinoscope </a></Link></li>
@@ -34,17 +34,17 @@ const Footer = () => {
                 <div className={styles.block}>
                     <h4>Lien Rapide</h4>
                     <ul>
-                        <li><Link href="/stage"><a> Offre de Stage récent </a></Link></li>
+                        <li><Link href="/stage"><a> Offres de stages récentes </a></Link></li>
                         <li><Link href="/emission"><a> K-LAM 2.0</a></Link></li>
-                        <li><Link href="/ade"><a>Association des étudiants</a></Link></li>
+                        <li><Link href="/ade"><a>Association Des Etudiants</a></Link></li>
                     </ul>
                 </div>
                 <div className={styles.block}>
-                    <h4>Evénement récent</h4>
+                    <h4>Evénements récents</h4>
                     <ul>
-                        <li><Link href="/"><a> Assise entre l'ade et Alensao </a></Link></li>
+                        <li><Link href="/"><a> Assise ADE/ALENSAO </a></Link></li>
                         <li><Link href="/"><a> Galerie</a></Link></li>
-                        <li><Link href="/emission/Abdelmalek el hebil"><a> K-LAM 2.0 episode2 saison 1</a></Link></li>
+                        <li><Link href="/emission/Abdelmalek el hebil"><a> K-LAM 2.0 Saison 1 Episode 2 </a></Link></li>
                     </ul>
                 </div>
                 </div>

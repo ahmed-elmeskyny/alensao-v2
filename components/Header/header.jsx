@@ -36,13 +36,13 @@ const Header  = ({setOpenLogin , setOpenRegister , user  }) => {
                 </div>
                 <div className={styles.info} onClick={()=> {auth.signOut(); router.push("/") }}>
                      <BsBoxArrowRight className={styles.icon}></BsBoxArrowRight>
-                     <p>se deconnecter</p>
+                     <p>Se déconnecter</p>
                 </div>
                 </>:
                 <>
                 <div className={styles.info} onClick={()=> setOpenRegister(true)}>
                     <RiUserSettingsFill className={styles.icon}></RiUserSettingsFill>
-                     <p>s'inscrire</p>
+                     <p>S'inscrire</p>
                 </div>
                 <div className={styles.info} style={{marginLeft:"10px"}} onClick={()=> setOpenLogin(true)}>
                     <MdPowerSettingsNew className={styles.icon}></MdPowerSettingsNew>

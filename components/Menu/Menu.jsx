@@ -63,7 +63,7 @@ const SideMenu = ({width , setwidth}) => {
                 <ul>
                     <li>
                         <ActiveLink href="/" activeClassName={styles.activeLink}>
-                            <a className={styles.acceuil}><RiDashboardFill style={{fontSize:"23px" , marginRight:"5px"}}></RiDashboardFill>Acceuil</a>
+                            <a className={styles.acceuil}><RiDashboardFill style={{fontSize:"23px" , marginRight:"5px"}}></RiDashboardFill>Accueil</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -73,17 +73,17 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/stage" activeClassName={styles.activeLink}>
-                            <a  className={styles.blog}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offre de Stage </a>
+                            <a  className={styles.blog}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offres de stages </a>
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/gallerie" activeClassName={styles.activeLink}>
+                        <ActiveLink href="/galerie" activeClassName={styles.activeLink}>
                             <a  className={styles.space}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Galerie </a>
                         </ActiveLink>
                     </li>
                     <li>
                         <ActiveLink href="/emission" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-Lam 2.0</a>
+                            <a  className={styles.faq}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-LAM 2.0</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -93,7 +93,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/contact" activeClassName={styles.activeLink}>
-                            <a  className={styles.contact}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Contact</a>
+                            <a  className={styles.contact}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Nous contacter</a>
                         </ActiveLink>
                     </li>
                 </ul>
@@ -108,7 +108,7 @@ const SideMenu = ({width , setwidth}) => {
                 <ul>
                     <li>
                         <ActiveLink href="/" activeClassName={styles.activeLink}>
-                            <a className={styles.acceuil} onClick={()=> setwidth("0%")}><RiDashboardFill style={{fontSize:"23px" , marginRight:"5px"}}></RiDashboardFill>Acceuil</a>
+                            <a className={styles.acceuil} onClick={()=> setwidth("0%")}><RiDashboardFill style={{fontSize:"23px" , marginRight:"5px"}}></RiDashboardFill>Accueil</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -118,17 +118,17 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/stage" activeClassName={styles.activeLink}>
-                            <a  className={styles.blog} onClick={()=> setwidth("0%")}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offre de Stage </a>
+                            <a  className={styles.blog} onClick={()=> setwidth("0%")}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offres de stages </a>
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/myspace" activeClassName={styles.activeLink}>
+                        <ActiveLink href="/galerie" activeClassName={styles.activeLink}>
                             <a  className={styles.space} onClick={()=> setwidth("0%")}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Galerie </a>
                         </ActiveLink>
                     </li>
                     <li>
                         <ActiveLink href="/emission" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-Lam 2.0</a>
+                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-LAM 2.0</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -138,7 +138,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/contact" activeClassName={styles.activeLink}>
-                            <a  className={styles.contact} onClick={()=> setwidth("0%")}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Contact</a>
+                            <a  className={styles.contact} onClick={()=> setwidth("0%")}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Nous contacter</a>
                         </ActiveLink>
                     </li>
                 </ul>

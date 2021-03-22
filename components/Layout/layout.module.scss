@@ -1,8 +1,27 @@
-.menu {
-  padding: 10px 20px;
-  font-size: 30px;
-  display: none;
-  @media (max-width: 900px) {
+.container {
+  .adsContainer {
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .ads {
+      width: 270px;
+      height: 70px;
+      border: 2px dotted #abb0b9;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #abb0b9;
+      background-color: #f6f7f8;
+    }
+  }
+  .menu {
+    padding: 10px 20px;
+    font-size: 30px;
+    display: none;
+    @media (max-width: 900px) {
+      display: flex;
+    }
   }
 }
