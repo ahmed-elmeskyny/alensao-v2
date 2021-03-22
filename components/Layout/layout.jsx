@@ -20,11 +20,11 @@ const Layout = (props) => {
 
     return (
         <div className={styles.container}> 
-             <div className={styles.adsContainer} >
+             {/* <div className={styles.adsContainer} >
                 <div className={styles.ads}>
                     <p>PUBLICITE</p>
                 </div>
-             </div>
+             </div> */}
              <Header setOpenLogin={props.setOpenLogin} setOpenRegister={props.setOpenRegister}></Header>          
              <Menu width={width} setwidth={setwidth}></Menu> 
              <div className={styles.menu}>

@@ -1,5 +1,6 @@
 //next
 import Head from 'next/head';
+import {useRouter} from "next/router"
 
 //react
 import { useState} from "react";
@@ -19,6 +20,7 @@ function Galerie() {
   const [openLogin , setOpenLogin ] = useState(false);
   const [openRegister , setOpenRegister] = useState(false);
 
+  const router = useRouter();
   return (
     <div >
       <Head>
@@ -34,14 +36,14 @@ function Galerie() {
         >
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
-             <h1> A Propos d' AlENSAO </h1>
+             <h1> Galerie </h1>
              <p>Acceuil / Galerie </p>
           </div>
         </div>
         <h1 className={styles.title}><div></div>Evénements<div></div></h1>
        <div className={styles.portfolioContainer}>
 
-          <div className={styles.portfolio} style={{backgroundImage: "url(/gg.jpg)" , backgroundSize:"100%"}}>
+          <div className={styles.portfolio} style={{backgroundImage: "url(/gg.jpg)" , backgroundSize:"100%"}} onClick={() => router.push(`galerie/nani`)} >
               <span>Assise ADE / ALENSAO</span>
           </div>
 
