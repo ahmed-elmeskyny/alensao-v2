@@ -32,7 +32,7 @@ export default function About() {
   const Submit = (data,e) => {
 
     console.log(data)
-    emailjs.send('service_6h9sktm', 'contact',{ name : data.name, email:data.email,objet:data.objet,phone:data.phone,message:data.message,},"user_sP8rfm3EkOE6Fwr1podrl")
+    emailjs.send('service_vbdzu7n', 'contact',{ name : data.name, email:data.email,objet:data.objet,phone:data.phone,message:data.message,},"user_AgjG8swIUnDoTMoSmrZj6")
     .then((res) => {
         console.log(res.text);
         setMessage("envoyée");

@@ -78,7 +78,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/gallerie" activeClassName={styles.activeLink}>
-                            <a  className={styles.space}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Gallerie </a>
+                            <a  className={styles.space}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Galerie </a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -123,7 +123,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/myspace" activeClassName={styles.activeLink}>
-                            <a  className={styles.space} onClick={()=> setwidth("0%")}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Gallerie </a>
+                            <a  className={styles.space} onClick={()=> setwidth("0%")}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Galerie </a>
                         </ActiveLink>
                     </li>
                     <li>

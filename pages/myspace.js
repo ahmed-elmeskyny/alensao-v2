@@ -45,6 +45,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
     
   const [openLogin , setOpenLogin ] = useState(false);
   const [openRegister , setOpenRegister] = useState(false);
+  const [fileURL,setFileURL] = useState(null);
 
   
   const onFileChange = async (e) => {
@@ -246,7 +247,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
   name="upload" 
   type="file" 
   placeholder="l'offre en pdf / Non-défini.."
-  onChange={ () => onFileChange(e)}
+  onChange={ (e) => onFileChange(e)}
 />
 </div>
 <div>

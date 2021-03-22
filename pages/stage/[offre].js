@@ -71,7 +71,7 @@ const Submit = async (data)=> {
    await fileRef.put(file)
    const fileURL = await fileRef.getDownloadURL();
 
-  emailjs.send('service_6h9sktm', 'template_v806qbj',{  offre: offreDescription.entreprise,email: data.email ,cv : `${fileURL}}`},"user_sP8rfm3EkOE6Fwr1podrl")
+  emailjs.send('service_vbdzu7n', 'template_2d1x7ri',{  offre: offreDescription.entreprise,email: data.email ,cv : `${fileURL}}`},"user_AgjG8swIUnDoTMoSmrZj6")
   .then((res) => {
       console.log(res.text);
       setMessage("envoyée");
