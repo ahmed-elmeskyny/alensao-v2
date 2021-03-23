@@ -22,7 +22,7 @@ export default function Stage() {
   return (
     <div >
       <Head>
-        <title>Alensao || offre de stage </title>
+        <title>Alensao || offres de stages </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -34,8 +34,8 @@ export default function Stage() {
         >
         <div className={styles.stageHeader}>
           <div className={styles.filter}>
-             <h1> Offre de Stage </h1>
-             <p>Acceuil / offre de stage </p>
+             <h1> Offres de Stages </h1>
+             <p>Acceuil / offres de stages </p>
           </div>
         </div>
         <StageMain></StageMain>
