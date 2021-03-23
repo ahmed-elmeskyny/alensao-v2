@@ -32,7 +32,7 @@ const Login = ({open , setOpen}) => {
     const [message , setMessage]= useState(false);
     const [erreur , setErreur]=useState(false);
     const [type , setType] = useState("password");
-
+    const [reset , setReset] = useState(false);
     const [notif , setNotif]= useState(false);
     
     const Submit = async(data) => {
@@ -68,6 +68,34 @@ const Login = ({open , setOpen}) => {
 
     }
 
+    const Reset = async ()=> {
+        isLoader(true)
+        console.log(email)
+        auth.sendPasswordResetEmail(email).then(
+            ()=> {
+                setMessage("Un e-mail de réinitialisation a été envoyer");
+                setNotif(true);
+                setEmail("");
+                setReset(false)
+                setOpen(false);
+                setTimeout(() => setNotif(false), 4000);  
+                isLoader(false);  
+            }
+        ).catch(
+            (error)=> {
+                setErreur(true)
+                        setMessage(error.message)
+                        setNotif(true);
+                        isLoader(false);
+                        setTimeout(
+                            ()=> {
+                                setNotif(false);
+                            },8000
+                        )
+
+            }
+        )
+    }
 
     return (
         <>
@@ -77,7 +105,7 @@ const Login = ({open , setOpen}) => {
                 <div className={styles.logo}>
                     <Image alt="alensao logo" src="/logo1.png" width="25px" height="25px"></Image>
                     <h3>ALENSAO</h3>
-                    <TiDelete className={styles.icon} onClick={()=> setOpen(false)}></TiDelete>
+                    <TiDelete className={styles.icon} onClick={()=>{ setOpen(false) ; setReset(false)}}></TiDelete>
                 </div>
                 {loader?<Loader></Loader> :<><form onSubmit={handleSubmit(Submit)} autoComplete="off" >
                      <label>E-mail</label>
@@ -89,8 +117,8 @@ const Login = ({open , setOpen}) => {
                        onChange={(e)=> setEmail(e.target.value)}
                        ref={register({ required : true})}
                      />
-                     <label>Mot de passe</label>
-                     <div  className={styles.password}>
+                    { reset ? null : <> <label>Mot de passe</label>
+                      <div  className={styles.password}>
                       <input 
                        name="password" 
                        type={type}
@@ -101,10 +129,10 @@ const Login = ({open , setOpen}) => {
                      />
                      { type == "password" ?<AiFillEye className={styles.icon} onClick={()=> setType("text")}></AiFillEye>: <AiOutlineEyeInvisible className={styles.icon} onClick={()=> setType("password")}></AiOutlineEyeInvisible>}
                      </div>
-                     <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><MdPowerSettingsNew style={{fontSize:"20px", marginRight:"5px"}}></MdPowerSettingsNew>Se Connecter </button>
+                   <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><MdPowerSettingsNew style={{fontSize:"20px", marginRight:"5px"}}></MdPowerSettingsNew>Se Connecter </button> </>}
                 </form>
                 <div className={styles.reset}>
-                    <a>Mot de passe Oublier ?</a>
+                 { reset ?  <button onClick={()=> Reset()} className={email.length  <= 0  ? null : styles.enabled} disabled={email.length  <= 0  ? true: false}> Envoyer </button>: <a onClick={ () => setReset(true)}>Mot de passe Oublier ?</a>}
                 </div></>}
             </div>
         </div> : null}

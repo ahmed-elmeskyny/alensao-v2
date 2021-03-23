@@ -36,7 +36,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>Pour un Meilleur Future</p>
-                            <h1>Association des lauréats se l' ENSAO </h1>
+                            <h1>Association Des Lauréats De l' ENSAO </h1>
                             <span>L'association des Lauréats de l'ENSAO se veut le lien entre les étudiants et les lauréats de l'école, à travers ses activités, ses partenariats et son vaste réseau de relations, elle facilite la transition du monde académique vers le monde du travail aux nouveaux lauréats.</span>
                         </div>
                     </div>
@@ -47,23 +47,13 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>en vedette</p>
-                             <h1>l' assise entre l'Ade & l'ENSAO & Soft Innovation - paris </h1>
+                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[2]})` , backgroundSize: "cover"  , height:"100%"}}>
-                    <div className={styles.filter}>
-                        <div className={styles.slideText}>
-                        <p>Pour un Meilleur Future</p>
-                            <h1>Association des lauréats se l' ENSAO </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          
         </Slide>
     )
 };

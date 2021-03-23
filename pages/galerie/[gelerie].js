@@ -43,7 +43,26 @@ export default function Episode() {
                  <p>Acceuil /  Galerie / {galerie} </p>
               </div>
            </div>
-           
+           <h1 className={styles.title}><div></div>Galerie<div></div></h1>
+           <div className={styles.photos}>
+             <div className={styles.photo} style={{backgroundImage:"url(/contact.jpg)"}}>
+
+             </div>
+             <div className={styles.photo} style={{backgroundImage:"url(/bulb.jpg)"}}>
+
+</div>
+<div className={styles.photo} style={{backgroundImage:"url(/emission.jpg)"}}>
+
+</div> <div className={styles.photo} style={{backgroundImage:"url(/job.jpg)"}}>
+
+</div> <div className={styles.photo} style={{backgroundImage:"url(/gg.jpg)"}}>
+
+</div> <div className={styles.photo} style={{backgroundImage:"url(/gg2.jpg)"}}>
+
+</div> <div className={styles.photo} style={{backgroundImage:"url(/gg3.jpg)"}}>
+
+</div>
+           </div>
       </Layout>
 
     </div>

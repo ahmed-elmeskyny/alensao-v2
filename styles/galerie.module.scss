@@ -3,7 +3,7 @@
   height: 55vh;
   background-image: url("../public/galerie.jpg");
   background-size: cover;
-
+  background-position: center;
   color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -47,6 +47,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
   .portfolio {
     width: 200px;
     height: 300px;
@@ -59,6 +60,10 @@
     cursor: pointer;
     margin-bottom: 10px;
     margin-top: 10px;
+    @media (max-width: 900px) {
+      width: 150px;
+      height: 250px;
+    }
 
     span {
       width: 100px;

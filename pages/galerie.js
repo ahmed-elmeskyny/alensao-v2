@@ -44,19 +44,19 @@ function Galerie() {
        <div className={styles.portfolioContainer}>
 
           <div className={styles.portfolio} style={{backgroundImage: "url(/gg.jpg)" , backgroundSize:"100%"}} onClick={() => router.push(`galerie/nani`)} >
-              <span>Assise ADE / ALENSAO</span>
+              <span><strong> Assise ADE / ALENSAO</strong></span>
           </div>
 
            <div className={styles.portfolio} style={{backgroundImage: "url(/gg2.jpg)" , backgroundSize:"100%"}} >
-            <span>Lorem Ipsum 2015</span>
+            <span><strong> Lorem Ipsum 2015</strong></span>
            </div>
 
           <div className={styles.portfolio} style={{backgroundImage: "url(/gg3.jpg)" , backgroundSize:"100%"}} >
-            <span> Ipsum Lorem 2016 </span>
+            <span><strong>Ipsum Lorem 2016 </strong></span>
           </div>
 
           <div className={styles.portfolio} style={{backgroundImage: "url(/gg4.jpg)" , backgroundSize:"100%"}}>
-            <span>ALENSAO 2016</span>
+            <span><strong> ALENSAO 2016</strong></span>
           </div>
        </div>
      

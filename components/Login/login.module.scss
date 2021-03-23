@@ -109,6 +109,27 @@
       justify-content: center;
       padding-top: 20px;
       border-top: #f6f7f8 2px solid;
+      a {
+        color: #0c97b4;
+        text-decoration: underline #0c97b4;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        background-color: rgba($color: #0c97b4, $alpha: 0.5);
+        cursor: pointer;
+      }
+      .enabled {
+        cursor: pointer;
+        background-color: #0c97b4;
+      }
     }
   }
 }

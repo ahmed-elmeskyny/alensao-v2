@@ -23,3 +23,35 @@
     }
   }
 }
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  div {
+    background-color: #0c97b4;
+    width: 105px;
+    height: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    @media (max-width: 900px) {
+      width: 50px;
+    }
+  }
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .photo {
+    width: 350px;
+    height: 180px;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+  }
+}
