@@ -32,6 +32,11 @@
   margin-top: 20px;
   h1 {
     text-transform: uppercase;
+    text-align: center;
+    padding: 0px 5px;
+    @media (max-width: 900px) {
+      font-size: 27px;
+    }
   }
   span {
     margin-top: 10px;
@@ -61,6 +66,9 @@
       align-items: center;
       justify-content: center;
       color: #676a6c;
+      @media (max-width: 900px) {
+        width: 100%;
+      }
       h3 {
         display: flex;
         align-items: center;

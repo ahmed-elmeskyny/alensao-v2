@@ -7,11 +7,9 @@ import styles from "./footer.module.scss";
 
 //react-icons
 import {FaFacebookSquare} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
-import {FaTwitter} from "react-icons/fa";
-import {AiFillInstagram} from "react-icons/ai";
-import {AiFillHeart} from "react-icons/ai";
 import {FaRegCopyright} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
+
 const Footer = () => {
 
 
@@ -51,9 +49,9 @@ const Footer = () => {
                 <div className={styles.contactInfo}>
                     <div className={styles.info}>
                         <h1>Contact</h1>
-                        <p style={{color:"red"}}><a href="mailto:alensao.association@gmail.com" >E-mail : alensao.association@gmail.com</a></p>
+                        <p><a href="mailto:alensao.association@gmail.com" ><MdEmail style={{fontSize:"22px",marginRight:"5px"}}></MdEmail> : alensao.association@gmail.com</a></p>
                         <div className={styles.social}>
-                        <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> Lien Facebook : <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
+                        <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> Suivez-nous sur : <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
                     </div>
                     </div>
                 </div>

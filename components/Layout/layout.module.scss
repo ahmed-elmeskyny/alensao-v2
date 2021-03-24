@@ -20,8 +20,26 @@
     padding: 10px 20px;
     font-size: 30px;
     display: none;
+
     @media (max-width: 900px) {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .social {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 20px;
+      color: #abb0b9;
+      .icon {
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+        margin-left: 15px;
+        &:hover {
+          color: #0c97b4;
+        }
+      }
     }
   }
 }

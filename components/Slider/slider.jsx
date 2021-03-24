@@ -36,7 +36,7 @@ const  Slider = () => {
     return (
             <Slide {...properties} >
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[0]})` , backgroundSize: "cover"  , backgroundPosition: "center", height:"100%"}}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[0]})` }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>Pour un Meilleur Future</p>
@@ -47,7 +47,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[1]})` , backgroundSize: "cover", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[1]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>en vedette</p>
@@ -59,7 +59,7 @@ const  Slider = () => {
             </div>
           
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[2]})` , backgroundSize: "100%",backgroundPosition: "center" , height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[2]})` }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -70,7 +70,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide}  style={{backgroundImage: `url(${slides[3]})` , backgroundSize: "cover", height:"100%" ,backgroundPosition: "center"}}>
+                <div className={styles.slide}  style={{backgroundImage: `url(${slides[3]})` }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -81,7 +81,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[4]})` , backgroundSize: "cover", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[4]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -93,7 +93,7 @@ const  Slider = () => {
             </div>
           
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[5]})` , backgroundSize: "cover",height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[5]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -104,7 +104,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[6]})` , backgroundSize: "cover",backgroundPosition:"center", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[6]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>

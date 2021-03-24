@@ -14,7 +14,6 @@ import ActiveLink from "../ActiveLink/activeLink";
 import {RiDashboardFill} from "react-icons/ri";
 import {FaFire} from "react-icons/fa";
 import {MdEventNote} from "react-icons/md";
-import {BsFillChatDotsFill} from "react-icons/bs";
 import {MdPermContactCalendar} from "react-icons/md";
 import {BiGroup} from "react-icons/bi";
 import {FaFacebookSquare} from "react-icons/fa";
@@ -23,7 +22,7 @@ import {RiDeleteBack2Fill} from "react-icons/ri";
 import {AiFillHeart} from "react-icons/ai";
 import {FaRegCopyright} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
-
+import {HiOutlinePhotograph} from "react-icons/hi";
 //nprogress
 import NProgress from "nprogress";
 
@@ -66,7 +65,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/about" activeClassName={styles.activeLink}>
-                            <a  className={styles.about} ><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>À propos</a>
+                            <a  className={styles.about} ><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>A propos</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -76,7 +75,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/galerie" activeClassName={styles.activeLink}>
-                            <a  className={styles.space}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Galerie </a>
+                            <a  className={styles.space}><HiOutlinePhotograph style={{fontSize:"23px" , marginRight:"5px"}} ></HiOutlinePhotograph> Galerie </a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -96,7 +95,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                 </ul>
                 <div className={styles.social}>
-                   <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
+                   <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon} style={{color:"#1877F2"}}></FaFacebookSquare></a>
                    <a href="mailto:alensao.association@gmail.com"  target="_blank"> <MdEmail className={styles.icon} style={{fontSize:"22px"}}></MdEmail></a>
                 </div>            
         </div>
@@ -111,7 +110,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/about" activeClassName={styles.activeLink}>
-                            <a  className={styles.about} onClick={()=> setwidth("0%")}><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>À propos</a>
+                            <a  className={styles.about} onClick={()=> setwidth("0%")}><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>A propos</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -121,7 +120,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/galerie" activeClassName={styles.activeLink}>
-                            <a  className={styles.space} onClick={()=> setwidth("0%")}><BsFillChatDotsFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillChatDotsFill> Galerie </a>
+                            <a  className={styles.space} onClick={()=> setwidth("0%")}><HiOutlinePhotograph style={{fontSize:"23px" , marginRight:"5px"}} ></HiOutlinePhotograph> Galerie </a>
                         </ActiveLink>
                     </li>
                     <li>

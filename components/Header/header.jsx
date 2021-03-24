@@ -30,7 +30,7 @@ const Header  = ({setOpenLogin , setOpenRegister , user  }) => {
                 </div>
                <div className={styles.text}>
                   <p>Association des Lauréats  </p>
-                  <p>de l’école Nationale des Sciences Appliquées</p>
+                  <p>de l’Ecole Nationale des Sciences Appliquées</p>
                 </div>
             </div>
             <div className={styles.infoContainer}>
