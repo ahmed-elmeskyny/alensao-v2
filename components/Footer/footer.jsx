@@ -34,7 +34,7 @@ const Footer = () => {
                 <div className={styles.block}>
                     <h4>Lien rapide</h4>
                     <ul>
-                        <li><Link href="/stage"><a> Offres de stages récentes </a></Link></li>
+                        <li><Link href="/stage"><a> Offres de stages </a></Link></li>
                         <li><Link href="/emission"><a> K-LAM 2.0</a></Link></li>
                         <li><Link href="/ade"><a>Association Des Etudiants</a></Link></li>
                     </ul>
@@ -52,7 +52,6 @@ const Footer = () => {
                 <div className={styles.contactInfo}>
                     <div className={styles.info}>
                         <h1>Contact</h1>
-                        <p>Tel : (+212) 6825918261</p>
                         <p style={{color:"red"}}><a href="mailto:alensao.association@gmail.com" >E-mail : alensao.association@gmail.com</a></p>
                         <div className={styles.social}>
                         <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> Lien Facebook : <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
@@ -62,7 +61,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyRight}>
                 <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
-                <p>Crée  par <span><a href="http://ahmed-elmeskyny.herokuapp.com/" target="_blank">Ahmed El meskyny</a></span></p>
+                <p>Crée  par <span><a href="http://ahmed-elmeskyny.herokuapp.com/" target="_blank">Ahmed El Meskyny</a></span></p>
             </div>
         </div>
     )

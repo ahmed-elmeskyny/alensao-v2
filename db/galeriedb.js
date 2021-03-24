@@ -9,11 +9,11 @@ export const  galeriedb= [
     },
     {
         id: 2,
-        eventName : "Rencontre des lauréats - hotel novotel ",
+        eventName : "Rencontre des lauréats - hôtel novotel ",
         date: "28 Mars 2015",
         photos: ["/rencontre1.jpg","/rencontre2.jpg" , "/rencontre3.jpg", "/rencontre4.jpg" , "/rencontre5.jpg" , "/rencontre6.jpg" , "/rencontre7.jpg", "/rencontre8.jpg" , "/rencontre9.jpg" ],
         thumbnail : "/rencontre.jpeg",
-        lieu : "Novotel"
+        lieu : "Novotel - Casablanca"
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ export const  galeriedb= [
         date: "04 Juin 2015",
         photos: ["/ftour1.jpg","/ftour2.jpg" , "/ftour3.jpg", "/ftour4.jpg" , "/ftour5.jpg" , "/ftour6.jpg" , "/ftour7.jpg", "/ftour8.jpg" , "/ftour9.jpg" ],
         thumbnail : "/ftour.jpeg",
-        lieu: "Riad 21 casa-blanca"
+        lieu: "Riad 21 Casablanca"
     },
     {
         id: 4,
@@ -29,6 +29,6 @@ export const  galeriedb= [
         date: "17 & 18 Mars 2005",
         photos: ["/forum1.jpg","/forum2.jpg" , "/forum3.jpg", "/forum4.jpg" , "/forum5.jpg" , "/forum6.jpg" , "/forum7.jpg", "/forum8.jpg" , "/forum9.jpg" ],
         thumbnail : "/forum.jpeg",
-        lieu: "Dar Sebti"
+        lieu: "ENSAO /Dar Sebti"
     }
 ]
