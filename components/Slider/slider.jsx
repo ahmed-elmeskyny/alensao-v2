@@ -36,7 +36,7 @@ const  Slider = () => {
     return (
             <Slide {...properties} >
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[0]})` }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[0]})`,backgroundPosition:"center" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>Pour un Meilleur Future</p>
@@ -59,7 +59,7 @@ const  Slider = () => {
             </div>
           
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[2]})` }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[2]})`,backgroundPosition:"center" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -70,7 +70,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide}  style={{backgroundImage: `url(${slides[3]})` }}>
+                <div className={styles.slide}  style={{backgroundImage: `url(${slides[3]})` ,backgroundPosition:"center"}}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -104,7 +104,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[6]})`  }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[6]})`,backgroundPosition:"center"  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>

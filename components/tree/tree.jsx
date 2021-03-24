@@ -39,7 +39,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/youssef.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>
@@ -120,7 +120,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp4.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/ahmed.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>
@@ -129,7 +129,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp4.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/belhaj.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>

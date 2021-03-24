@@ -47,8 +47,8 @@ console.log(newEvent)
            <div className={styles.photose}>
              {
                newEvent.photos.map(
-                photoe => <div className={styles.photoee} key={photoe} style={{backgroundImage : `url(${photoe})`}}>
-            
+                photoe => <div className={styles.photoee} key={photoe} >
+                 <img src={photoe} width="100%" height="100%"></img>
                      </div>
                )
              }

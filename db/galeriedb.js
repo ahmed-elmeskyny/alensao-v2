@@ -30,5 +30,14 @@ export const  galeriedb = [
         photos: ["/forum1.jpg","/forum2.jpg" , "/forum3.jpg", "/forum4.jpg" , "/forum5.jpg" , "/forum6.jpg" , "/forum7.jpg", "/forum8.jpg" , "/forum9.jpg" ],
         thumbnail : "/forum.jpeg",
         lieu: "ENSAO / Dar Sebti"
+    },
+    {
+        id:5,
+        eventName : "Déjeuner ALENSAO & ADE ",
+        date: "09 Janv 2021",
+        photos: ["/dej1.jpg","/dej2.jpg" , "/dej3.jpg", "/dej4.jpeg" , "/dej5.jpeg" , "/dej6.jpeg" , "/dej7.jpeg", "/dej8.jpeg" , "/dej9.jpeg" ],
+        thumbnail : "/dej.jpg",
+        lieu: "Palmier D'orient"
+
     }
 ]

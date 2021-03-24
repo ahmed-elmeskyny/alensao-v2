@@ -43,6 +43,7 @@ const Footer = () => {
                         <li><Link href="/galerie/2"><a>Rencontre des Lauréats - Hôtel Novotel </a></Link></li>
                         <li><Link href="/galerie/3"><a>Ftour Ramdan  </a></Link></li>
                         <li><Link href="/galerie/4"><a>Forum ENSAO </a></Link></li>
+                        <li><Link href="/galerie/5"><a>Déjeuner Alensao & ADE </a></Link></li>
                     </ul>
                 </div>
                 </div>

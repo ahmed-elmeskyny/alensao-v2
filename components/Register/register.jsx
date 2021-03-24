@@ -137,7 +137,7 @@ const Register = ({open,setOpen }) => {
                           <option value="génie des systémes electronique , informatique et réseaux">Génie des systémes electronique , informatique et réseaux</option>
                      </select>
                       <label>Promotion <span style={{color:"red"}}> * </span> </label>
-                      <input type="number" name="promotion" min="2001" placeholder="2001" ref={register({required : true})}>
+                      <input type="number" name="promotion" min="2004" max="2020" placeholder="2004" ref={register({required : true})}>
 
                       </input>
                      <label>email <span style={{color:"red"}}> * </span> </label>

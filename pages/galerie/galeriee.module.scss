@@ -48,11 +48,11 @@
   align-items: center;
   margin-top: 20px;
   .photoee {
-    width: 350px;
-    height: 180px;
+    width: 300px;
+    overflow: hidden;
     background-size: 100%;
     background-position: center;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 10px;
   }
 }

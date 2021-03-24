@@ -41,7 +41,7 @@ const Login = ({open , setOpen}) => {
 
             await auth.signInWithEmailAndPassword(data.email,data.password).then(
                 ()=> {
-                    setMessage("Vous etes connecte");
+                    setMessage("Vous êtes connectés");
                     setNotif(true);
                     setEmail("");
                     setPassword("");
