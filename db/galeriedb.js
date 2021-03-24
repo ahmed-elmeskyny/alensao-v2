@@ -3,7 +3,7 @@ export const  galeriedb= [
         id: 1,
         eventName : "Assise ADE & ALENSAO ",
         date: "15 Janv 2021",
-        photos: ["/assise1.jpg","/assise2.jpg" , "/assise3.jpg", "/assise4.jpg" , "/assise5.jpg" , "/assise6.jpg" , "/assise7.jpg", "/assise8.jpg" , "/assise9.jpg" ],
+        photos: ["/assise1.jpg","/assise2.jpg" , "/assise3.jpg", "/assise4.jpg" , "/assise5.jpg" , "/assise6.JPG" , "/assise7.JPG", "/assise8.JPG" , "/assise9.JPG" ],
         thumbnail : "/assise.jpg",
         lieu: "ENSAO"
     },
