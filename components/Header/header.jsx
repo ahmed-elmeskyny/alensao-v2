@@ -24,9 +24,11 @@ const Header  = ({setOpenLogin , setOpenRegister , user  }) => {
     return (
         <div className={styles.hero}>
             <div className={styles.logo} onClick={ () => router.push("/")}>
+                <div style={{display:"flex", alignItems: "center", justifyContent:"center"}}>
                 <Image alt="alensao logo" src="/logo1.png" width="25px" height="25px"></Image>
-                <div className={styles.text}>
-                  <h3>ALENSAO</h3>
+                <h3>ALENSAO</h3>
+                </div>
+               <div className={styles.text}>
                   <p>Association des Lauréats  </p>
                   <p>de l’école Nationale des Sciences Appliquées</p>
                 </div>

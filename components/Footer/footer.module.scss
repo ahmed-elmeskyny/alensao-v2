@@ -86,6 +86,9 @@
           align-items: center;
           justify-content: flex-end;
         }
+        @media (max-width: 400px) {
+          width: 100%;
+        }
         .social {
           .icon {
             transition: all 0.3s ease;
