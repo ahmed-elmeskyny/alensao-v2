@@ -1,4 +1,4 @@
-export const  galeriedb= [
+export const  galeriedb = [
     {
         id: 1,
         eventName : "Assise ADE & ALENSAO ",

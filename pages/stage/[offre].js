@@ -120,7 +120,7 @@ const Submit = async (data)=> {
           {notif ? <Notification erreur={erreur}>{message}</Notification>: null}
           <div className={styles.offreStageHeader}>
               <div className={styles.filter}>
-                  <h1>{offreDescription.fonction}</h1>
+                  <h1>Stage</h1>
                  <p>Accueil /  offre de stage </p>
               </div>
            </div>

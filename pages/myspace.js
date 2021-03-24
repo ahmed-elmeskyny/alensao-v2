@@ -214,7 +214,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
                                  <input 
                                     name="debut" 
                                     type="date" 
-                                    ref={register({required : true})}
+                                    ref={register({required : false})}
                                  />
                                 
    <label>Lieu <span style={{color:"red"}}> * </span></label>
@@ -229,7 +229,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
       name="contrat" 
       type="text" 
       placeholder="stage / CDI / CDD / Non-défini ..."
-      ref={register({required : true})}
+      ref={register({required : false})}
    />
     </div>
 
@@ -256,7 +256,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
   name="durée" 
   type="text"
   placeholder="6mois / Non-défini ..." 
-  ref={register({required : true})}
+  ref={register({required : false})}
 
 />
 </div>
@@ -266,7 +266,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
   name="postuler" 
   type="date"
 
-  ref={register({required : true})}
+  ref={register({required : false})}
 
 />
 </div>

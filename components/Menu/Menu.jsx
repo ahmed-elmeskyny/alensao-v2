@@ -18,13 +18,11 @@ import {BsFillChatDotsFill} from "react-icons/bs";
 import {MdPermContactCalendar} from "react-icons/md";
 import {BiGroup} from "react-icons/bi";
 import {FaFacebookSquare} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
-import {FaTwitter} from "react-icons/fa";
-import {AiFillInstagram} from "react-icons/ai";
 import {CgScreen} from "react-icons/cg";
 import {RiDeleteBack2Fill} from "react-icons/ri";
 import {AiFillHeart} from "react-icons/ai";
 import {FaRegCopyright} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
 
 //nprogress
 import NProgress from "nprogress";
@@ -99,7 +97,7 @@ const SideMenu = ({width , setwidth}) => {
                 </ul>
                 <div className={styles.social}>
                    <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
-
+                   <a href="mailto:alensao.association@gmail.com"  target="_blank"> <MdEmail className={styles.icon} style={{fontSize:"22px"}}></MdEmail></a>
                 </div>            
         </div>
         <div className={styles.filter} style={{width: width}}>
@@ -145,6 +143,7 @@ const SideMenu = ({width , setwidth}) => {
                 <div>
                 <div className={styles.social}>
                 <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
+                <a href="mailto:alensao.association@gmail.com"  target="_blank"> <MdEmail className={styles.icon} style={{fontSize:"22px"}}></MdEmail></a>
                 </div>
                 <div className={styles.copyRight}>
                     <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
