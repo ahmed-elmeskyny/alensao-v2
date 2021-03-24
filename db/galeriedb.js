@@ -11,7 +11,7 @@ export const  galeriedb= [
         id: 2,
         eventName : "Rencontre des lauréats ",
         date: "28 Mars 2015",
-        photos: ["/rencontre1.JPG","/rencontre2.jpg" , "/rencontre3.jpg", "/rencontre4.jpg" , "/rencontre5.jpg" , "/rencontre6.jpg" , "/rencontre7.jpg", "/rencontre8.jpg" , "/rencontre9.jpg" ],
+        photos: ["/rencontre1.JPG","/rencontre2.JPG" , "/rencontre3.JPG", "/rencontre4.JPG" , "/rencontre5.JPG" , "/rencontre6.JPG" , "/rencontre7.JPG", "/rencontre8.JPG" , "/rencontre9.JPG" ],
         thumbnail : "/rencontre.jpeg",
         lieu : "Hôtel Novotel - Casablanca"
     },
