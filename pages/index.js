@@ -40,6 +40,10 @@ Notre raison d'être, fut, est, et demeurera toujours l'étudiant produit par l'
 En tant que repère, l'ALENSAO se doit d'être impassiblement et incessamment à la pointe de la contemporanéité, cette plateforme digitale en demeure la preuve indéniable. Nonobstant le gouffre inéluctable entre les lauréats inhérent à la suite de leurs ambitions propres, ladite plateforme permet de faciliter le contact entre lauréats et étudiants. De surcroît, l'ALENSAO jouie d'un fort réseau de contact, incluant des lauréats de l'école, des conférenciers, des formateurs, et des entreprises au Maroc et à l'international. Elle s'impose donc comme un acteur intrinsèque du tissu universitaire, capable de contribuer via le conseil et l'accompagnement.
 Pour conclure, je dirais que l'ALENSAO se personnifie en la locomotive brandissant l'étendard de l'école, en quête de redorer son label, et d'intercéder en faveur de ses lauréats.</p>
           </div>
+          <div  className={styles.sgnature}>
+            <p>MELHAOUI OUASSIM</p>
+            <p>Promotion 2005 , Génie informatique</p>
+          </div>
         </div>
       </Layout>
     </div>

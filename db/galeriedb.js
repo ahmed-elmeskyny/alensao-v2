@@ -25,10 +25,10 @@ export const  galeriedb= [
     },
     {
         id: 4,
-        eventName : "Forum ENSAO ",
+        eventName : "Forum ENSAO 2005 ",
         date: "17 & 18 Mars 2005",
         photos: ["/forum1.jpg","/forum2.jpg" , "/forum3.jpg", "/forum4.jpg" , "/forum5.jpg" , "/forum6.jpg" , "/forum7.jpg", "/forum8.jpg" , "/forum9.jpg" ],
         thumbnail : "/forum.jpeg",
-        lieu: "ENSAO /Dar Sebti"
+        lieu: "ENSAO / Dar Sebti"
     }
 ]
