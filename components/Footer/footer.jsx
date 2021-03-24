@@ -32,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className={styles.block}>
-                    <h4>Lien Rapide</h4>
+                    <h4>Lien rapide</h4>
                     <ul>
                         <li><Link href="/stage"><a> Offres de stages récentes </a></Link></li>
                         <li><Link href="/emission"><a> K-LAM 2.0</a></Link></li>
@@ -40,11 +40,12 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className={styles.block}>
-                    <h4>Evénements récents</h4>
+                    <h4>Evénements </h4>
                     <ul>
-                        <li><Link href="/"><a> Assise ADE/ALENSAO </a></Link></li>
-                        <li><Link href="/"><a> Galerie</a></Link></li>
-                        <li><Link href="/emission/Mr Abdelmalek ELHEBIL"><a> K-LAM 2.0 Saison 1 Episode 2 </a></Link></li>
+                        <li><Link href="/galerie/1"><a>Assise ADE & ALENSAO </a></Link></li>
+                        <li><Link href="/galerie/2"><a>Rencontre des Lauréats - Hotel Novotel </a></Link></li>
+                        <li><Link href="/galerie/3"><a>Ftour Ramdan  </a></Link></li>
+                        <li><Link href="/galerie/4"><a>Forum ENSAO </a></Link></li>
                     </ul>
                 </div>
                 </div>

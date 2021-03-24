@@ -107,7 +107,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[9]})` , backgroundSize: "cover",backgroundPosition:"center", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[9]})` , backgroundSize: "cover", height:"100%" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
