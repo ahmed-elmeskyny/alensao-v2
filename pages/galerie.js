@@ -11,8 +11,8 @@ import styles from "../styles/galerie.module.scss";
 //components
 import Layout from "../components/Layout/layout";
 
-
-
+//db
+import {galeriedb } from "../db/galeriedb";
 
 
 
@@ -42,24 +42,18 @@ function Galerie() {
         </div>
         <h1 className={styles.title}><div></div>Evénements<div></div></h1>
        <div className={styles.portfolioContainer}>
-
-          <div className={styles.portfolio} style={{backgroundImage: "url(/gg.jpg)" , backgroundSize:"100%"}} onClick={() => router.push(`galerie/nani`)} >
-              <span><strong> Assise ADE / ALENSAO</strong></span>
+      { galeriedb.map(
+         (event =>  
+         <div className={styles.port}>
+             <div className={styles.portfolio}  key={event.id} style={{backgroundImage: `url(${event.thumbnail})` , backgroundSize:"cover" , backgroundPosition:"center"}} onClick={() => router.push(`galerie/${event.id}`)} >
+               <span><strong>{event.eventName}</strong></span>
+            </div>
+           <p>{event.date}</p>
           </div>
+          )
+        ) }
 
-           <div className={styles.portfolio} style={{backgroundImage: "url(/gg2.jpg)" , backgroundSize:"100%"}} >
-            <span><strong> Lorem Ipsum 2015</strong></span>
-           </div>
-
-          <div className={styles.portfolio} style={{backgroundImage: "url(/gg3.jpg)" , backgroundSize:"100%"}} >
-            <span><strong>Ipsum Lorem 2016 </strong></span>
-          </div>
-
-          <div className={styles.portfolio} style={{backgroundImage: "url(/gg4.jpg)" , backgroundSize:"100%"}}>
-            <span><strong> ALENSAO 2016</strong></span>
-          </div>
-       </div>
-     
+     </div>
 
       </Layout>
 

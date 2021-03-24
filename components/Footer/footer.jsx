@@ -44,7 +44,7 @@ const Footer = () => {
                     <ul>
                         <li><Link href="/"><a> Assise ADE/ALENSAO </a></Link></li>
                         <li><Link href="/"><a> Galerie</a></Link></li>
-                        <li><Link href="/emission/Abdelmalek el hebil"><a> K-LAM 2.0 Saison 1 Episode 2 </a></Link></li>
+                        <li><Link href="/emission/Mr Abdelmalek ELHEBIL"><a> K-LAM 2.0 Saison 1 Episode 2 </a></Link></li>
                     </ul>
                 </div>
                 </div>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyRight}>
                 <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
-                <p>Crée avec <AiFillHeart className={styles.icon} style={{color:"red"}}></AiFillHeart> par <span><a href="http://ahmed-elmeskyny.herokuapp.com/" target="_blank">Ahmed El meskyny</a></span></p>
+                <p>Crée  par <span><a href="http://ahmed-elmeskyny.herokuapp.com/" target="_blank">Ahmed El meskyny</a></span></p>
             </div>
         </div>
     )

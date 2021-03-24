@@ -23,7 +23,7 @@ const Header  = ({setOpenLogin , setOpenRegister , user  }) => {
 
     return (
         <div className={styles.hero}>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={ () => router.push("/")}>
                 <Image alt="alensao logo" src="/logo1.png" width="25px" height="25px"></Image>
                 <h3>ALENSAO</h3>
             </div>
