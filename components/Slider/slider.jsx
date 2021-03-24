@@ -38,7 +38,7 @@ const  Slider = () => {
     return (
             <Slide {...properties} >
             <div className={styles.eachSlide}>
-                <div style={{backgroundImage: `url(${slides[0]})` , backgroundSize: "cover"  , backgroundPosition: "center", height:"100%"}}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[0]})` , backgroundSize: "cover"  , backgroundPosition: "center", height:"100%"}}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>Pour un Meilleur Future</p>
@@ -49,7 +49,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[1]})` , backgroundSize: "cover", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[1]})` , backgroundSize: "cover", height:"100%" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>en vedette</p>
@@ -61,7 +61,7 @@ const  Slider = () => {
             </div>
           
             <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[3]})` , backgroundSize: "100%",backgroundPosition: "center" , height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[3]})` , backgroundSize: "100%",backgroundPosition: "center" , height:"100%" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -72,7 +72,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[4]})` , backgroundSize: "cover", height:"100%" ,backgroundPosition: "center"}}>
+                <div className={styles.slide}  style={{backgroundImage: `url(${slides[4]})` , backgroundSize: "cover", height:"100%" ,backgroundPosition: "center"}}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -83,7 +83,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[5]})` , backgroundSize: "cover", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[5]})` , backgroundSize: "cover", height:"100%" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -94,29 +94,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[6]})` , backgroundSize: "cover", height:"100%" }}>
-                    <div className={styles.filter}>
-                        <div className={styles.slideText}>
-                            {/* <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[7]})` , backgroundSize: "cover", height:"100%" }}>
-                    <div className={styles.filter}>
-                        <div className={styles.slideText}>
-                            {/* <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className={styles.eachSlide}>
-                <div  style={{backgroundImage: `url(${slides[8]})` , backgroundSize: "cover",backgroundPosition:"center", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[8]})` , backgroundSize: "cover",backgroundPosition:"center", height:"100%" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
