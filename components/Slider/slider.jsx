@@ -21,7 +21,7 @@ const slides = [
     "/slide4.jpeg",
     "/slide5.jpeg",
     "/slide6.jpeg",
-    "/rencontre8.jpg",
+    "/rencontre9.JPG",
     "/slide10.jpeg"
 ]
 
@@ -93,7 +93,7 @@ const  Slider = () => {
             </div>
           
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[5]})` , backgroundSize: "cover",backgroundPosition:"center", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[5]})` , backgroundSize: "cover",height:"100%" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
@@ -104,7 +104,7 @@ const  Slider = () => {
                 </div>
             </div>
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[6]})` , backgroundSize: "cover", height:"100%" }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[6]})` , backgroundSize: "cover",backgroundPosition:"center", height:"100%" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             {/* <p>en vedette</p>
