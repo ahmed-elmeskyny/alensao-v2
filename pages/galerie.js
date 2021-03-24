@@ -48,8 +48,8 @@ function Galerie() {
              <div className={styles.portfolio}  key={event.id} style={{backgroundImage: `url(${event.thumbnail})` , backgroundSize:"cover" , backgroundPosition:"center"}} onClick={() => router.push(`galerie/${event.id}`)} >
             </div>
             <p style={{color:"black"}}><strong>{event.eventName}</strong></p>
-            <p>{event.lieu}</p>
-           <p>{event.date}</p>
+            <p>Lieu : {event.lieu}</p>
+           <p>Date : {event.date}</p>
           </div>
           )
         ) }

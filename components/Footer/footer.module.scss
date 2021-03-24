@@ -70,7 +70,7 @@
       .info {
         background-color: rgba($color: white, $alpha: 0.1);
         color: white;
-        width: 300px;
+        width: 350px;
         height: 150px;
         padding: 10px 20px;
         text-align: right;
@@ -81,10 +81,12 @@
         justify-content: center;
         justify-content: space-evenly;
         cursor: pointer;
-
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
         .social {
-          //   display: flex;
-          //   justify-content: space-evenly;
           .icon {
             transition: all 0.3s ease;
             font-size: 20px;

@@ -51,10 +51,11 @@ const Footer = () => {
                 </div>
                 <div className={styles.contactInfo}>
                     <div className={styles.info}>
-                        <p>(+212) 6825918261</p>
-                        <p style={{color:"red"}}><a href="mailto:alensao.association@gmail.com" >alensao.association@gmail.com</a></p>
+                        <h1>Contact</h1>
+                        <p>Tel : (+212) 6825918261</p>
+                        <p style={{color:"red"}}><a href="mailto:alensao.association@gmail.com" >E-mail : alensao.association@gmail.com</a></p>
                         <div className={styles.social}>
-                        <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
+                        <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> Lien Facebook : <FaFacebookSquare className={styles.icon}></FaFacebookSquare></a>
                     </div>
                     </div>
                 </div>
