@@ -25,7 +25,11 @@ const Header  = ({setOpenLogin , setOpenRegister , user  }) => {
         <div className={styles.hero}>
             <div className={styles.logo} onClick={ () => router.push("/")}>
                 <Image alt="alensao logo" src="/logo1.png" width="25px" height="25px"></Image>
-                <h3>ALENSAO</h3>
+                <div className={styles.text}>
+                  <h3>ALENSAO</h3>
+                  <p>Association des Lauréats  </p>
+                  <p>de l’école Nationale des Sciences Appliquées</p>
+                </div>
             </div>
             <div className={styles.infoContainer}>
               {  user ?
