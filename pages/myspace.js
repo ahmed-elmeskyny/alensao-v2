@@ -100,7 +100,7 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
   return (
     <div >
       <Head>
-        <title>Alensao || My Space</title>
+        <title>Alensao || Espace lauréat</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

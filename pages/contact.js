@@ -64,7 +64,7 @@ export default function About() {
         <div className={styles.contactHeader}>
           <div className={styles.filter}>
              <h1> Nous-Contactez </h1>
-             <p>Acceuil / contact </p>
+             <p>Accueil / Contact </p>
           </div>
         </div>
         <div className={styles.contactContainer}>
@@ -78,13 +78,7 @@ export default function About() {
                         <p>alensao.association@gmail.com</p>
                     </div>
                 </div>
-                <div className={styles.info}>
-                    <FaPhoneAlt className={styles.icon} ></FaPhoneAlt>
-                    <div className={styles.text}>
-                        <span>Phone :</span>
-                        <p>(+212) 6782910935</p>
-                    </div>
-                </div>
+                
             </div>
             <div className={styles.contact}>
                 <form onSubmit={ handleSubmit(Submit)} autoComplete="off">

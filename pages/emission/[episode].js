@@ -45,7 +45,7 @@ export default function Episode() {
           <div className={styles.episodeHeader}>
               <div className={styles.filter}>
                   <h1>K-LAM 2.0</h1>
-                 <p>Acceuil /  K-LAM 2.0 / {guest} </p>
+                 <p>Accueil /  K-LAM 2.0 / {guest} </p>
               </div>
            </div>
            <div className={styles.episodeInfo}>

@@ -37,7 +37,7 @@ function Galerie() {
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
              <h1> Galerie </h1>
-             <p>Acceuil / Galerie </p>
+             <p>Accueil / Galerie </p>
           </div>
         </div>
         <h1 className={styles.title}><div></div>Evénements<div></div></h1>

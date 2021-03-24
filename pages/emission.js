@@ -32,7 +32,7 @@ export default function Emission() {
         <div className={styles.emissionHeader}>
           <div className={styles.filter}>
               <h1>K-LAM 2.0 Ensao</h1>
-              <p>Acceuil /  K-LAM 2.0 </p>
+              <p>Accueil /  K-LAM 2.0 </p>
           </div>
         </div>
 

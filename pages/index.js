@@ -32,7 +32,7 @@ function  Home() {
         >
         <Slider></Slider>
         <div className={styles.speachContainer}>
-          <h1>Mot du Président d' ALENSAO  </h1>
+          <h1>Mot du Président de l'ALENSAO  </h1>
           <div className={styles.mot}>   
               <div className={styles.img}></div>
               <p>Le monde évolue à une vitesse vertigineuse, il est donc primordial d'adapter un rythme au moins équivalent, ou d'encourir l'obsolescence. Cependant, un rythme ou une vitesse n'ont de sens qu'en la présence d'un repère. C'est ce qu'incarne, à mon sens, l'Association des Lauréats. Elle représente la référence grâce à laquelle le lauréat de l'ENSAO se localise, le point de départ depuis lequel il s'élance vers le monde du travail, et, enfin, le point de chute vers laquelle il revient, quand le besoin s'en fait sentir. Le rôle nous incombant donc, en tant que membres de cette association, ne diffère guère de celui d'une famille.

@@ -39,8 +39,8 @@ console.log(newEvent)
 
           <div className={styles.episodeHeader}>
               <div className={styles.filter}>
-                  <h1>Galerie</h1>
-                 <p>Acceuil /  Galerie / {newEvent.eventName} </p>
+                  <h1>{newEvent.eventName}</h1>
+                 <p>Accueil /  Galerie  </p>
               </div>
            </div>
            <h1 className={styles.title}><div></div>Galerie<div></div></h1>

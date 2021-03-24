@@ -35,7 +35,7 @@ function About() {
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
              <h1> A Propos d' AlENSAO </h1>
-             <p>Acceuil / alensao </p>
+             <p>Accueil / alensao </p>
           </div>
         </div>
         <AboutDynamic title="A propos" img="/logo.png"  width="350px" height="200px" text="L'ALENSAO (Association des Lauréats de l'Ecole Nationale des Sciences Appliquées d'Oujda) est l'organisme regroupant les lauréat de l'école. L'association se veut le porte parole des lauréats, ainsi que leur représentant vis à vis de l'école. Elle est donc le principal médiateur des lauréats désirant reprendre contact avec l'école et ses étudiants, que ce soit à travers des activités et événement organisés par les étudiants ou par les lauréats, des séminaires, des conférences ou des formations. De plus, de par son vaste réseau de contacts, elle fournit un soutient aux étudiants organisant des événements au niveau de l'école, que cela soit à travers des mise en contact avec des personnalités clés, par la fourniture de certains service ou par une aide financière. L'ALENSAO travail elle même sur plusieurs projets, en collaboration avec l'ADE (Association Des Etudiants) de l'ENSAO, dont le but est de redorer l'image de la seul grande école d'ingenieur de l'Orientale, à savoir, l'Ecole Nationale des Sciences Appliquées d'Oujda."></AboutDynamic>

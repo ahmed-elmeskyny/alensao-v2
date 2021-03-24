@@ -26,8 +26,7 @@ const Footer = () => {
                 <div className={styles.block}>
                     <h4>ALENSAO</h4>
                     <ul>
-                        <li><Link href="/about"><a> À propos </a></Link></li>
-                        <li><Link href="/ade"><a> Trombinoscope </a></Link></li>
+                        <li><Link href="/about"><a> A propos </a></Link></li>
                         <li><Link href="/contact"><a>Contactez-nous</a></Link></li>
                     </ul>
                 </div>
