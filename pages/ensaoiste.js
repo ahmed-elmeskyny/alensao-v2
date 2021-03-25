@@ -14,6 +14,10 @@ import Layout from "../components/Layout/layout";
 import AboutDynamic from "../components/about/about";
 
 
+//react-player
+import React from "react";
+import ReactPlayer from "react-player/youtube";
+
 
 function Ensa() {
   const [openLogin , setOpenLogin ] = useState(false);
@@ -40,6 +44,27 @@ function Ensa() {
         </div>
         <AboutDynamic title="Description" img="/ensaoiste.png" width="200px" height="200px" ensa></AboutDynamic>
         <h3 className={styles.title}><div></div>Episodes<div></div></h3>
+        <div className={styles.episodesContainer}>
+          <div className={styles.episodeContainer} >
+                <div className={styles.video}>
+                    <ReactPlayer url="https://www.youtube.com/watch?v=s-MwGJqI1tI" controls={true} width="100%" height="100%" ></ReactPlayer>
+                </div>
+                <div className={styles.text} >
+                    <h3>Mourad MZIOUT </h3>
+                    <p>Promotion 2007</p>
+                </div>
+          </div>
+          <div className={styles.episodeContainer} >
+                <div className={styles.video}>
+                    <ReactPlayer url="https://youtu.be/mbNJrFc3BQs" controls={true} width="100%" height="100%" ></ReactPlayer>
+                </div>
+                <div className={styles.text} >
+                    <h3>Kouassi Serge Brice</h3>
+                    <p>Promotion 2007</p>
+                </div>
+          </div>
+
+        </div>
       </Layout>
 
     </div>
