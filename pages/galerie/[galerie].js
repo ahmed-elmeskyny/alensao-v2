@@ -18,7 +18,6 @@ import {galeriedb} from "../../db/galeriedb";
 
 import {TiDeleteOutline} from "react-icons/ti"
 
-
 export default function Episode() {
   const router = useRouter();
   const { galerie }= router.query;
