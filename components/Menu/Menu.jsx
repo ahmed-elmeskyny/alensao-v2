@@ -85,7 +85,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
-                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoiste</a>
+                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoiste du monde</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -131,6 +131,11 @@ const SideMenu = ({width , setwidth}) => {
                     <li>
                         <ActiveLink href="/emission" activeClassName={styles.activeLink}>
                             <a  className={styles.faq} onClick={()=> setwidth("0%")}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-LAM 2.0</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
+                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoiste du monde</a>
                         </ActiveLink>
                     </li>
                     <li>
