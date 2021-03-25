@@ -85,7 +85,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
-                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoiste du monde</a>
+                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoistes du monde</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -135,7 +135,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
-                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoiste du monde</a>
+                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoistes du monde</a>
                         </ActiveLink>
                     </li>
                     <li>

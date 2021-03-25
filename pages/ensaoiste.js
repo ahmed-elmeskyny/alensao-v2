@@ -34,7 +34,7 @@ function Ensa() {
         >
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
-             <h1> Ensaoiste Du Monde </h1>
+             <h1> Ensaoistes Du Monde </h1>
              <p>Accueil / Ensaoiste </p>
           </div>
         </div>
