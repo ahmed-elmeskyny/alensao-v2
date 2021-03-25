@@ -26,6 +26,12 @@
       height: 310px;
     }
     .description {
+      .hover {
+        transition: all 0.3s ease-in;
+        &:hover {
+          transform: scale(0.8);
+        }
+      }
       width: 30%;
       text-align: justify;
       @media (max-width: 900px) {

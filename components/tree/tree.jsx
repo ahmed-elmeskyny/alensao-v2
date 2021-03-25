@@ -21,7 +21,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile} >
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp1.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/abbaci.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>
@@ -30,7 +30,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp3.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/samir.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>
@@ -66,7 +66,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp4.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/adnane.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>
@@ -102,7 +102,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp4.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/ismail.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>
@@ -111,7 +111,7 @@ const Tree = ({name , stats , img}) => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/pdp4.jpg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/mahmoud.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>

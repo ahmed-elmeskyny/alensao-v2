@@ -40,7 +40,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>Pour un Meilleur Future</p>
-                            <h1>Association Des Lauréats De l' ENSAO </h1>
+                            <h1>Association Des Lauréats De l'ENSAO </h1>
                             <span>L'association des Lauréats de l'ENSAO se veut le lien entre les étudiants et les lauréats de l'école, à travers ses activités, ses partenariats et son vaste réseau de relations, elle facilite la transition du monde académique vers le monde du travail aux nouveaux lauréats.</span>
                         </div>
                     </div>

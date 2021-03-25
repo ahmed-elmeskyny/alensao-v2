@@ -146,7 +146,7 @@ const SideMenu = ({width , setwidth}) => {
                 </div>
                 <div className={styles.copyRight}>
                     <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
-                    <p>Crée avec <AiFillHeart className={styles.icon} style={{color:"red"}}></AiFillHeart> par <span>Ahmed El meskyny</span></p>
+                    <p>Crée par <span>Ahmed El meskyny</span></p>
                 </div>
                 </div>
             </div>
