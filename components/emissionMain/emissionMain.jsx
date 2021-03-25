@@ -33,9 +33,7 @@ const EmissionMain= () => {
                     <Image alt="k-lam 2.0 logo" src="/klamlogo.png" width="170px" height="30px" className={styles.hover} ></Image>
                     <p>Etant des élèves ingénieurs, à l'Ecole Nationale des Sciences Appliquées d'Oujda, il est de notre devoir d'être instruits et conscients de les situations sociale et économique de la région, et du Royaume. C'est dans ce cadre que nous avons lancé une émission nommée "K-LAM 2.0". Son but étant d'inviter des personnalités de haut calibre, afin de dialoguer avec eux sur des points socio-économiques qui intéressent le développement de notre pays. 
                     </p>
-                    <div className={styles.social}>
-                        <a href="https://www.youtube.com/channel/UCbBDkfV17rgQDyyJz-SxDfQ" target="_blank"><AiFillYoutube style={{color:"#FF0000",marginRight:"10px" ,fontSize:"40px",cursor:"pointer"}}></AiFillYoutube></a>
-                    </div>
+                    
                 </div>
             </div>
             <div className={styles.season} >

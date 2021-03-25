@@ -1,11 +1,11 @@
 export const  galeriedb = [
     {
-        id: 1,
-        eventName : "Assise ADE & ALENSAO ",
-        date: "15 Janv 2021",
-        photos: ["/assise1.jpg","/assise2.jpg" , "/assise3.jpg", "/assise4.jpg" , "/assise5.jpg" , "/assise6.JPG" , "/assise7.JPG", "/assise8.JPG" , "/assise9.JPG" ],
-        thumbnail : "/assise.jpg",
-        lieu: "ENSAO"
+        id: 4,
+        eventName : "Forum ENSAO 2005 ",
+        date: "17 & 18 Mars 2005",
+        photos: ["/forum1.jpg","/forum2.jpg" , "/forum3.jpg", "/forum4.jpg" , "/forum5.jpg" , "/forum6.jpg" , "/forum7.jpg", "/forum8.jpg" , "/forum9.jpg" ],
+        thumbnail : "/forum.jpeg",
+        lieu: "ENSAO / Dar Sebti"
     },
     {
         id: 2,
@@ -15,6 +15,7 @@ export const  galeriedb = [
         thumbnail : "/rencontre.jpeg",
         lieu : "Hôtel Novotel - Casablanca"
     },
+    
     {
         id: 3,
         eventName : "Ftour Ramadan ",
@@ -23,14 +24,7 @@ export const  galeriedb = [
         thumbnail : "/ftour.jpeg",
         lieu: "Riad 21 Casablanca"
     },
-    {
-        id: 4,
-        eventName : "Forum ENSAO 2005 ",
-        date: "17 & 18 Mars 2005",
-        photos: ["/forum1.jpg","/forum2.jpg" , "/forum3.jpg", "/forum4.jpg" , "/forum5.jpg" , "/forum6.jpg" , "/forum7.jpg", "/forum8.jpg" , "/forum9.jpg" ],
-        thumbnail : "/forum.jpeg",
-        lieu: "ENSAO / Dar Sebti"
-    },
+    
     {
         id:5,
         eventName : "Déjeuner ALENSAO & ADE ",
@@ -39,5 +33,15 @@ export const  galeriedb = [
         thumbnail : "/dej.jpg",
         lieu: "Palmier D'orient"
 
-    }
+    },
+    {
+        id: 1,
+        eventName : "Assise ADE & ALENSAO ",
+        date: "15 Janv 2021",
+        photos: ["/assise1.jpg","/assise2.jpg" , "/assise3.jpg", "/assise4.jpg" , "/assise5.jpg" , "/assise6.JPG" , "/assise7.JPG", "/assise8.JPG" , "/assise9.JPG" ],
+        thumbnail : "/assise.jpg",
+        lieu: "ENSAO"
+    },
+
+
 ]
