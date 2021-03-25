@@ -19,7 +19,7 @@ import {BiGroup} from "react-icons/bi";
 import {FaFacebookSquare} from "react-icons/fa";
 import {CgScreen} from "react-icons/cg";
 import {RiDeleteBack2Fill} from "react-icons/ri";
-import {AiFillHeart} from "react-icons/ai";
+import {BiWorld} from "react-icons/bi";
 import {FaRegCopyright} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 import {HiOutlinePhotograph} from "react-icons/hi";
@@ -65,7 +65,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/about" activeClassName={styles.activeLink}>
-                            <a  className={styles.about} ><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>A propos</a>
+                            <a  className={styles.about} ><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>ALENSAO</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -81,6 +81,11 @@ const SideMenu = ({width , setwidth}) => {
                     <li>
                         <ActiveLink href="/emission" activeClassName={styles.activeLink}>
                             <a  className={styles.faq}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-LAM 2.0</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
+                            <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoiste</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -110,7 +115,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/about" activeClassName={styles.activeLink}>
-                            <a  className={styles.about} onClick={()=> setwidth("0%")}><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>A propos</a>
+                            <a  className={styles.about} onClick={()=> setwidth("0%")}><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>ALENSAO</a>
                         </ActiveLink>
                     </li>
                     <li>
