@@ -51,7 +51,7 @@ function Ensa() {
                 </div>
                 <div className={styles.text} >
                     <h3>Mourad MZIOUT </h3>
-                    <p>Promotion 2007</p>
+                    <p>Promotion 2007 - Génie informatique</p>
                 </div>
           </div>
           <div className={styles.episodeContainer} >
@@ -60,7 +60,7 @@ function Ensa() {
                 </div>
                 <div className={styles.text} >
                     <h3>Kouassi Serge Brice</h3>
-                    <p>Promotion 2007</p>
+                    <p>Promotion 2007 - Génie telecommunication et réseau</p>
                 </div>
           </div>
 
