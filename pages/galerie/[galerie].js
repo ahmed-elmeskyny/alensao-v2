@@ -15,15 +15,16 @@ import Layout from "../../components/Layout/layout";
 
 //db
 import {galeriedb} from "../../db/galeriedb";
+import {TiDeleteOutline} from "react-icons/ti";
 
-import {TiDeleteOutline} from "react-icons/ti"
+//react-player
+import ReactPlayer from "react-player/youtube";
 
 export default function Episode() {
   const router = useRouter();
   const { galerie }= router.query;
   const id = galerie;
   const newEvent = galeriedb.find( event => event.id.toString() === id  );
-  const photos = newEvent.photos;
 
   
   const [openLogin , setOpenLogin ] = useState(false);
@@ -55,6 +56,7 @@ export default function Episode() {
            </div>
            <h1 className={styles.title}><div></div>Galerie<div></div></h1>
            <div className={styles.photose}>
+
              {
                newEvent.photos.map(
                 photoe => <div className={styles.photoee} key={photoe} onClick={()=> { setUrl(photoe); setOpen(true)}}>
@@ -62,8 +64,17 @@ export default function Episode() {
                      </div>
                )
              }
-              
              </div>
+             <h1 className={styles.title}><div></div>Videos<div></div></h1>
+             {
+               newEvent.video? 
+                <div className={styles.video}>
+                      <video src="/forumVideo1.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"0px"}}>
+                      </video>
+                      <video src="/forumVideo2.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"0px"}}>
+                      </video>
+                </div> : null
+             }
            { open? <div className={styles.zoom}>
                <div className={styles.filter}>
                  <TiDeleteOutline className={styles.icon} onClick={()=> setOpen(false)}></TiDeleteOutline>

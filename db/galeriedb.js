@@ -5,7 +5,8 @@ export const  galeriedb = [
         date: "17 & 18 Mars 2005",
         photos: ["/forum1.jpg","/forum2.jpg" , "/forum3.jpg", "/forum4.jpg" , "/forum5.jpg" , "/forum6.jpg" , "/forum7.jpg", "/forum8.jpg" , "/forum9.jpg" ],
         thumbnail : "/forum.jpeg",
-        lieu: "ENSAO / Dar Sebti"
+        lieu: "ENSAO / Dar Sebti",
+        video : ["/forumVideo1.mp4","/forumVideo2.mp4"]
     },
     {
         id: 2,
