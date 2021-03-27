@@ -69,9 +69,9 @@ export default function Episode() {
              {
                newEvent.video? 
                 <div className={styles.video}>
-                      <video src="/forumVideo1.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"0px"}}>
+                      <video src="/forumVideo1.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"10px"}}>
                       </video>
-                      <video src="/forumVideo2.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"0px"}}>
+                      <video src="/forumVideo2.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"10px"}}>
                       </video>
                 </div> : null
              }
