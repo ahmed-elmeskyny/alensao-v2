@@ -98,6 +98,11 @@ const SideMenu = ({width , setwidth}) => {
                             <a  className={styles.contact}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Nous contacter</a>
                         </ActiveLink>
                     </li>
+                    <li>
+                        <ActiveLink href="/ade" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq}>MagEnsao</a>
+                        </ActiveLink>
+                    </li>
                 </ul>
                 <div className={styles.social}>
                    <a href="https://web.facebook.com/Association.ALENSAO?_rdc=1&_rdr" target="_blank"> <FaFacebookSquare className={styles.icon} style={{color:"#1877F2"}}></FaFacebookSquare></a>
@@ -146,6 +151,11 @@ const SideMenu = ({width , setwidth}) => {
                     <li>
                         <ActiveLink href="/contact" activeClassName={styles.activeLink}>
                             <a  className={styles.contact} onClick={()=> setwidth("0%")}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Nous contacter</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/ade" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq}>MagEnsao</a>
                         </ActiveLink>
                     </li>
                 </ul>

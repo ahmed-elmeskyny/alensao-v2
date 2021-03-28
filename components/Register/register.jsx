@@ -49,11 +49,13 @@ const Register = ({open,setOpen }) => {
 
       if (password !== confirmPassword) {
         setErreur(true)
-        setMessage("veuillez confirme votre mot de passe");
-        setNotif(true);
-        setTimeout( ()=> {
-          setNotif(false);
-        } , 8000);
+        setMessage("Veuillez confirmer votre mot de passe");
+        setTimeout(
+          ()=> {
+            setErreur(false);
+          }, 4000
+        )
+
         return;
       }
         isLoader(true);
@@ -64,7 +66,7 @@ const Register = ({open,setOpen }) => {
           await createUserProfile(user,data,fileURL);
           user.sendEmailVerification().then(
             ()=> {
-               setMessage("un mail de confirmation vous a été envoyé");
+               setMessage("Un Mail de confirmation vous a été envoyé");
                setNotif(true)} 
           ).catch (
             (error)=> {
@@ -84,19 +86,19 @@ const Register = ({open,setOpen }) => {
           isLoader(false);
           setErreur(true);
           setMessage(error.message);
-          setNotif(true);
           setTimeout(
             ()=> {
-              setNotif(false);
-            }
-         , 8000 )
+              setErreur(false);
+            }, 4000
+          )
+      
         }
   
     }
 
     return (
       <>
-      {notif ?<Notification erreur={erreur}>{message}</Notification> : null}
+      {notif ?<Notification>{message}</Notification> : null}
         {open? 
         <div className={styles.registerFormContainer}>
          <div className={styles.filter}>
@@ -178,6 +180,7 @@ const Register = ({open,setOpen }) => {
                        value={confirmPassword}
                        onChange={ (e) => setConfirm(e.target.value)}
                      />
+                   {erreur?  <span style={{color: "red" , display:"flex", justifyContent:"center",alignItems:"center"}}>{message}</span> : null}
                      <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><RiUserSettingsFill style={{fontSize:"20px", marginRight:"5px"}}></RiUserSettingsFill>S'inscrire </button>
                 </form>}
             </div>
