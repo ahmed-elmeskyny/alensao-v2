@@ -31,6 +31,7 @@ import Notification from "../components/Notification/notification";
 //firebase
 import {createUserOffre, createOffre ,db, storage} from "../config/utils"
 import { AddOffre } from '../redux/offreReducer/offre-action';
+import {FaUserGraduate} from "react-icons/fa";
 
  function MySpace(props) {
 
@@ -118,8 +119,9 @@ import { AddOffre } from '../redux/offreReducer/offre-action';
                   <div className={styles.description}>
                       <p><BsFillPersonFill className={styles.icon}></BsFillPersonFill>{props.user.firstname} {props.user.lastname}</p>
                       <p><HiOutlineMailOpen className={styles.icon} ></HiOutlineMailOpen> {props.user.email} </p>
-                      <p><BsFillPeopleFill className={styles.icon}></BsFillPeopleFill> {props.user.promotion}</p>
-                     {props.user.verified? <p><BsCheckAll className={styles.icon } style={{color:"#32cd32"}}></BsCheckAll> email verifiee</p> :  <p><TiDelete className={styles.icon } style={{color:"#FF0000"}}></TiDelete> email non  verifiee</p>}
+                      <p><BsFillPeopleFill className={styles.icon}></BsFillPeopleFill> Promotion : {props.user.promotion}</p>
+                      <p><FaUserGraduate className={styles.icon}></FaUserGraduate> Filiére : {props.user.domaine}</p>
+                     {props.user.verified? <p><BsCheckAll className={styles.icon } style={{color:"#32cd32"}}></BsCheckAll> email vérifié</p> :  <p><TiDelete className={styles.icon } style={{color:"#FF0000"}}></TiDelete> email non  verifiee</p>}
                       <p><BsFillBookmarkFill className={styles.icon}></BsFillBookmarkFill> Mes Offres</p>
                   </div>
                   <div onClick={() => setOpen(true)}>

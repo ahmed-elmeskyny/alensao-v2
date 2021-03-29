@@ -62,7 +62,7 @@ const  Slider = () => {
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[2]})`,backgroundPosition:"center" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                             <h1>Match de football amical contre le MCO</h1>
+                             <h1>Match de football contre les vétérans de la MCO</h1>
                             <span>A l’occasion de la première édition du Forum Entreprises de l’ENSAO, un match amical fut organisé entre des étudiants et des professeurs de l’ENSAO, et des joueurs du MCO</span>
                         </div>
                     </div>
@@ -82,21 +82,18 @@ const  Slider = () => {
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[4]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                            {/* <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span> */}
+                             <h1>Rencontre des Lauréats 28 Mars 2015</h1>
+                            <span>Une rencontre inédite et tant attendue par tant de lauréats, s'étant déroulé au Novotel de Casablanca.</span>
                         </div>
                     </div>
                 </div>
             </div>
-          
             <div className={styles.eachSlide}>
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[5]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                            {/* <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span> */}
+                             <h1>Point de rencontre</h1>
+                            <span>Cette rencontre a permit au comité de l'ALENSAO de réunir plusieurs lauréats, et des personnalités tel que Monsieur Mustapha KHALFI, Ministre de la Communication, ainsi que 3 directeurs de l'ENSAO : Messieurs BARBOUCHA Mohammed, LAALEJ Mouhssine et ROUBI Larbi</span>
                         </div>
                     </div>
                 </div>
@@ -105,9 +102,8 @@ const  Slider = () => {
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[6]})`,backgroundPosition:"center"  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                            {/* <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span> */}
+                             <h1>Réunion de l'ALENSAO à l'hôtel Bourgreg de Salé </h1>
+                            <span>Réunion des membres de L'ALENSAO en Janvier 2015 dans l'intention de discuter et d'œuvrer sur la rencontre prévue pour Mars de la même année</span>
                         </div>
                     </div>
                 </div>

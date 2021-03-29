@@ -41,7 +41,7 @@ function About() {
         </div>
         <div className={styles.building} >
             <Image alt="construction" src="/building.svg" width="300px" height="300px"></Image>
-            <h1>En cours de construction</h1>
+            <h3>Un nouveau concept en cours de réalisation, en collaboration entre l'ALENSAO et l'ADE, d'un magazine bimestriel couvrant les événements au sein de l'ENSAO. Reportages, articles, news... soyez aux aguets pour notre nouvelle revue : MagEnsao!</h3>
         </div>
       </Layout>
 
