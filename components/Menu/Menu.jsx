@@ -71,8 +71,8 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/ade" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ade</a>
+                        <ActiveLink href="/ad-hoc" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>Ad-hoc</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -148,8 +148,8 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/ade" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ade</a>
+                        <ActiveLink href="/ad-hoc" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>Ad-hoc</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -159,7 +159,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/contactez-nous" activeClassName={styles.activeLink}>
-                            <a  className={styles.contact} onClick={()=> setwidth("0%")}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Nous contacter</a>
+                            <a  className={styles.contact} onClick={()=> setwidth("0%")}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Contactez-nous</a>
                         </ActiveLink>
                     </li>
 

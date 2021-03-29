@@ -54,13 +54,7 @@ const Login = ({open , setOpen}) => {
                     (error)=> {
                         setErreur(true)
                         setMessage(error.message)
-                        setNotif(true);
                         isLoader(false);
-                        setTimeout(
-                            ()=> {
-                                setNotif(false);
-                            },8000
-                        )
         
                     }
                 
@@ -85,14 +79,7 @@ const Login = ({open , setOpen}) => {
             (error)=> {
                 setErreur(true)
                         setMessage(error.message)
-                        setNotif(true);
                         isLoader(false);
-                        setTimeout(
-                            ()=> {
-                                setNotif(false);
-                            },8000
-                        )
-
             }
         )
     }
@@ -129,10 +116,11 @@ const Login = ({open , setOpen}) => {
                      />
                      { type == "password" ?<AiFillEye className={styles.icon} onClick={()=> setType("text")}></AiFillEye>: <AiOutlineEyeInvisible className={styles.icon} onClick={()=> setType("password")}></AiOutlineEyeInvisible>}
                      </div>
+                     {erreur?  <span style={{color: "red" , display:"flex", justifyContent:"center",alignItems:"center"}}>{message}</span> : null}
                    <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><MdPowerSettingsNew style={{fontSize:"20px", marginRight:"5px"}}></MdPowerSettingsNew>Se Connecter </button> </>}
                 </form>
                 <div className={styles.reset}>
-                 { reset ?  <button onClick={()=> Reset()} className={email.length  <= 0  ? null : styles.enabled} disabled={email.length  <= 0  ? true: false}> Envoyer </button>: <a onClick={ () => setReset(true)}>Mot de passe Oublier ?</a>}
+                 { reset ?  <button onClick={()=> Reset()} className={email.length  <= 0  ? null : styles.enabled} disabled={email.length  <= 0  ? true: false}> Envoyer </button>: <a onClick={ () => setReset(true)}>Mot de passe Oublié ?</a>}
                 </div></>}
             </div>
         </div> : null}

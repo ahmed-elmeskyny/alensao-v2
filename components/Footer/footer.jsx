@@ -25,7 +25,7 @@ const Footer = () => {
                     <h4>ALENSAO</h4>
                     <ul>
                         <li><Link href="/about"><a> A propos </a></Link></li>
-                        <li><Link href="/contact"><a>Contactez-nous</a></Link></li>
+                        <li><Link href="/contactez-nous"><a>Contactez-nous</a></Link></li>
                     </ul>
                 </div>
                 <div className={styles.block}>

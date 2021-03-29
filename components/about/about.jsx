@@ -18,7 +18,7 @@ const AboutDynamic = ({isInverse , title , img ,width , height , text , ensa}) =
                     {ensa ? <div style={{lineHeight:"30px"}}>
                         <p>Le concept de cette émission, dans le cadre d'un partenariat entre I'ADE
                             et I'ALENSAO, sera de diffuser des capsules vidéo d'une minute, durant
-                             laquelle des lauréats de I'ENSAO se présenteront de la manière qui suit :</p>
+                             laquelle des lauréats de I'ENSAO se présenteront de la manière qui suit:</p>
                            <ul style={{marginLeft:"35px"}}>
                                <li>Nom & Prénom</li>
                                <li>Promotion et filière</li>
