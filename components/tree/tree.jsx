@@ -30,7 +30,7 @@ const Tree = () => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/jihane.jpeg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/sanaa.jpeg)"}}>
 
                      </div>
                      <div className={styles.name}>
