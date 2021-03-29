@@ -51,8 +51,8 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                             <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span>
+                             <h1>L'assise Entre l'Ade & l'ENSAO & Soft Innovation - Paris </h1>
+                            <span>Premier événement en collaboration entre l’ADE et l’ALENSAO, marquant une nouvelle ère de synergie très prometteuse. Fut aussi l’invité d’honneur la société SoftInnovation, représenté par son Président, Mr Samir OUAMASSI.</span>
                         </div>
                     </div>
                 </div>
@@ -62,9 +62,8 @@ const  Slider = () => {
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[2]})`,backgroundPosition:"center" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                            {/* <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span> */}
+                             <h1>Match de football amical contre le MCO</h1>
+                            <span>A l’occasion de la première édition du Forum Entreprises de l’ENSAO, un match amical fut organisé entre des étudiants et des professeurs de l’ENSAO, et des joueurs du MCO</span>
                         </div>
                     </div>
                 </div>
@@ -73,9 +72,8 @@ const  Slider = () => {
                 <div className={styles.slide}  style={{backgroundImage: `url(${slides[3]})` ,backgroundPosition:"center"}}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                            {/* <p>en vedette</p>
-                             <h1>L'assise Entre L'Ade & L'ENSAO & Soft Innovation - Paris </h1>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores dolorem non quaerat ipsum rerum quos aliquam incidunt eos doloribus, qui molestiae nobis voluptatum voluptatibus, at vel porro aspernatur eveniet!</span> */}
+                             <h1>Ftour Ramadan</h1>
+                            <span>A l’occasion du saint mois de Ramadan, en 2015, l’ALENSAO a organisé un Ftour entre d’anciens lauréats au Riad21 à Casablanca </span>
                         </div>
                     </div>
                 </div>

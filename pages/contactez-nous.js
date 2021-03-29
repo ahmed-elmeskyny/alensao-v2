@@ -63,8 +63,8 @@ export default function About() {
            {notif ? <Notification erreur={erreur}>{message}</Notification>: null}
         <div className={styles.contactHeader}>
           <div className={styles.filter}>
-             <h1> Nous-Contactez </h1>
-             <p>Accueil / Contact </p>
+             <h1> Contactez-nous</h1>
+             <p>Accueil / Contactez-nous</p>
           </div>
         </div>
         <div className={styles.contactContainer}>

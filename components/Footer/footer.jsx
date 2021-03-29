@@ -33,18 +33,18 @@ const Footer = () => {
                     <ul>
                         <li><Link href="/stage"><a> Offres de stages </a></Link></li>
                         <li><Link href="/emission"><a> K-LAM 2.0</a></Link></li>
-                        <li><Link href="/ade"><a>Association Des Etudiants</a></Link></li>
+                        <li><Link href="/ade"><a>Comité ad-hoc</a></Link></li>
                         <li><a href="https://www.youtube.com/channel/UCbBDkfV17rgQDyyJz-SxDfQ"  target="_blank">Chaîne youtube de l'ADE</a></li>
                     </ul>
                 </div>
                 <div className={styles.block}>
                     <h4>Evénements </h4>
                     <ul>
-                        <li><Link href="/galerie/1"><a>Assise ADE & ALENSAO / 15 Janv 2021</a></Link></li>
+                        <li><Link href="/galerie/4"><a>Forum ENSAO / 17 & 18 Mars 2005</a></Link></li>
                         <li><Link href="/galerie/2"><a>Rencontre des Lauréats - Hôtel Novotel / 28 Mars 2015</a></Link></li>
                         <li><Link href="/galerie/3"><a>Ftour Ramdan / 04 Juin 2015</a></Link></li>
-                        <li><Link href="/galerie/4"><a>Forum ENSAO / 17 & 18 Mars 2005</a></Link></li>
                         <li><Link href="/galerie/5"><a>Déjeuner Alensao & ADE / 09 Janv 2021</a></Link></li>
+                        <li><Link href="/galerie/1"><a>Assise ADE & ALENSAO / 15 Janv 2021</a></Link></li>
                     </ul>
                 </div>
                 </div>

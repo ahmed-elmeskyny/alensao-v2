@@ -42,7 +42,7 @@ const StageMain = () => {
 
     return (
         <div className={styles.stageContainer}>     
-           <h1>Publiez votre CV - Postulez à des emplois depuis n'importe quel appareil</h1>      
+           <h1>Publiez votre CV - Postulez depuis n'importe où</h1>      
         <div className={styles.main}>
             <div className={styles.leftside}>
                 <div className={styles.search}>

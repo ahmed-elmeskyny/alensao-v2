@@ -34,7 +34,7 @@ function About() {
         >
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
-             <h1> A Propos de l'AlENSAO </h1>
+             <h1> A Propos de l'ALENSAO </h1>
              <p>Accueil / alensao </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ function Ade() {
                <p>Accueil / ADE</p>
             </div>
           </div>
-          <AboutDynamic title="A propos" img="/ade.png"  width="200px" height="200px" text="L'ADE (Association Des Etudiants) de l'Ecole Nationale des Sciences Appliquées d'Oujda est l'organisme responsable de la communication entre les étudiants de l'école et tout autre organisme, qu'il soit interne, ou externe. Elle est donc le principal organisme avec lequel l'ALENSAO traite, pour toute affaire touchant les étudiants de l'école, soit, leur totalité. De part l'implication de l'ADE au niveau de la vie estudiantine, l'ALENSAO la compte comme un organisme frère. La preuve de cela se manifeste en la multitude de projets sur lesquels les deux associations ont œuvré. On comptera une émission portant sur la vie socio-économique du pays, un événement culinaire, un événement de soirées musicales, un concept audiovisuel faisant appel à d'ancient lauréats... pour n'en citer que certains. De plus, un noyau s'est imposé entre les deux organismes, et oeuvre sur les projets liant les deux associations. Il compte comme membres :"></AboutDynamic>
+          <AboutDynamic title="A propos"    text="En vue de la collaboration étroite entre l'Association des Lauréats de l'ENSAO (ALENSAO), et l'Association des Etudiants de l'ENSAO (ADE), et dans le but de faciliter la coopération et la synergie entre les deux organismes, un comité ad-hoc a vu le jour, comprenant des membres des deux organismes, ainsi que des membres externe. L'objectif principal de ce comité est d'œuvrer sur la multitude d'événements et de projets incluant les deux associations. Les membres du comité sont comme suit :"></AboutDynamic>
           <Tree></Tree>
   
         </Layout>

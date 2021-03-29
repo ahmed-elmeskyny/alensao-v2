@@ -71,6 +71,11 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
+                        <ActiveLink href="/ade" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ade</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
                         <ActiveLink href="/stage" activeClassName={styles.activeLink}>
                             <a  className={styles.blog}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offres de stages </a>
                         </ActiveLink>
@@ -90,19 +95,15 @@ const SideMenu = ({width , setwidth}) => {
                             <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoistes du monde</a>
                         </ActiveLink>
                     </li>
-                    <li>
-                        <ActiveLink href="/ade" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ADE</a>
-                        </ActiveLink>
-                    </li>
+
                     <li>
                         <ActiveLink href="/magensao" activeClassName={styles.activeLink}>
                             <a  className={styles.faq}><BsBookmarks style={{fontSize:"23px" , marginRight:"5px"}}  ></BsBookmarks> MagEnsao</a>
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/contact" activeClassName={styles.activeLink}>
-                            <a  className={styles.contact}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Nous contacter</a>
+                        <ActiveLink href="/contactez-nous" activeClassName={styles.activeLink}>
+                            <a  className={styles.contact}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Contactez-nous</a>
                         </ActiveLink>
                     </li>
 
@@ -148,7 +149,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/ade" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ADE</a>
+                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>ade</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -157,7 +158,7 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/contact" activeClassName={styles.activeLink}>
+                        <ActiveLink href="/contactez-nous" activeClassName={styles.activeLink}>
                             <a  className={styles.contact} onClick={()=> setwidth("0%")}><MdPermContactCalendar style={{fontSize:"23px" , marginRight:"5px"}} ></MdPermContactCalendar>Nous contacter</a>
                         </ActiveLink>
                     </li>

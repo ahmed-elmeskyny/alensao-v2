@@ -81,6 +81,9 @@
         justify-content: center;
         justify-content: space-evenly;
         cursor: pointer;
+        @media (max-width: 400px) {
+          font-size: 15px;
+        }
         p {
           a {
             &:hover {
