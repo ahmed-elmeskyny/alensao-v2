@@ -33,8 +33,8 @@ function Ade() {
           >
           <div className={styles.aboutHeader}>
             <div className={styles.filter}>
-               <h1> A Propos de l'ADE </h1>
-               <p>Accueil / ADE</p>
+               <h1> Comité ad-hoc </h1>
+               <p>Accueil / Ad-hoc</p>
             </div>
           </div>
           <AboutDynamic title="A propos"    text="En vue de la collaboration étroite entre l'Association des Lauréats de l'ENSAO (ALENSAO), et l'Association des Etudiants de l'ENSAO (ADE), et dans le but de faciliter la coopération et la synergie entre les deux organismes, un comité ad-hoc a vu le jour, comprenant des membres des deux organismes, ainsi que des membres externe. L'objectif principal de ce comité est d'œuvrer sur la multitude d'événements et de projets incluant les deux associations. Les membres du comité sont comme suit :"></AboutDynamic>
