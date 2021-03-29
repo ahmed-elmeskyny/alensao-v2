@@ -24,6 +24,8 @@ import {FaRegCopyright} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 import {HiOutlinePhotograph} from "react-icons/hi";
 import {BsBookmarks} from "react-icons/bs";
+import {RiArrowDownSLine} from "react-icons/ri";
+import {BsFillCameraVideoFill} from "react-icons/bs";
 
 //nprogress
 import NProgress from "nprogress";
@@ -31,6 +33,11 @@ import NProgress from "nprogress";
 
 const SideMenu = ({width , setwidth}) => {
     const [Fixed  , setFixed] = useState(false);
+    const [open , isOpen] = useState(false);
+    const [open1 , isOpen1] = useState(false);
+    const [open2 , isOpen2] = useState(false)
+
+
     // Router.events.on("routeChangeStart" , (url)=> NProgress.start());
 
     Router.onRouteChangeStart = () => {
@@ -62,18 +69,25 @@ const SideMenu = ({width , setwidth}) => {
                 <ul>
                     <li>
                         <ActiveLink href="/" activeClassName={styles.activeLink}>
-                            <a className={styles.acceuil}><RiDashboardFill style={{fontSize:"23px" , marginRight:"5px"}}></RiDashboardFill>Accueil</a>
+                            <a className={styles.acceuil} ><RiDashboardFill style={{fontSize:"23px" , marginRight:"5px"}}></RiDashboardFill>Accueil</a>
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/about" activeClassName={styles.activeLink}>
-                            <a  className={styles.about} ><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>ALENSAO</a>
-                        </ActiveLink>
-                    </li>
-                    <li>
-                        <ActiveLink href="/ad-hoc" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>Ad-hoc</a>
-                        </ActiveLink>
+                            <a  className={styles.about} onClick={()=> isOpen(!open)} ><RiArrowDownSLine  style={{fontSize:"23px" , marginRight:"5px"}}></RiArrowDownSLine>Organismes</a>
+                        {open? <div className={styles.submenu}>
+                               <ul>
+                                   <li>
+                                      <ActiveLink href="/about" activeClassName={styles.activeLink}>
+                                         <a  className={styles.about} onClick={()=> setwidth("0%")}><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>ALENSAO</a>
+                                      </ActiveLink>
+                                   </li>
+                                   <li>
+                                     <ActiveLink href="/ad-hoc" activeClassName={styles.activeLink}>
+                                         <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>Comité Ad-hoc</a>
+                                     </ActiveLink>
+                                   </li>
+                               </ul>
+                            </div>:null}
                     </li>
                     <li>
                         <ActiveLink href="/stage" activeClassName={styles.activeLink}>
@@ -81,25 +95,44 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                        <ActiveLink href="/galerie" activeClassName={styles.activeLink}>
-                            <a  className={styles.space}><HiOutlinePhotograph style={{fontSize:"23px" , marginRight:"5px"}} ></HiOutlinePhotograph> Galerie </a>
+
+                            <a  className={styles.space} onClick={()=> isOpen1(!open1)}><RiArrowDownSLine  style={{fontSize:"23px" , marginRight:"5px"}}></RiArrowDownSLine> Multimédia </a>
+                        {open1? <div className={styles.submenu}>
+                               <ul>
+                                   <li>
+                                   <ActiveLink href="/galerie" activeClassName={styles.activeLink}>
+                            <a  className={styles.space} onClick={()=> setwidth("0%")}><HiOutlinePhotograph style={{fontSize:"23px" , marginRight:"5px"}} ></HiOutlinePhotograph> Galerie </a>
                         </ActiveLink>
+                                   </li>
+                                   <li>
+                                     <ActiveLink href="/videotheque" activeClassName={styles.activeLink}>
+                                         <a  className={styles.faq} onClick={()=> setwidth("0%")}><BsFillCameraVideoFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillCameraVideoFill>Vidéothéque</a>
+                                     </ActiveLink>
+                                   </li>
+                               </ul>
+                            </div>:null}
                     </li>
                     <li>
-                        <ActiveLink href="/emission" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-LAM 2.0</a>
+                            <a  className={styles.faq} onClick={()=> isOpen2(!open2)}><RiArrowDownSLine  style={{fontSize:"23px" , marginRight:"5px"}}></RiArrowDownSLine>News & infos</a>
+                        {open2? <div className={styles.submenu}>
+                               <ul>
+                                   <li>
+                                   <ActiveLink href="/emission" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><CgScreen style={{fontSize:"23px" , marginRight:"5px"}} ></CgScreen>K-LAM 2.0</a>
                         </ActiveLink>
-                    </li>
-                    <li>
-                        <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
+                                   </li>
+                                   <li>
+                                   <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
                             <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoistes du monde</a>
                         </ActiveLink>
-                    </li>
-
-                    <li>
+                                   </li>
+                                   <li>
                         <ActiveLink href="/magensao" activeClassName={styles.activeLink}>
                             <a  className={styles.faq}><BsBookmarks style={{fontSize:"23px" , marginRight:"5px"}}  ></BsBookmarks> MagEnsao</a>
                         </ActiveLink>
+                    </li>
+                               </ul>
+                            </div>:null}
                     </li>
                     <li>
                         <ActiveLink href="/contactez-nous" activeClassName={styles.activeLink}>
@@ -113,6 +146,7 @@ const SideMenu = ({width , setwidth}) => {
                    <a href="mailto:alensao.association@gmail.com"  target="_blank"> <MdEmail className={styles.icon} style={{fontSize:"22px"}}></MdEmail></a>
                 </div>            
         </div>
+
         <div className={styles.filter} style={{width: width}}>
           <div className={styles.mobileMenu}>
             <RiDeleteBack2Fill className={styles.iconDelete} onClick={()=> setwidth("0%")}></RiDeleteBack2Fill>
@@ -125,6 +159,11 @@ const SideMenu = ({width , setwidth}) => {
                     <li>
                         <ActiveLink href="/about" activeClassName={styles.activeLink}>
                             <a  className={styles.about} onClick={()=> setwidth("0%")}><FaFire style={{fontSize:"23px" , marginRight:"5px"}} ></FaFire>ALENSAO</a>
+                        </ActiveLink>
+                    </li>
+                    <li>
+                        <ActiveLink href="/ad-hoc" activeClassName={styles.activeLink}>
+                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>Comité Ad-hoc</a>
                         </ActiveLink>
                     </li>
                     <li>
@@ -145,11 +184,6 @@ const SideMenu = ({width , setwidth}) => {
                     <li>
                         <ActiveLink href="/ensaoiste" activeClassName={styles.activeLink}>
                             <a  className={styles.contact}><BiWorld style={{fontSize:"23px" , marginRight:"5px"}} ></BiWorld>Ensaoistes du monde</a>
-                        </ActiveLink>
-                    </li>
-                    <li>
-                        <ActiveLink href="/ad-hoc" activeClassName={styles.activeLink}>
-                            <a  className={styles.faq} onClick={()=> setwidth("0%")}><BiGroup style={{fontSize:"23px" , marginRight:"5px"}} ></BiGroup>Ad-hoc</a>
                         </ActiveLink>
                     </li>
                     <li>

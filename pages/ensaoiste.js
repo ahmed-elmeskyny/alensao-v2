@@ -26,7 +26,7 @@ function Ensa() {
   return (
     <div >
       <Head>
-        <title>Alensao || A propos</title>
+        <title>Alensao || Ensaoiste Du monde</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

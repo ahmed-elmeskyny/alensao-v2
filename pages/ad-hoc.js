@@ -21,7 +21,7 @@ function Ade() {
     return (
       <div >
         <Head>
-          <title>Alensao || A propos</title>
+          <title>Alensao || Comité Ad-hoc</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
   

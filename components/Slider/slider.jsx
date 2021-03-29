@@ -12,7 +12,7 @@ import { Slide } from "react-slideshow-image";
 //react-icons
 import {AiOutlineRight} from "react-icons/ai";
 import {AiOutlineLeft} from "react-icons/ai";
-import {BsBoxArrowInRight} from "react-icons/bs";
+
 
 
 const slides = [
@@ -39,7 +39,6 @@ const  Slider = () => {
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[0]})`,backgroundPosition:"center" }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                            <p>Pour un Meilleur Future</p>
                             <h1>Association Des Lauréats De l'ENSAO </h1>
                             <span>L'association des Lauréats de l'ENSAO se veut le lien entre les étudiants et les lauréats de l'école, à travers ses activités, ses partenariats et son vaste réseau de relations, elle facilite la transition du monde académique vers le monde du travail aux nouveaux lauréats.</span>
                         </div>
@@ -50,7 +49,6 @@ const  Slider = () => {
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[1]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                            <p>en vedette</p>
                              <h1>L'assise Entre l'Ade & l'ENSAO & Soft Innovation - Paris </h1>
                             <span>Premier événement en collaboration entre l’ADE et l’ALENSAO, marquant une nouvelle ère de synergie très prometteuse. Fut aussi l’invité d’honneur la société SoftInnovation, représenté par son Président, Mr Samir OUAMASSI.</span>
                         </div>
