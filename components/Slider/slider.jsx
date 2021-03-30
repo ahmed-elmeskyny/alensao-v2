@@ -91,7 +91,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                              <h1>Point de rencontre</h1>
-                            <span>Cette rencontre a permit au comité de l'ALENSAO de réunir plusieurs lauréats, et des personnalités tel que Monsieur Mustapha KHALFI, Ministre de la Communication, ainsi que 3 directeurs de l'ENSAO : Messieurs BARBOUCHA Mohammed, LAALEJ Mouhssine et ROUBI Larbi.</span>
+                            <span>Cette rencontre a permis au comité de l'ALENSAO de réunir plusieurs lauréats, et des personnalités tel que Monsieur Mustapha KHALFI, Ministre de la Communication, ainsi que 3 directeurs de l'ENSAO : Messieurs BARBOUCHA Mohammed, LAALEJ Mouhssine et ROUBI Larbi.</span>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,53 @@
+.aboutHeader {
+  width: 100%;
+  height: 55vh;
+  background-image: url("../public/video.jpg");
+  background-size: 100%;
+  background-position: 0px -80px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  .filter {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba($color: black, $alpha: 0.4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      font-size: 45px;
+      font-family: "Ubuntu", sans-serif;
+    }
+  }
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  div {
+    background-color: #0c97b4;
+    width: 105px;
+    height: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    @media (max-width: 900px) {
+      width: 50px;
+    }
+  }
+}
+
+.videosContainer {
+  padding: 10px;
+  h1 {
+  }
+  .videos {
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    flex-wrap: wrap;
+  }
+}

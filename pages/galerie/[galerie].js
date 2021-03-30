@@ -73,16 +73,7 @@ export default function Episode() {
                )
              }
              </div>
-             {
-               newEvent.video? 
-              <> <h1 className={styles.title}><div></div>Videos<div></div></h1>
-                <div className={styles.video}>
-                      <video src="/forumVideo1.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"10px"}}>
-                      </video>
-                      <video src="/forumVideo2.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"10px"}}>
-                      </video>
-                </div> </>: null
-             }
+
            { open? <div className={styles.zoom} onKeyPress={(e)=> handlekey(e)}>
                <div className={styles.filter}>
                  <TiDeleteOutline className={styles.icon} onClick={()=> setOpen(false)} ></TiDeleteOutline>
