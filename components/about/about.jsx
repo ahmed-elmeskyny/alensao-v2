@@ -11,7 +11,7 @@ const AboutDynamic = ({isInverse , title , img ,width , height , text , ensa}) =
             <h1> <div></div>{title}</h1>
             <div className={styles.aboutContainer}>
                { img ?<div className={styles.logo}>
-                    <Image alt="alensao logo" src={img} width={width} height={height}></Image>
+                    <img className={styles.img} alt="alensao logo" src={img} width={width} height={height}></img>
                 </div>: null}
                 <div className={styles.description}>
                    {text}
@@ -30,7 +30,7 @@ const AboutDynamic = ({isInverse , title , img ,width , height , text , ensa}) =
 ENSAOistes en explicitant la portée dudit réseau, ainsi que de prouver aux
 étudiants de I'ENSAO que leurs prédécesseurs ont atteint des objectifs qu'ils
 ne soupçonnaient même pas. Ces capsules seront diffusées sur la chaine
-Youtube de I'ADE, et partagés sur les pages Facebook de I'ADE et de
+Youtube de I'ADE, et partagées sur les pages Facebook de I'ADE et de
 I'ALENSAO.
 Pour ceux qui veulent envoyer une capsule vidéo, ou bien veulent plus
 d'informations, veuillez contacter le responsable de communication interne et

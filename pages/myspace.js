@@ -120,7 +120,7 @@ import {FaUserGraduate} from "react-icons/fa";
                       <p><BsFillPersonFill className={styles.icon}></BsFillPersonFill>{props.user.firstname} {props.user.lastname}</p>
                       <p><HiOutlineMailOpen className={styles.icon} ></HiOutlineMailOpen> {props.user.email} </p>
                       <p><BsFillPeopleFill className={styles.icon}></BsFillPeopleFill> Promotion : {props.user.promotion}</p>
-                      <p><FaUserGraduate className={styles.icon}></FaUserGraduate> Filiére : {props.user.domaine}</p>
+                      <p><FaUserGraduate className={styles.icon}></FaUserGraduate> Filière : {props.user.domaine}</p>
                      {props.user.verified? <p><BsCheckAll className={styles.icon } style={{color:"#32cd32"}}></BsCheckAll> email vérifié</p> :  <p><TiDelete className={styles.icon } style={{color:"#FF0000"}}></TiDelete> email non  verifiee</p>}
                       <p><BsFillBookmarkFill className={styles.icon}></BsFillBookmarkFill> Mes Offres</p>
                   </div>
@@ -147,7 +147,7 @@ import {FaUserGraduate} from "react-icons/fa";
                    :
                    <div className={styles.empty}>
                        <Image alt="no data" src="/noData.svg" width="100px" height="100px"></Image>
-                        <p>Vous n'avez publier aucune offre</p>
+                        <p>Vous n'avez publié aucune offre</p>
                     </div> 
                  }
               </div>

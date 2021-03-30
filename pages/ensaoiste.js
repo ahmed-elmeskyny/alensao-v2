@@ -42,7 +42,7 @@ function Ensa() {
              <p>Accueil / Ensaoiste </p>
           </div>
         </div>
-        <AboutDynamic title="Description" img="/ensaoiste.png" width="200px" height="200px" ensa></AboutDynamic>
+        <AboutDynamic title="Description" img="/ensaoiste.png" width="200px" height="250px" ensa></AboutDynamic>
         <h3 className={styles.title}><div></div>Episodes<div></div></h3>
         <div className={styles.episodesContainer}>
           <div className={styles.episodeContainer} >
@@ -51,7 +51,7 @@ function Ensa() {
                 </div>
                 <div className={styles.text} >
                     <h3>Mourad MZIOUT </h3>
-                    <p>Promotion 2007 </p><p>Génie informatique</p>
+                    <p>Promotion 2007 </p><p>Génie Informatique</p>
                 </div>
           </div>
           <div className={styles.episodeContainer} >
@@ -60,7 +60,7 @@ function Ensa() {
                 </div>
                 <div className={styles.text} >
                     <h3>Kouassi Serge Brice</h3>
-                    <p>Promotion 2006 </p><p>Génie telecommunication et réseau</p>
+                    <p>Promotion 2006 </p><p>Génie Télécommunication et réseau</p>
                 </div>
           </div>
 

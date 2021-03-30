@@ -116,7 +116,7 @@ const Tree = () => {
                      </div>
                      <div className={styles.name}>
                          <h3>DINE Ismail</h3>
-                         <p>Ancient Membre de l'ADE</p>
+                         <p>Ancien Membre de l'ADE</p>
                      </div>
                 </div>
                 <div className={styles.profile}>
@@ -125,7 +125,7 @@ const Tree = () => {
                      </div>
                      <div className={styles.name}>
                          <h3>AZDAD Mahmoud</h3>
-                         <p>Ancient Membre de l'ADE</p>
+                         <p>Ancien Membre de l'ADE</p>
                      </div>
                 </div>
                 <div className={styles.profile}>
