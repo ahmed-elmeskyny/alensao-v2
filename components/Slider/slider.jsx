@@ -49,7 +49,7 @@ const  Slider = () => {
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[1]})`  }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
-                             <h1>L'assise Entre l'Ade & l'ENSAO & Soft Innovation - Paris </h1>
+                             <h1>L'assise Entre l'ADE & l'ALENSAO & Soft Innovation - Paris </h1>
                             <span>Premier événement en collaboration entre l’ADE et l’ALENSAO, marquant une nouvelle ère de synergie très prometteuse. Fut aussi l’invité d’honneur la société SoftInnovation, représenté par son Président, Mr Samir OUAMASSI.</span>
                         </div>
                     </div>
