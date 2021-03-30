@@ -33,6 +33,14 @@ export default function Episode() {
   const [open , setOpen]=useState(false);
   const [url ,setUrl]=useState("");
 
+  const handlekey = (e)=>{
+    console.log("kkk")
+    if(e.key === 'Escape'){
+      setOpen(false)
+      console.log('aj')
+
+    }
+  }
 
 
   return (
@@ -75,9 +83,9 @@ export default function Episode() {
                       </video>
                 </div> </>: null
              }
-           { open? <div className={styles.zoom}>
+           { open? <div className={styles.zoom} onKeyPress={(e)=> handlekey(e)}>
                <div className={styles.filter}>
-                 <TiDeleteOutline className={styles.icon} onClick={()=> setOpen(false)}></TiDeleteOutline>
+                 <TiDeleteOutline className={styles.icon} onClick={()=> setOpen(false)} ></TiDeleteOutline>
                <img src={url} className={styles.img}></img>
                </div>
              </div> : null}

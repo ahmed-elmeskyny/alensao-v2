@@ -51,7 +51,7 @@ const StageMain = () => {
                     <BiSearch></BiSearch>
                     </div>
                 </div>
-                <Calendars></Calendars>
+                {/* <Calendars></Calendars> */}
                 {/* <div className={styles.ad}>
                      <h2>AD</h2>
                 </div> */}
@@ -60,7 +60,7 @@ const StageMain = () => {
               {  offres.length !=0 ? 
               offres.map( 
                   offre => <Offre  key={offre.id} offre={offre}></Offre>) 
-              :  <div className={styles.empty}><Image alt="no data" src="/noData.svg" width="100px" height="100px"></Image><p>Aucune offre n' a été publiée </p></div>}
+              :  <div className={styles.empty}><Image alt="no data" src="/noData.svg" width="100px" height="100px"></Image><p>Aucune offre n' a ètè publiée </p></div>}
             </div>
             </div>
         </div>

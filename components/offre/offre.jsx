@@ -42,7 +42,7 @@ const Offre = ({offre, isLaureat , DeleteOffre , UserId}) => {
     }
     return (
 
-        <div className={styles.offreContainer} style={isLaureat ? {margin: "0",marginBottom:"15px" ,width : "100%"} : null}>
+        <div className={styles.offreContainer} style={isLaureat ? {margin: "0",marginBottom:"15px" ,width : "100%"} : null} onClick={ () => router.push(`stage/${offre.id}`)}>
             <div className={styles.offreDescription}>
             { isLaureat ?    <AiFillDelete style={{color:"red", fontSize:"20px" , cursor:"pointer" , display:"flex" }} onClick={()=> setConfirm(true)}></AiFillDelete> : null }
                 <div className={styles.header}>
@@ -53,9 +53,6 @@ const Offre = ({offre, isLaureat , DeleteOffre , UserId}) => {
                    <div className={styles.img}>
                       <Image alt="societe" src="/logo1.png" width="25px" height="25px"></Image>
                    </div>
-                </div>
-                <div className={styles.descriptiontext}>
-                   <p>{description}</p><span>...</span>
                 </div>
                 <div className={styles.conditions}>
                     <div className={styles.condition}>
@@ -79,9 +76,6 @@ const Offre = ({offre, isLaureat , DeleteOffre , UserId}) => {
                 </div>
             </div>
             <div className={styles.details}>
-                <div className={styles.tag}>
-                 <p>{secteur}</p>
-                </div>
                 <div className={styles.detail} onClick={ () => router.push(`stage/${offre.id}`)}>
                     <span>voir les détails</span>
                     <IoIosArrowForward></IoIosArrowForward>
