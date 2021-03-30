@@ -50,7 +50,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                              <h1>L'assise Entre l'ADE & l'ALENSAO & Soft Innovation - Paris </h1>
-                            <span>Premier événement en collaboration entre l’ADE et l’ALENSAO, marquant une nouvelle ère de synergie très prometteuse. Fut aussi l’invité d’honneur la société SoftInnovation, représenté par son Président, M. Samir OUAMASSI.</span>
+                            <span>Premier événement en collaboration entre l’ADE et l’ALENSAO, marquant une nouvelle ère de synergie très prometteuse. Fut aussi l’invité d’honneur la société SoftInnovation, représentée par son Président, M. Samir OUAMASSI.</span>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                              <h1>Ftour Ramadan</h1>
-                            <span>A l’occasion du saint mois de Ramadan, en 2015, l’ALENSAO a organisé un Ftour entre d’anciens lauréats au Riad21 à Casablanca. </span>
+                            <span>A l’occasion du saint mois de Ramadan, en 2015, l’ALENSAO a organisé un Ftour entre les anciens lauréats à Riad21 - Casablanca. </span>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                              <h1>Rencontre des Lauréats 28 Mars 2015</h1>
-                            <span>Une rencontre inédite et tant attendue par tant de lauréats, s'étant déroulé au Novotel de Casablanca.</span>
+                            <span>Une rencontre inédite et tant attendue par tant de lauréats, s'étant déroulé à Novotel de Casablanca.</span>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                              <h1>Point de rencontre</h1>
-                            <span>Cette rencontre a permis au comité de l'ALENSAO de réunir plusieurs lauréats, et des personnalités tel que Monsieur Mustapha KHALFI, Ministre de la Communication, ainsi que 3 directeurs de l'ENSAO : Messieurs BARBOUCHA Mohammed, LAALEJ Mouhssine et ROUBI Larbi.</span>
+                            <span>Cette rencontre a permis au comité de l'ALENSAO de réunir plusieurs lauréats, et des personnalités tel que Monsieur Mustapha KHALFI, Ministre de la Culture et de la Communication, ainsi que 3 directeurs de l'ENSAO : Messieurs BARBOUCHA Mohammed, ELEULDJ Mohcine et ROUBI Larbi.</span>
                         </div>
                     </div>
                 </div>
