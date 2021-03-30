@@ -42,10 +42,10 @@ const Offre = ({offre, isLaureat , DeleteOffre , UserId}) => {
     }
     return (
 
-        <div className={styles.offreContainer} style={isLaureat ? {margin: "0",marginBottom:"15px" ,width : "100%"} : null} onClick={ () => router.push(`stage/${offre.id}`)}>
+        <div className={styles.offreContainer} style={isLaureat ? {margin: "0",marginBottom:"15px" ,width : "100%"} : null} >
             <div className={styles.offreDescription}>
             { isLaureat ?    <AiFillDelete style={{color:"red", fontSize:"20px" , cursor:"pointer" , display:"flex" }} onClick={()=> setConfirm(true)}></AiFillDelete> : null }
-                <div className={styles.header}>
+                <div className={styles.header} onClick={ () => router.push(`stage/${offre.id}`)}>
                     <div className={styles.title}>
                         <span> {createdAt}</span>
                         <h2>{fonction}</h2>

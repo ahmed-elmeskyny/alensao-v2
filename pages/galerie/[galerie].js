@@ -74,7 +74,7 @@ export default function Episode() {
              }
              </div>
 
-           { open? <div className={styles.zoom} onKeyPress={(e)=> handlekey(e)}>
+           { open? <div className={styles.zoom} onClick={()=> setOpen(false)} >
                <div className={styles.filter}>
                  <TiDeleteOutline className={styles.icon} onClick={()=> setOpen(false)} ></TiDeleteOutline>
                <img src={url} className={styles.img}></img>

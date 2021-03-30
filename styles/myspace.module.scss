@@ -30,6 +30,14 @@
       background-image: url("../public/blank.jpg");
       background-size: cover;
       background-position: center;
+      .icon {
+        position: relative;
+        left: 100px;
+        top: 100px;
+        font-size: 20px;
+        color: #0c97b4;
+        cursor: pointer;
+      }
     }
     .description {
       font-family: "Ubuntu", sans-serif;

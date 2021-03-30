@@ -32,6 +32,7 @@ import Notification from "../components/Notification/notification";
 import {createUserOffre, createOffre ,db, storage} from "../config/utils"
 import { AddOffre } from '../redux/offreReducer/offre-action';
 import {FaUserGraduate} from "react-icons/fa";
+import {MdAddAPhoto} from "react-icons/md";
 
  function MySpace(props) {
 
@@ -115,7 +116,7 @@ import {FaUserGraduate} from "react-icons/fa";
         {props.user ?  
         <>  <div className={styles.mySpaceContainer}>
               <div className={styles.mySpace}>
-                  <div className={styles.pdp} style={props.user.photoURL ?{ backgroundImage: `url(${props.user.photoURL})`} : null}></div>
+                  <div className={styles.pdp} style={props.user.photoURL ?{ backgroundImage: `url(${props.user.photoURL})`} : null}><MdAddAPhoto className={styles.icon}></MdAddAPhoto> </div>
                   <div className={styles.description}>
                       <p><BsFillPersonFill className={styles.icon}></BsFillPersonFill>{props.user.firstname} {props.user.lastname}</p>
                       <p><HiOutlineMailOpen className={styles.icon} ></HiOutlineMailOpen> {props.user.email} </p>
