@@ -10,12 +10,11 @@
   h1 {
     font-size: 49px;
     font-family: "Ubuntu", sans-serif;
-    // font-family: "Gochi Hand", cursive;
     display: flex;
     align-items: center;
     justify-content: center;
     @media (max-width: 900px) {
-      font-size: 28px;
+      font-size: 20px;
     }
     div {
       background-color: #0c97b4;
