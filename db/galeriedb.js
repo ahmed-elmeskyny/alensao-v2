@@ -23,16 +23,16 @@ export const  galeriedb = [
         date: "04 Juin 2015",
         photos: ["/ftour1.jpg","/ftour2.jpg" , "/ftour3.jpg", "/ftour4.jpg" , "/ftour5.jpg" , "/ftour6.jpg" , "/ftour7.jpg", "/ftour8.jpg" , "/ftour9.jpg" ],
         thumbnail : "/ftour.jpeg",
-        lieu: "Riad 21 Casablanca"
+        lieu: "Riad 21 - Casablanca"
     },
     
     {
         id:5,
-        eventName : "Déjeuner ALENSAO & ADE ",
+        eventName : "Déjeuner ADE & ALENSAO  ",
         date: "09 Janv 2021",
         photos: ["/dej1.jpg","/dej2.jpg" , "/dej3.jpg", "/dej4.jpeg" , "/dej5.jpeg" , "/dej6.jpeg" , "/dej7.jpeg", "/dej8.jpeg" , "/dej9.jpeg" ],
         thumbnail : "/dej.jpg",
-        lieu: "Palmier D'orient"
+        lieu: "Palmier D'orient - Oujda"
 
     },
     {
