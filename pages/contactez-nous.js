@@ -50,7 +50,7 @@ export default function About() {
   return (
     <div >
       <Head>
-        <title>Alensao || Comité Ad-hoc</title>
+        <title>Alensao || Contactez-nous</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -83,12 +83,12 @@ export default function About() {
             <div className={styles.contact}>
                 <form onSubmit={ handleSubmit(Submit)} autoComplete="off">
                     <div className={styles.info}>
-                       <input type="text" placeholder="votre nom complet" name="name"  ref={register({required : true})}/>
-                       <input type="numbre" placeholder="telephone" name="phone"  ref={register({required : true})}/>
+                       <input type="text" placeholder="Nom complet" name="name"  ref={register({required : true})}/>
+                       <input type="numbre" placeholder="Téléphone" name="phone"  ref={register({required : true})}/>
                     </div>
                     <div className={styles.email}>
-                        <input type="email" placeholder="email" name="email" ref={register({required : true})}/>
-                        <input type="text" placeholder="objet"  name="objet" ref={register({required : true})}/>
+                        <input type="email" placeholder="Email" name="email" ref={register({required : true})}/>
+                        <input type="text" placeholder="Objet"  name="objet" ref={register({required : true})}/>
                     </div>
                     <textarea type="text" placeholder="Message" name="message" ref={register({required : true})} >
                     </textarea>

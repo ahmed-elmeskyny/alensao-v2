@@ -19,7 +19,7 @@ export default function Emission() {
   return (
     <div >
       <Head>
-        <title>Alensao || Émission </title>
+        <title>Alensao || K-LAM 2.0</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -158,11 +158,6 @@ const SideMenu = ({width , setwidth}) => {
                         </ActiveLink>
                     </li>
                     <li>
-                                     <ActiveLink href="/videotheque" activeClassName={styles.activeLink}>
-                                         <a  className={styles.faq} onClick={()=> setwidth("0%")}><BsFillCameraVideoFill style={{fontSize:"23px" , marginRight:"5px"}} ></BsFillCameraVideoFill>Vidéothéque</a>
-                                     </ActiveLink>
-                                   </li>
-                    <li>
                         <ActiveLink href="/magensao" activeClassName={styles.activeLink}>
                             <a  className={styles.faq}><BsBookmarks style={{fontSize:"23px" , marginRight:"5px"}}  ></BsBookmarks> MagEnsao</a>
                         </ActiveLink>
