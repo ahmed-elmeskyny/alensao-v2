@@ -34,7 +34,7 @@ Youtube de I'ADE, et partagées sur les pages Facebook de I'ADE et de
 I'ALENSAO.
 Pour ceux qui veulent envoyer une capsule vidéo, ou bien veulent plus
 d'informations, veuillez contacter le responsable de communication interne et
-externe å travers le mail : ade.ensao@gmail.com</p>
+externe à travers le mail : ade.ensao@gmail.com.</p>
                     </div>: null }
                     
                 </div>

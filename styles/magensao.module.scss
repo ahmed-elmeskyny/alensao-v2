@@ -34,4 +34,7 @@
   padding-right: 100px;
   font-family: "Ubuntu", sans-serif;
   text-align: justify;
+  @media (max-width: 900px) {
+    padding: 10px;
+  }
 }
