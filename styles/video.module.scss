@@ -44,10 +44,10 @@
 .videosContainer {
   padding: 10px;
   h1 {
+    font-family: "Ubuntu", sans-serif;
   }
   .videos {
     display: flex;
-    font-family: "Ubuntu", sans-serif;
     flex-wrap: wrap;
   }
 }

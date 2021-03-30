@@ -80,10 +80,18 @@ export default function Episode() {
                <img src={url} className={styles.img}></img>
                </div>
              </div> : null}
-              
-              
-            
 
+             {
+               newEvent.video ? 
+               <>
+               <h1 className={styles.title}><div></div>Videos<div></div></h1>
+               <div className={styles.videos}>
+                      <video src="/forumVideo1.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"10px"}}>
+                      </video>
+                      <video src="/forumVideo2.mp4" width="300px" height="300px" controls style={{outline:"none", margin:"20px",marginTop:"10px"}}>
+                      </video>
+                </div> </>: null
+             }
       </Layout>
 
     </div>
