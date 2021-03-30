@@ -10,7 +10,7 @@ export const  klam = [
     {
         id:2,
         episode: "Episode 2",
-        guest : "Mr Abdelmalek ELHEBIL",
+        guest : "M. Abdelmalek ELHEBIL",
         description : "Mr Abdelmalek EL HEBIL, une sommité internationale du monde sportif, doublé d'un conférencier international hors pair, à tel qu'il est aussi formateur de ces derniers. Ayant passé son savoir faire à plus de 190 nationalités différentes, décoré par plusieurs pays, et ayant personnellement visité plus de 147 pays, il nous honore de sa présence et partage avec nous quelques réflexions, suite à des questions posées durant cet épisode de notre émission. Bon visionnage !" ,
         thumbnail : "/thumbnail.png",
         link : "https://www.youtube.com/watch?v=yqmkLtNJtPU&t=6s"   

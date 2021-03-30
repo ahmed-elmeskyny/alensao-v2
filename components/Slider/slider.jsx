@@ -50,7 +50,7 @@ const  Slider = () => {
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                              <h1>L'assise Entre l'ADE & l'ALENSAO & Soft Innovation - Paris </h1>
-                            <span>Premier événement en collaboration entre l’ADE et l’ALENSAO, marquant une nouvelle ère de synergie très prometteuse. Fut aussi l’invité d’honneur la société SoftInnovation, représenté par son Président, Mr Samir OUAMASSI.</span>
+                            <span>Premier événement en collaboration entre l’ADE et l’ALENSAO, marquant une nouvelle ère de synergie très prometteuse. Fut aussi l’invité d’honneur la société SoftInnovation, représenté par son Président, M. Samir OUAMASSI.</span>
                         </div>
                     </div>
                 </div>
