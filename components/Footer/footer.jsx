@@ -33,7 +33,7 @@ const Footer = () => {
                     <ul>
                         <li><Link href="/stage"><a> Offres de stages </a></Link></li>
                         <li><Link href="/emission"><a> K-LAM 2.0</a></Link></li>
-                        <li><Link href="/ade"><a>Comité ad-hoc</a></Link></li>
+                        <li><Link href="/ad-hoc"><a>Comité ad-hoc</a></Link></li>
                         <li><a href="https://www.youtube.com/channel/UCbBDkfV17rgQDyyJz-SxDfQ"  target="_blank">Chaîne youtube de l'ADE</a></li>
                     </ul>
                 </div>

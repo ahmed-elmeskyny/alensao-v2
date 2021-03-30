@@ -243,7 +243,7 @@ import {FaUserGraduate} from "react-icons/fa";
                                     // placeholder="2 fev 2021 / Non-défini..."
                                     ref={register({required:false})}
                                  />
-   <label>Ajouté l'offre PDF </label>
+   <label>Ajouter l'offre PDF </label>
 <input 
   className={styles.file}
   name="upload" 
