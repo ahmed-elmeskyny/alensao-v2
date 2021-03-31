@@ -22,6 +22,10 @@ function  Home() {
       <Head>
         <title>Alensao</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Alensao"></meta>
+  <meta property="og:image" content="/og.png"></meta>
+  <meta property="og:description" content="Le monde évolue à une vitesse vertigineuse, il est donc impératif d'adapter un rythme au moins équivalent, au risque d'être dépassé. Cependant, un rythme ou une vitesse n'ont de sens qu'en la présence d'un repère. C'est ce que représente, à mon avis, l'Association des Lauréats. Elle incarne la référence grâce à laquelle le lauréat de l'ENSAO se localise, le point de départ depuis lequel il s'élance vers le monde du travail, et, enfin, le point de chute vers lequel il revient, quand le besoin s'en fait sentir. Le rôle nous incombant donc, en tant que membres de cette association, n'est pas si différent de celui d'une famille.
+Notre raison d'être"></meta>
       </Head>
 
       <Layout 
