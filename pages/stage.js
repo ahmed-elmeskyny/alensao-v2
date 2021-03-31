@@ -34,8 +34,8 @@ export default function Stage() {
         >
         <div className={styles.stageHeader}>
           <div className={styles.filter}>
-             <h1> Offres de Stages </h1>
-             <p>Accueil / offres de stages </p>
+             <h1> Stages & Emplois </h1>
+             <p>Accueil / Stages & Emplois </p>
           </div>
         </div>
         <StageMain></StageMain>
