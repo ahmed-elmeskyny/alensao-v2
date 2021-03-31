@@ -81,7 +81,7 @@ const SideMenu = ({width , setwidth}) => {
                                
                     <li>
                         <ActiveLink href="/stage" activeClassName={styles.activeLink}>
-                            <a  className={styles.blog}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offres de stages </a>
+                            <a  className={styles.blog}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Stages & Emplois </a>
                         </ActiveLink>
                     </li>
                 
@@ -139,7 +139,7 @@ const SideMenu = ({width , setwidth}) => {
                     </li>
                     <li>
                         <ActiveLink href="/stage" activeClassName={styles.activeLink}>
-                            <a  className={styles.blog} onClick={()=> setwidth("0%")}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Offres de stages </a>
+                            <a  className={styles.blog} onClick={()=> setwidth("0%")}><MdEventNote style={{fontSize:"23px" , marginRight:"5px"}} ></MdEventNote> Stages & Emplois </a>
                         </ActiveLink>
                     </li>
                     <li>
