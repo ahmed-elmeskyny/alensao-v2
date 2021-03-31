@@ -116,7 +116,7 @@ import {MdAddAPhoto} from "react-icons/md";
         {props.user ?  
         <>  <div className={styles.mySpaceContainer}>
               <div className={styles.mySpace}>
-                  <div className={styles.pdp} style={props.user.photoURL ?{ backgroundImage: `url(${props.user.photoURL})`} : null}><MdAddAPhoto className={styles.icon}></MdAddAPhoto> </div>
+                  <div className={styles.pdp} style={props.user.photoURL ?{ backgroundImage: `url(${props.user.photoURL})`} : null}></div>
                   <div className={styles.description}>
                       <p><BsFillPersonFill className={styles.icon}></BsFillPersonFill>{props.user.firstname} {props.user.lastname}</p>
                       <p><HiOutlineMailOpen className={styles.icon} ></HiOutlineMailOpen> {props.user.email} </p>
