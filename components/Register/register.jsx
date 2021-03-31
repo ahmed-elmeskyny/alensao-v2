@@ -180,6 +180,8 @@ const Register = ({open,setOpen }) => {
                        value={confirmPassword}
                        onChange={ (e) => setConfirm(e.target.value)}
                      />
+                       <input type="checkbox" name="terms" value="j'accepte la politique de confidentialité"   ref={register({required : true})}/>
+                       <label for="terms"> j'accepte la politique de confidentialité</label><br></br>
                    {erreur?  <span style={{color: "red" , display:"flex", justifyContent:"center",alignItems:"center"}}>{message}</span> : null}
                      <button type="submit" className={email.length  <= 0 || password.length <= 0 ? null : styles.enabled} disabled={email.length  <= 0 || password.length <= 0 ? true: false}><RiUserSettingsFill style={{fontSize:"20px", marginRight:"5px"}}></RiUserSettingsFill>S'inscrire </button>
                 </form>}
