@@ -43,6 +43,15 @@ export const  galeriedb = [
         thumbnail : "/assise.jpg",
         lieu: "ENSAO"
     },
+    {
+        id: 6,
+        eventName : "EUGO - Eastern University Games of Oujda",
+        date: "27/28/29 Fev 2020",
+        photos: ["/eugo1.jpeg","/eugo2.jpeg" , "/eugo3.jpeg", "/eugo4.jpeg" , "/eugo5.jpeg", "/eugo6.jpeg" , "/eugo7.jpeg", "/eugo8.jpeg" , "/eugo9.jpeg" , "/eugo10.jpeg", "/eugo11.jpeg", "/eugo12.jpeg", "/eugo13.jpeg", "/eugo14.jpeg", "/eugo15.jpeg", "/eugo16.jpeg"],
+        thumbnail : "cover.jpeg",
+        lieu: "Saidia"
+    }
+
 
 
 ]
