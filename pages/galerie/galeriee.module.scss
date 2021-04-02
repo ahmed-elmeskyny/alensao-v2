@@ -92,9 +92,17 @@
     }
   }
 }
-.video {
+.videos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  .video {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }

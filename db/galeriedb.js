@@ -6,7 +6,7 @@ export const  galeriedb = [
         photos: ["/forum1.jpg","/forum2.jpg" , "/forum3.jpg", "/forum4.jpg" , "/forum5.jpg" , "/forum6.jpg" , "/forum7.jpg", "/forum8.jpg" , "/forum9.jpg" ],
         thumbnail : "/forum.jpeg",
         lieu: "ENSAO / Dar Sebti",
-        video : ["/forumVideo1.mp4","/forumVideo2.mp4"]
+        video : ["https://youtu.be/SWMCpmnNJZo","https://youtu.be/2G1gFk3jLkI"]
     },
     {
         id: 2,
@@ -49,7 +49,8 @@ export const  galeriedb = [
         date: "27/28/29 Fev 2020",
         photos: ["/eugo1.jpeg","/eugo2.jpeg" , "/eugo3.jpeg", "/eugo4.jpeg" , "/eugo5.jpeg", "/eugo6.jpeg" , "/eugo7.jpeg", "/eugo8.jpeg" , "/eugo9.jpeg" , "/eugo10.jpeg", "/eugo11.jpeg", "/eugo12.jpeg", "/eugo13.jpeg", "/eugo14.jpeg", "/eugo15.jpeg", "/eugo16.jpeg"],
         thumbnail : "cover.jpeg",
-        lieu: "Saidia"
+        lieu: "Saidia",
+        video : ["https://youtu.be/-baS5EG2fVA"]
     }
 
 
