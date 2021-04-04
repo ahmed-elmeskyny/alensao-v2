@@ -43,7 +43,7 @@ const Footer = () => {
                         <li><Link href="/galerie/4"><a>Forum ENSAO / 17 & 18 Mars 2005</a></Link></li>
                         <li><Link href="/galerie/2"><a>Rencontre des Lauréats - Hôtel Novotel / 28 Mars 2015</a></Link></li>
                         <li><Link href="/galerie/3"><a>Ftour Ramdan / 04 Juin 2015</a></Link></li>
-                        <li><Link href="/galerie/5"><a>EUGO - saidia / 27 & 28 & 29 Fev 2020</a></Link></li>
+                        <li><Link href="/galerie/6"><a>EUGO - saidia / 27 & 28 & 29 Fev 2020</a></Link></li>
                         <li><Link href="/galerie/5"><a>Déjeuner Alensao & ADE / 09 Janv 2021</a></Link></li>
                         <li><Link href="/galerie/1"><a>Assise ADE & ALENSAO / 15 Janv 2021</a></Link></li>
                     </ul>
