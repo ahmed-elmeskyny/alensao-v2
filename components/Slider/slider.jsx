@@ -22,7 +22,8 @@ const slides = [
     "/slide5.jpeg",
     "/slide6.jpeg",
     "/rencontre9.JPG",
-    "/slide10.jpeg"
+    "/slide10.jpeg",
+    "/remise.jpeg"
 ]
 
 const properties =  {
@@ -102,6 +103,16 @@ const  Slider = () => {
                         <div className={styles.slideText}>
                              <h1>Réunion de l'ALENSAO à l'hôtel Bourgreg de Salé </h1>
                             <span>Réunion des membres de L'ALENSAO en Janvier 2015 dans l'intention de discuter et d'œuvrer sur la rencontre prévue pour Mars de la même année.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.eachSlide}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[7]})`,backgroundPosition:"center"  }}>
+                    <div className={styles.filter}>
+                        <div className={styles.slideText}>
+                             <h1>Alensao</h1>
+                            <span>Remise de l’attestation de remerciement pour Ahmed El Meskyny pour son grand dévouement et engagement dans la réalisation du premier siteweb de l’association des lauréats de l’ENSAO.</span>
                         </div>
                     </div>
                 </div>
