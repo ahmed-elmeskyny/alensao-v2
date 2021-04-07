@@ -44,7 +44,7 @@ const EmissionMain= () => {
                             return (
                             <div className={styles.episode} key={episode.id} onClick={() => router.push(`emission/${episode.guest}`)} >
                                 <div className={styles.img} style={{backgroundImage: `url(${episode.thumbnail})`}}></div>
-                                <p> {episode.episode } - {episode.guest}</p>
+                                <p > {episode.episode } </p><p> {episode.guest}</p>
                             </div>)
                         })
                     }

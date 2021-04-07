@@ -35,6 +35,9 @@ export default function Episode() {
       <Head>
         <title>Alensao || Episode </title>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="K-LAM 2.0"></meta>
+        <meta property="og:image" content="/og1.png"></meta>
+        <meta property="og:description" content="Pr. Khalid SERRAJ, Doyen de la Faculté de Médecine et de Pharmacie d'Oujda, nous accueil gracieusement dans son bureau pour le troisième épisode de notre émission. Nous entamons plusieurs sujets avec lui, notamment sa vision sur l'interdisciplinarité et la coopération entre la Faculté de Médecine et les autres établissements de l'Université."></meta>
       </Head>
       <Layout 
         openLogin={openLogin}
@@ -61,7 +64,7 @@ export default function Episode() {
                   <p><span>Pilotage:</span> Mohammed-Ayoub  El Maftouhi  </p>
                   <p><span>Proposé par :</span> Ouassim Melhaoui  </p>
                   <p><span>Présenté par :</span> Mohammed-Ayoub  El Maftouhi </p>
-                  <p><span>Production:</span> Hicham Hajji & Ihab Biziz  </p>
+                  <p><span>Production:</span> {newKlam.production} </p>
                </div>
                <div className={styles.logos}>
                  <Image alt="alensao logo" src="/logo.png" width="170px" height="100px"></Image>
