@@ -69,7 +69,7 @@ export default function Episode() {
                <div className={styles.logos}>
                  <Image alt="alensao logo" src="/logo.png" width="170px" height="100px"></Image>
                  <Image alt="alensao logo" src="/ade.png" width="100px" height="100px"></Image>
-                 <Image alt="alensao logo" src="/hicham.png" width="170px" height="100px"></Image>
+                { guest === "Pr Khalid SERRAJ" ?null :<Image alt="alensao logo" src="/hicham.png" width="170px" height="100px"></Image>}
                </div>
            </div>
       </Layout>
