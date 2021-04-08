@@ -22,7 +22,7 @@ export const  klam = [
         id:3,
         episode: "Episode 3",
         guest : "Pr Khalid SERRAJ",
-        description : "Pr. Khalid SERRAJ, Doyen de la Faculté de Médecine et de Pharmacie d'Oujda, nous accueil gracieusement dans son bureau pour le troisième épisode de notre émission. Nous entamons plusieurs sujets avec lui, notamment sa vision sur l'interdisciplinarité et la coopération entre la Faculté de Médecine et les autres établissements de l'Université." ,
+        description : "Pr. Khalid SERRAJ, Doyen de la Faculté de Médecine et de Pharmacie d'Oujda, nous accueille gracieusement dans son bureau pour le troisième épisode de notre émission. Nous entamons plusieurs sujets avec lui, notamment sa vision sur l'interdisciplinarité et la coopération entre la Faculté de Médecine et les autres établissements de l'Université." ,
         thumbnail : "/thumbnail.png",
         link : "https://youtu.be/JRQk1j21H48",
         production: "Ihab Biziz & Oussama El Haddouchi"    
