@@ -8,14 +8,32 @@ import {auth ,createUserProfile, db} from "../config/utils";
 import {connect} from "react-redux";
 import {setCurrentUser} from "../redux/uerReducer/user-action";
 import { AddOffre } from '../redux/offreReducer/offre-action';
-import {AddOffrePublic} from "../redux/publicReducer/public-action"
+import {AddOffrePublic} from "../redux/publicReducer/public-action";
+  
+
+import { Router } from 'next/router'
+import * as gtag from '../lib/gtag'
+
 
 
 class MyApp extends App {
 
     unsubscribeFromAuth = null;
 
+
     componentDidMount() {
+      
+      
+        const handleRouteChange = (url) => {
+          gtag.pageview(url)
+        }
+        Router.events.on('routeChangeComplete', handleRouteChange)
+
+      
+
+
+
+
       this.unsubscribeFromAuth=  auth.onAuthStateChanged(
           async (user)=>{
               if(user){
@@ -59,12 +77,16 @@ class MyApp extends App {
               }
             }
           )
-          
+          return () => {
+            Router.events.off('routeChangeComplete', handleRouteChange)
+          }
     }
+    
 
     render() {
         //pageProps that were returned  from 'getInitialProps' are stored in the props i.e. pageprops
         const {Component, pageProps} = this.props;
+
 
         return (
             <Provider store={store}>
