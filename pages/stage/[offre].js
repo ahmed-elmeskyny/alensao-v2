@@ -120,8 +120,8 @@ const Submit = async (data)=> {
           {notif ? <Notification erreur={erreur}>{message}</Notification>: null}
           <div className={styles.offreStageHeader}>
               <div className={styles.filter}>
-                  <h1>Stage</h1>
-                 <p>Accueil /  offre de stage </p>
+                  <h1>Stages & Emplois</h1>
+                 <p>Accueil /  Stages & Emplois </p>
               </div>
            </div>
            {offreDescription ? 
@@ -146,11 +146,11 @@ const Submit = async (data)=> {
                 <p>{offreDescription.website}</p>
                </div>
                <div className={styles.info}>
-                 <h3><VscDebugStart className={styles.icon}></VscDebugStart>Début periode de stage   </h3>
+                 <h3><VscDebugStart className={styles.icon}></VscDebugStart>Date de début  </h3>
                  <p>{offreDescription.debut}</p>
                </div>
                <div className={styles.info}>
-                 <h3><BiTimeFive className={styles.icon}/> Durée du stage  </h3>
+                 <h3><BiTimeFive className={styles.icon}/> Durée   </h3>
                  <p>{offreDescription.durée}</p>
                </div>
                <div className={styles.info}>
