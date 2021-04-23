@@ -42,7 +42,7 @@ function About() {
              <p>Accueil / MagEnsao </p>
           </div>
         </div>
-        <h1 className={styles.title}><div></div>La Premier Magazine de l'ENSAO<div></div></h1>
+        <h1 className={styles.title}><div></div>Le Premier Magazine de l'ENSAO<div></div></h1>
         <div className={styles.magContainer}>
         {
           magdb.map(
