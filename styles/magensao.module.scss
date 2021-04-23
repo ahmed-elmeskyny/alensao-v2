@@ -29,6 +29,9 @@
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px;
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
   div {
     background-color: #0c97b4;
     width: 105px;
