@@ -23,7 +23,8 @@ const slides = [
     "/slide6.jpeg",
     "/rencontre9.JPG",
     "/slide10.jpeg",
-    "/remise.jpeg"
+    "/remise.jpeg",
+    "/nawal.jpeg"
 ]
 
 const properties =  {
@@ -36,6 +37,16 @@ const  Slider = () => {
 
     return (
             <Slide {...properties} >
+            <div className={styles.eachSlide}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[8]})`,backgroundPosition:"0px -170px"  }}>
+                    <div className={styles.filter}>
+                        <div className={styles.slideText}>
+                             <h1>K-LAM 2.0 Nawal El Moutawakel </h1>
+                            <span>8 Mai 2021 : Coulisses du tournage de l'émission K-LAM 2.0, en compagnie de l'icone internationale du sport féminin, Nawal El Moutawakel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className={styles.eachSlide}>
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[0]})`,backgroundPosition:"center" }}>
                     <div className={styles.filter}>
