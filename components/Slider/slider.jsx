@@ -38,7 +38,7 @@ const  Slider = () => {
     return (
             <Slide {...properties} >
             <div className={styles.eachSlide}>
-                <div className={styles.slide} style={{backgroundImage: `url(${slides[8]})`,backgroundPosition:"0px -170px"  }}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[8]})`, backgroundPositionX:"-150px"   }}>
                     <div className={styles.filter}>
                         <div className={styles.slideText}>
                              <h1>K-LAM 2.0 Nawal El Moutawakel </h1>
