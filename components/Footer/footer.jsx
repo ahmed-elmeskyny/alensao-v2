@@ -46,6 +46,7 @@ const Footer = () => {
                         <li><Link href="/galerie/6"><a>EUGO - saidia / 27 & 28 & 29 Fev 2020</a></Link></li>
                         <li><Link href="/galerie/5"><a>Déjeuner Alensao & ADE / 09 Janv 2021</a></Link></li>
                         <li><Link href="/galerie/1"><a>Assise ADE & ALENSAO / 15 Janv 2021</a></Link></li>
+                        <li><Link href="/galerie/1"><a>Tournage avec Mme Nawal EL MOUTAWAKEL / 8 mai 2021</a></Link></li>
                     </ul>
                 </div>
                 </div>

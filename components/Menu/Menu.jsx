@@ -44,7 +44,7 @@ const SideMenu = ({width , setwidth}) => {
     }
     const handleScroll = ()=> {
         const offset= window.scrollY;
-        if(offset > 40 ){
+        if(offset > 400 ){
           setFixed(true);
         }
         else{

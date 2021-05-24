@@ -52,6 +52,15 @@ export const  galeriedb = [
         thumbnail : "/assise.jpg",
         lieu: "ENSAO"
     },
+    {
+        id: 7,
+        eventName : " K-LAM 2.0 avec Mme Nawal EL MOUTAWAKEL",
+        date: "8 mai 2021",
+        photos: [ "/nawal8.jpeg", "/nawal2.jpeg","/nawal3.jpeg","/nawal4.jpeg","/nawal5.jpeg","/nawal6.jpeg","/nawal7.jpeg","/nawal1.jpeg"],
+        thumbnail : "/nawalcover1.jpeg",
+        lieu: "Bureau de l'AMSD, Stade Mohammed V"
+
+    }
 
 
 
