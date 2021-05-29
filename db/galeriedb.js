@@ -61,6 +61,15 @@ export const  galeriedb = [
         lieu: "Bureau de l'AMSD, Stade Mohammed V",
         video : ["https://youtu.be/dkr7xFggZSo"]
 
+    },
+    {
+        id: 8,
+        eventName : "Don du sang",
+        date: "26 mai 2021",
+        photos: [ "/sang1.jpeg", "/sang2.jpeg","/sang3.jpeg","/sang4.jpeg","/sang5.jpeg","/sang6.jpeg","/sang7.jpeg","/sang8.jpeg"],
+        thumbnail : "/coversang.jpg",
+        lieu: "ENSAO",
+
     }
 
 
