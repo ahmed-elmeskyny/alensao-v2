@@ -24,7 +24,8 @@ const slides = [
     "/rencontre9.JPG",
     "/slide10.jpeg",
     "/remise.jpeg",
-    "/nawal.jpeg"
+    "/nawal.jpeg",
+    "/alensaobr.jpeg"
 ]
 
 const properties =  {
@@ -37,6 +38,16 @@ const  Slider = () => {
 
     return (
             <Slide {...properties} >
+            <div className={styles.eachSlide}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[9]})`  }}>
+                    <div className={styles.filter}>
+                        <div className={styles.slideText}>
+                             <h1>Nouveau bureau ALENSAO</h1>
+                            <span>L'ALENSAO est fière d'annoncer l'inauguration de son nouveau bureau au sein du bloc A, 1er étage. Preuve irréfutable de la coopération entre l'ENSAO et l'Association de ses Lauréats, et produit de la synergie entre ces deux organismes et l'ADE, ce bureau légitimise d'avantage le statut et les actions de l'ALENSAO.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className={styles.eachSlide}>
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[8]})`, backgroundPositionX:"-150px"   }}>
                     <div className={styles.filter}>
