@@ -47,7 +47,9 @@
 .magContainer {
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   @media (max-width: 900px) {
+    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -58,6 +60,7 @@
       align-items: center;
       color: #0c97b4;
       text-decoration: underline;
+      margin-bottom: 10px;
     }
   }
 

@@ -47,6 +47,7 @@ function About() {
         {
           magdb.map(
             (mag)=> 
+           
             <a href={mag.read} target="_blank">
             <div className={styles.mag}>
               <div className={styles.thumbnail} style={{backgroundImage:`url(${mag.thumbnail})`}}></div>
@@ -60,6 +61,7 @@ function About() {
                <a href={mag.pdf} target="_blank" >PDF téléchargeable</a>
             </div>
          </a>
+   
           )
         }
         </div>
