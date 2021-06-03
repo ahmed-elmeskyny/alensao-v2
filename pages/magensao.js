@@ -47,13 +47,19 @@ function About() {
         {
           magdb.map(
             (mag)=> 
-            <a href={mag.pdf} target="_blank"><div className={styles.mag}>
+            <a href={mag.read} target="_blank">
+            <div className={styles.mag}>
               <div className={styles.thumbnail} style={{backgroundImage:`url(${mag.thumbnail})`}}></div>
               <div className={styles.text}>
-              <h4>{mag.title}</h4>
-              <p>{mag.date}</p>
+                 <h4>{mag.title}</h4>
+                 <p>{mag.date}</p>
+              </div>
+          </div>
+           <div className={styles.links}>
+              <a href={mag.read} target="_blank">Lecture interactive</a>
+               <a href={mag.pdf} target="_blank" >PDF téléchargeable</a>
             </div>
-          </div></a> 
+         </a>
           )
         }
         </div>
