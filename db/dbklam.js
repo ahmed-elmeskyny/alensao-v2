@@ -27,5 +27,15 @@ export const  klam = [
         link : "https://youtu.be/JRQk1j21H48",
         production: "Ihab Biziz & Oussama El Haddouchi"    
 
+    },
+    {
+        id:4,
+        episode: "Episode 4",
+        guest : "Mme Nawal EL MOUTAWAKEL",
+        description : "Mme Nawal EL MOUTAWAKEL, athlète légendaire, de renommée internationale, doublée d'une femme politique réputée, et d'actrice sociale et associative brandissant le sport comme outil principal de sa campagne de développement à tout âge. Durant cet épisode, elle nous accueilli dans les locaux de l'Association Marocaine Sport et Développement, dont elle est la Présidente, pour répondre à quelques questions." ,
+        thumbnail : "/thumbnail.png",
+        link : "https://www.youtube.com/watch?v=uwvs5JeJNcg",
+        production: "Ihab Biziz & folks box"    
+
     }
 ]
