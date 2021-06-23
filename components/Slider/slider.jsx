@@ -25,7 +25,8 @@ const slides = [
     "/slide10.jpeg",
     "/remise.jpeg",
     "/nawal.jpeg",
-    "/alensaobr.jpeg"
+    "/alensaobr.jpeg",
+    "alenslide.jpeg"
 ]
 
 const properties =  {
@@ -38,6 +39,15 @@ const  Slider = () => {
 
     return (
             <Slide {...properties} >
+                <div className={styles.eachSlide}>
+                <div className={styles.slide} style={{backgroundImage: `url(${slides[10]})` ,backgroundPosition:"center"  }}>
+                    <div className={styles.filter}>
+                        <div className={styles.slideText}>
+                             <h3>Clôture du premier semestre des activités ADE/ALENSAO et inauguration officielle du nouveau bureau de l'ALENSAO.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className={styles.eachSlide}>
                 <div className={styles.slide} style={{backgroundImage: `url(${slides[9]})`  }}>
                     <div className={styles.filter}>

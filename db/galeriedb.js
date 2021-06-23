@@ -70,6 +70,15 @@ export const  galeriedb = [
         thumbnail : "/coversang.jpg",
         lieu: "ENSAO",
 
+    },
+    {
+        id: 9,
+        eventName : "Inauguration officielle du nouveau bureau de l'ALENSAO",
+        date: "22 juin 2021",
+        photos: [ "/alen1.jpeg","/alen4.jpeg","/alen5.jpeg", "/alen2.jpeg","/alen3.jpeg"],
+        thumbnail : "/alencover.jpeg",
+        lieu: "ENSAO",
+
     }
 
 

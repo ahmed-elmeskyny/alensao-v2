@@ -3,13 +3,14 @@ import Head from 'next/head';
 import Image from "next/image"
 
 //react
-import { useState} from "react";
+import { useState , useEffect} from "react";
 
 //styles 
 import styles from "../styles/magensao.module.scss";
 
 //components
 import Layout from "../components/Layout/layout";
+import Popup from "../components/popup/popup";
 
 //db
 import {magdb}from "../db/dbMag"
@@ -19,6 +20,15 @@ import {magdb}from "../db/dbMag"
 function About() {
   const [openLogin , setOpenLogin ] = useState(false);
   const [openRegister , setOpenRegister] = useState(false);
+  // const [toggle, setToggle] = useState(false);
+
+  // useEffect( ()=> {
+  //    setTimeout(
+  //       ()=>{
+  //          setToggle(true);
+  //       },5000
+  //    )
+  // }, []);
 
   return (
     <div >
@@ -65,6 +75,7 @@ function About() {
           )
         }
         </div>
+       {/* {toggle? <Popup setToggle={setToggle}></Popup>: null} */}
         {/* <div className={styles.building} >
           <h1 style={{color:"red"}}>En cours de construction ....</h1>
             <Image alt="construction" src="/building.svg" width="300px" height="300px"></Image>
