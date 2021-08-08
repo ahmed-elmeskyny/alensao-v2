@@ -127,7 +127,7 @@ const Tree = () => {
                      </div>
                 </div>
                 <div className={styles.profile}>
-                     <div className={styles.pdp} style={{backgroundImage : "url(/ismail.jpeg)"}}>
+                     <div className={styles.pdp} style={{backgroundImage : "url(/ismail.jpg)"}}>
 
                      </div>
                      <div className={styles.name}>
