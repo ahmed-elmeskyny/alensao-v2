@@ -143,7 +143,7 @@ const Submit = async (data)=> {
                </div>
                <div className={styles.info}>
                  <h3><VscGlobe className={styles.icon}/>Site web  </h3>
-                <p>{offreDescription.website}</p>
+                <a href={offreDescription.website} target="_blank" style={{color:"#0c97b4"}}>{offreDescription.website}</a>
                </div>
                <div className={styles.info}>
                  <h3><VscDebugStart className={styles.icon}></VscDebugStart>Date de début  </h3>
@@ -174,7 +174,7 @@ const Submit = async (data)=> {
               </div>
               <div className={styles.postuler}>
              { offreDescription.pdf ? <button className={styles.pdf}><a href={offreDescription.pdf} target="_blank"><BiCloudDownload className={styles.icon}></BiCloudDownload>Télécharger l'offre</a></button> : null}
-                <button onClick={()=>setOpen(true)}> <BsFillPersonFill className={styles.icon}></BsFillPersonFill>Postuler</button>
+                {offreDescription.entreprise == "ICTFICIAL Oy" ?   <div style={{textAlign:"center"}} ><p>Postuler ici</p> <a href={offreDescription.website} target="_blank" style={{color:"#0c97b4"}}>{offreDescription.website}</a></div> :<button onClick={()=>setOpen(true)}> <BsFillPersonFill className={styles.icon}></BsFillPersonFill>Postuler</button>}
               </div>
            </div>
            :
