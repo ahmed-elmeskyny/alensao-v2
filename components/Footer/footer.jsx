@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyRight}>
                 <p><FaRegCopyright className={styles.icon}></FaRegCopyright>Copyright 2021 Alensao. All rights reserved </p>
-                <p>Crée  par <span><a href="http://ahmed-elmeskyny.herokuapp.com/" target="_blank">Ahmed El Meskyny</a></span></p>
+                <p>Crée  par <span><a href="https://ahmedelmeskyny.vercel.app/" target="_blank">Ahmed El Meskyny</a></span></p>
             </div>
         </div>
     )
