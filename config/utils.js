@@ -77,7 +77,7 @@ export const createOffre = async (id, data, pdf) => {
 };
 
 export const addEmail = async (email) => {
-  const emailRef = db.collection("subscriptions").doc("emails");
+  const emailRef = db.collection("subscriptions").doc();
   await emailRef.set({
     email: email,
   });
