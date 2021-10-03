@@ -113,6 +113,53 @@
     }
   }
 
+  .subs {
+    // align-self: flex-start;
+    color: #0c97b4;
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 30px;
+    p {
+      margin-bottom: 10px;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      label {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        color: #abb0b9;
+        font-size: 13px;
+      }
+      input {
+        width: 350px;
+        padding: 15px 20px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-family: "Ubuntu", sans-serif;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: none;
+
+        @media (max-width: 900px) {
+          width: 100%;
+        }
+      }
+      button {
+        padding: 16px 20px;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        color: white;
+        background-color: #0c97b4;
+        cursor: pointer;
+
+        @media (max-width: 900px) {
+          padding: 8px 5px;
+        }
+      }
+    }
+  }
+
   .copyRight {
     width: 100%;
     margin-top: 80px;

@@ -23,7 +23,7 @@ function About() {
   useEffect(() => {
     setTimeout(() => {
       setToggle(true);
-    }, 5000);
+    }, 2000);
   }, []);
 
   return (

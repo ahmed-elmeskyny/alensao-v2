@@ -36,9 +36,8 @@ const Popup = ({ setToggle }) => {
             onClick={() => setToggle(false)}
           ></TiDelete>
           <span>MagEnsao</span>
-          <h3>SUBSCRIBE!</h3>
           <p>
-            Inscrivez-vous pour recevoir mensuellement notre magazine MagEnsao
+            Inscrivez-vous pour recevoir mensuellement notre magazine "MagEnsao"
           </p>
           <form onSubmit={handleSubmit(Submit)} autoComplete="off">
             <input
@@ -49,7 +48,7 @@ const Popup = ({ setToggle }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             ></input>
-            <button type="submit">Subscribe</button>
+            <button type="submit"> Inscrivez-vous</button>
           </form>
         </div>
       </div>
