@@ -38,8 +38,7 @@ const Popup = ({ setToggle }) => {
           <span>MagEnsao</span>
           <h3>SUBSCRIBE!</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Architecto, consectetur quam?
+            Inscrivez-vous pour recevoir mensuellement notre magazine MagEnsao
           </p>
           <form onSubmit={handleSubmit(Submit)} autoComplete="off">
             <input
