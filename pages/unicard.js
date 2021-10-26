@@ -18,7 +18,7 @@ function MyEnsao() {
   return (
     <div>
       <Head>
-        <title>Alensao || A propos</title>
+        <title>Alensao || UniCard</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
