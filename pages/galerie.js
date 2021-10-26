@@ -1,68 +1,70 @@
 //next
-import Head from 'next/head';
-import {useRouter} from "next/router"
+import Head from "next/head";
+import { useRouter } from "next/router";
 
 //react
-import { useState} from "react";
+import { useState } from "react";
 
-//styles 
+//styles
 import styles from "../styles/galerie.module.scss";
 
 //components
 import Layout from "../components/Layout/layout";
 
 //db
-import {galeriedb } from "../db/galeriedb";
-
-
+import { galeriedb } from "../db/galeriedb";
 
 function Galerie() {
-  const [openLogin , setOpenLogin ] = useState(false);
-  const [openRegister , setOpenRegister] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
+  const [openRegister, setOpenRegister] = useState(false);
 
   const router = useRouter();
   return (
-    <div >
+    <div>
       <Head>
         <title>Alensao || Galerie</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout 
+      <Layout
         openLogin={openLogin}
-        setOpenLogin={setOpenLogin} 
-        setOpenRegister={setOpenRegister} 
+        setOpenLogin={setOpenLogin}
+        setOpenRegister={setOpenRegister}
         openRegister={openRegister}
-        >
+      >
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
-             <h1> Galerie </h1>
-             <p>Accueil / Galerie </p>
+            <h1> Galerie </h1>
+            <p>Accueil / Galerie </p>
           </div>
         </div>
-        <h1 className={styles.title}><div></div>Evénements<div></div></h1>
-       <div className={styles.portfolioContainer}>
-      { galeriedb.map(
-         (event =>  
-         <div className={styles.port}>
-             <div className={styles.portfolio}  key={event.id} style={{backgroundImage: `url(${event.thumbnail})` , backgroundSize:"cover" , backgroundPosition:"center"}} onClick={() => router.push(`galerie/${event.id}`)} >
+        <h1 className={styles.title}>
+          <div></div>Galerie<div></div>
+        </h1>
+        <div className={styles.portfolioContainer}>
+          {galeriedb.map((event) => (
+            <div className={styles.port}>
+              <div
+                className={styles.portfolio}
+                key={event.id}
+                style={{
+                  backgroundImage: `url(${event.thumbnail})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+                onClick={() => router.push(`galerie/${event.id}`)}
+              ></div>
+              <p style={{ color: "black" }}>
+                <strong>{event.eventName}</strong>
+              </p>
+              <p>Lieu : {event.lieu}</p>
+              <p>Date : {event.date}</p>
             </div>
-            <p style={{color:"black"}}><strong>{event.eventName}</strong></p>
-            <p>Lieu : {event.lieu}</p>
-           <p>Date : {event.date}</p>
-          </div>
-          )
-        ) }
-
-     </div>
-
+          ))}
+        </div>
       </Layout>
-
     </div>
-  )
+  );
 }
-
-
-
 
 export default Galerie;

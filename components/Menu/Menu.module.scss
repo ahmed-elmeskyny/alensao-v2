@@ -27,6 +27,7 @@
         margin-left: 20px;
         outline: none;
         cursor: pointer;
+
         &:hover {
           color: #0c97b4;
         }
@@ -34,17 +35,6 @@
       .activeLink {
         color: #0c97b4;
         text-decoration: underline #0c97b4;
-        // &::before {
-        //   content: " ";
-        //   position: relative;
-        //   // top: 71px;
-        //   top: -10px;
-        //   left: 35px;
-        //   width: 90px;
-
-        //   border-top: #5f3dc5 2px solid;
-        //   border-radius: 2px;
-        // }
       }
     }
   }
@@ -65,21 +55,21 @@
   }
 }
 
-.submenu {
-  position: absolute;
-  z-index: 10000;
-  background-color: white;
-  padding: 20px;
-  width: 250px;
-  border-radius: 10px;
-  border: 1px solid #abb0b9;
-  margin-top: 10px;
-  ul {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    li {
-      padding: 5px;
+li {
+  .submenu {
+    position: absolute;
+    top: 33px;
+    z-index: 10000;
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #abb0b9;
+    border-top: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    a {
+      margin-bottom: 10px;
     }
   }
 }
