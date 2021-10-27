@@ -33,7 +33,7 @@ function MyEnsao() {
       >
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
-            <h1>MyEnsao </h1>
+            <h1>UniCard </h1>
             <p>Accueil / Convention </p>
           </div>
         </div>
