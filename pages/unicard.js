@@ -49,12 +49,12 @@ function MyEnsao() {
               <img
                 className={styles.img}
                 alt="alensao logo"
-                src="/carte1.jpeg"
+                src="/front.png"
               ></img>
               <img
                 className={styles.img}
                 alt="alensao logo"
-                src="/carte2.jpeg"
+                src="/back.png"
               ></img>
             </div>
             <p>
