@@ -11,6 +11,9 @@ import styles from "../styles/convention.module.scss";
 import Layout from "../components/Layout/layout";
 import AboutDynamic from "../components/about/about";
 
+//react-icons
+import { FaDirections } from "react-icons/fa";
+
 function MyEnsao() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openRegister, setOpenRegister] = useState(false);
@@ -82,7 +85,6 @@ function MyEnsao() {
                 className={styles.logo}
                 style={{
                   backgroundImage: "url(/loftin.jpeg)",
-                  backgroundSize: "cover",
                 }}
               ></div>
               <div className={styles.description}>
@@ -109,6 +111,10 @@ function MyEnsao() {
                   </li>
                 </ul>
               </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
+              </div>
             </div>
           </div>
           <div
@@ -123,7 +129,6 @@ function MyEnsao() {
                 className={styles.logo}
                 style={{
                   backgroundImage: "url(/lunaria.jpeg)",
-                  backgroundSize: "cover",
                 }}
               ></div>
               <div className={styles.description}>
@@ -134,6 +139,10 @@ function MyEnsao() {
                     <em>Soda offert sur tous tacos, burger, ou sandwich</em>
                   </li>
                 </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
@@ -149,7 +158,6 @@ function MyEnsao() {
                 className={styles.logo}
                 style={{
                   backgroundImage: "url(/sa7bi.jpeg)",
-                  backgroundSize: "cover",
                 }}
               ></div>
               <div className={styles.description}>
@@ -160,6 +168,10 @@ function MyEnsao() {
                     <em>Réduction de 10% sur tout le menu</em>
                   </li>
                 </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
@@ -175,7 +187,6 @@ function MyEnsao() {
                 className={styles.logo}
                 style={{
                   backgroundImage: "url(/inessbeauty.jpeg)",
-                  backgroundSize: "cover",
                 }}
               ></div>
               <div className={styles.description}>
@@ -186,6 +197,10 @@ function MyEnsao() {
                     <em>Réduction de 20% sur le total du ticket</em>
                   </li>
                 </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
@@ -201,7 +216,6 @@ function MyEnsao() {
                 className={styles.logo}
                 style={{
                   backgroundImage: "",
-                  backgroundSize: "cover",
                 }}
               ></div>
               <div className={styles.description}>
@@ -220,6 +234,10 @@ function MyEnsao() {
                   </li>
                 </ul>
               </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
+              </div>
             </div>
           </div>
           <div
@@ -234,7 +252,6 @@ function MyEnsao() {
                 className={styles.logo}
                 style={{
                   backgroundImage: "url(/smith.jpeg)",
-                  backgroundSize: "cover",
                 }}
               ></div>
               <div className={styles.description}>
@@ -247,6 +264,10 @@ function MyEnsao() {
                     </em>
                   </li>
                 </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
@@ -262,7 +283,6 @@ function MyEnsao() {
                 className={styles.logo}
                 style={{
                   backgroundImage: "url(/sami.jpeg)",
-                  backgroundSize: "cover",
                 }}
               ></div>
               <div className={styles.description}>
@@ -274,6 +294,10 @@ function MyEnsao() {
                   </li>
                 </ul>
               </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
+              </div>
             </div>
           </div>
           <div
@@ -287,8 +311,8 @@ function MyEnsao() {
               <div
                 className={styles.logo}
                 style={{
-                  // backgroundImage: "url(/lunaria.jpeg)",
-                  backgroundSize: "cover",
+                  backgroundImage: "url(/milli.jpg)",
+                  backgroundSize: "60%",
                 }}
               ></div>
               <div className={styles.description}>
@@ -300,31 +324,9 @@ function MyEnsao() {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div
-            className={styles.conventionCard}
-            style={{
-              backgroundImage: "url(/cardCover.png)",
-              backgroundSize: "250%",
-            }}
-          >
-            <div className={styles.convention}>
-              <div
-                className={styles.logo}
-                style={{
-                  // backgroundImage: "url(/lunaria.jpeg)",
-                  backgroundSize: "cover",
-                }}
-              ></div>
-              <div className={styles.description}>
-                <h1>Parapharmacie EL MESKYNY</h1>
-
-                <ul>
-                  <li>
-                    <em>15% de remise sur les produits parapharmacie </em>
-                  </li>
-                </ul>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
@@ -339,12 +341,40 @@ function MyEnsao() {
               <div
                 className={styles.logo}
                 style={{
-                  // backgroundImage: "url(/lunaria.jpeg)",
-                  backgroundSize: "cover",
+                  backgroundImage: "url(/parapharmacie.jpg)",
                 }}
               ></div>
               <div className={styles.description}>
-                <h1>Opticien Lahlou</h1>
+                <h1>Parapharmacie EL MESKYNY</h1>
+
+                <ul>
+                  <li>
+                    <em>15% de remise sur les produits parapharmacie </em>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
+              </div>
+            </div>
+          </div>
+          <div
+            className={styles.conventionCard}
+            style={{
+              backgroundImage: "url(/cardCover.png)",
+              backgroundSize: "250%",
+            }}
+          >
+            <div className={styles.convention}>
+              <div
+                className={styles.logo}
+                style={{
+                  backgroundImage: "url(/lehlou.jpg)",
+                }}
+              ></div>
+              <div className={styles.description}>
+                <h1>Opticien Lehlou</h1>
 
                 <ul>
                   <li>
@@ -357,6 +387,10 @@ function MyEnsao() {
                   </li>
                 </ul>
               </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
+              </div>
             </div>
           </div>
           <div
@@ -369,10 +403,11 @@ function MyEnsao() {
             <div className={styles.convention}>
               <div
                 className={styles.logo}
-                style={{
-                  // backgroundImage: "url(/lunaria.jpeg)",
-                  backgroundSize: "cover",
-                }}
+                style={
+                  {
+                    // backgroundImage: "url(/lunaria.jpeg)",
+                  }
+                }
               ></div>
               <div className={styles.description}>
                 <h1>Gym Corsica </h1>
@@ -384,6 +419,10 @@ function MyEnsao() {
                     </em>
                   </li>
                 </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
@@ -398,10 +437,11 @@ function MyEnsao() {
             <div className={styles.convention}>
               <div
                 className={styles.logo}
-                style={{
-                  // backgroundImage: "url(/lunaria.jpeg)",
-                  backgroundSize: "cover",
-                }}
+                style={
+                  {
+                    // backgroundImage: "url(/lunaria.jpeg)",
+                  }
+                }
               ></div>
               <div className={styles.description}>
                 <h1>Gym Men Fit</h1>
@@ -413,6 +453,10 @@ function MyEnsao() {
                     </em>
                   </li>
                 </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
@@ -427,12 +471,13 @@ function MyEnsao() {
             <div className={styles.convention}>
               <div
                 className={styles.logo}
-                style={{
-                  // backgroundImage: "url(/lunaria.jpeg)",
-                  backgroundSize: "cover",
-                }}
+                style={
+                  {
+                    // backgroundImage: "url(/lunaria.jpeg)",
+                  }
+                }
               ></div>
-              <div className={styles.description}>
+              <div className={styles.description} style={{ height: "100%" }}>
                 <h1>City Play</h1>
 
                 <ul>
@@ -489,6 +534,10 @@ function MyEnsao() {
                     </p>
                   </li>
                 </ul>
+              </div>
+              <div className={styles.adress}>
+                <FaDirections></FaDirections>
+                <p>Direction</p>
               </div>
             </div>
           </div>
