@@ -14,6 +14,9 @@ import AboutDynamic from "../components/about/about";
 //react-icons
 import { FaDirections } from "react-icons/fa";
 
+//db
+import { conventions } from "../db/conventions";
+
 function MyEnsao() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openRegister, setOpenRegister] = useState(false);
@@ -58,22 +61,44 @@ function MyEnsao() {
               ></img>
             </div>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum,It is a long established fact that a reader will be
+              UniCard est un concept réalisé suite à une cogitation entre
+              l'ALENSAO et l'ADE à une solution pour améliorer le style de vie
+              des étudiants de notre école, plus précisément, leur budget, qui
+              se conclu par une solution à ce même problème, mais à l'échelle
+              universitaire. Il s'agit d'une carte de fidélité, que les deux
+              associations fournissent, permettant de bénéficier de divers
+              offres et réductions, chez plusieurs partenaires avec lesquelles
+              des conventions furent signées. Ces partenaires couvrent plusieurs
+              services, tel que des restaurants, des cafés, salles de sport,
+              salon de coiffure, paramédical , librairie, opticien, salle de
+              jeux, conservatoire de musique... Pour plus de détails sur les
+              offres, voir plus bas.
             </p>
           </div>
         </div>
 
         <div className={styles.conventionsContainer}>
-          <div
+          {conventions.map((convention) => (
+            <div className={styles.conventionCard}>
+              <div className={styles.logo}>
+                <img src={convention.logo}></img>
+              </div>
+              <div className={styles.description}>
+                <h3>{convention.title}</h3>
+                <p>{convention.convention}</p>
+                <p>
+                  <span>ADRESS :</span>
+                  {convention.adress}
+                </p>
+                <div className={styles.adress}>
+                  <FaDirections></FaDirections>
+                  <p>Direction</p>
+                </div>
+              </div>
+            </div>
+          ))}
+
+          {/* <div
             className={styles.conventionCard}
             style={{
               backgroundImage: "url(/cardCover.png)",
@@ -540,7 +565,7 @@ function MyEnsao() {
                 <p>Direction</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </Layout>
     </div>
