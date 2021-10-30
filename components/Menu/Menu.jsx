@@ -365,37 +365,17 @@ const SideMenu = ({ width, setwidth }) => {
                 </div>
               ) : null}
             </li>
-            <li style={{ position: "relative" }}>
-              <a
-                onClick={() => {
-                  setToggle2(!toggle2);
-                  if (toggle1) {
-                    setToggle1(!toggle1);
-                  }
-                }}
-                style={toggle2 ? { color: "#0c97b4" } : null}
-              >
-                <RiArrowDownSLine
-                  style={{ fontSize: "23px", marginRight: "5px" }}
-                ></RiArrowDownSLine>
-                MyEnsao
-              </a>
-              {toggle2 ? (
-                <div style={{ marginLeft: "30px", fontSize: "15px" }}>
-                  <ActiveLink
-                    href="/myensao"
-                    activeClassName={styles.activeLink}
-                  >
-                    <a className={styles.contact}>
-                      <BiWorld
-                        style={{ fontSize: "23px", marginRight: "5px" }}
-                      ></BiWorld>
-                      Convention
-                    </a>
-                  </ActiveLink>
-                </div>
-              ) : null}
+            <li>
+              <ActiveLink href="/unicard" activeClassName={styles.activeLink}>
+                <a className={styles.space} onClick={() => setwidth("0%")}>
+                  <AiFillCreditCard
+                    style={{ fontSize: "23px", marginRight: "5px" }}
+                  ></AiFillCreditCard>{" "}
+                  UniCard{" "}
+                </a>
+              </ActiveLink>
             </li>
+
             {/* <li>
               <ActiveLink href="/emission" activeClassName={styles.activeLink}>
                 <a className={styles.faq} onClick={() => setwidth("0%")}>
