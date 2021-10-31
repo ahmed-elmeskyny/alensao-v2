@@ -84,7 +84,7 @@ function MyEnsao() {
               color: "#0c97b4",
             }}
           >
-            200DH / Année{" "}
+            Tarif : 200DH / Année{" "}
           </h2>
           <div
             style={{
@@ -101,8 +101,14 @@ function MyEnsao() {
               Pour plus d'informations sur Unicard , merci de nous contacter sur
               :
             </p>
-            <p style={{ color: "#0c97b4" }}>Tél: 06 09 02 05 38 </p>
-            <p style={{ color: "#0c97b4" }}>Whatsapp: 06 09 02 05 38 </p>
+            <p>
+              Tél :<span style={{ color: "#0c97b4" }}> 06 09 02 05 38</span>
+            </p>
+            <p>
+              {" "}
+              Whatsapp :
+              <span style={{ color: "#0c97b4" }}> 06 09 02 05 38</span>{" "}
+            </p>
             <p>
               Email :{" "}
               <a href="mailto:contact@alensao.com" style={{ color: "#0c97b4" }}>
