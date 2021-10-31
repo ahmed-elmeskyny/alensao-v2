@@ -55,7 +55,7 @@ export const conventions = [
     title: "Milli Gusto",
     logo: "/milli.jpg",
     convention: " •	20% de remise sur le ticket (sauf Soda ou Café)",
-    adress: "N°198 quartier belmrah  route universitaire Oujda",
+    adress: "N°198 Quartier Belmrah  Route Universitaire Oujda",
     map: "https://www.google.com/maps/place/Milli+gusto+caf%C3%A9+restaurant/@34.659425,-1.9055667,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d3c88d4eef9:0xa597e77f8cd60a13!8m2!3d34.6594248!4d-1.9033696",
   },
   {
@@ -63,7 +63,7 @@ export const conventions = [
     title: "Café Espace Jasmin",
     logo: "/jasmin.jpeg",
     convention: "• 15% de remise sur les boissons chaudes et la restauration",
-    adress: "N°198 quartier belmrah  route universitaire Oujda ",
+    adress: "N°198 Quartier Belmrah  Route Universitaire Oujda ",
     map: "https://www.google.com/maps/place/Jasmine+Cafe+Space/@34.6593656,-1.9048361,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca58270f9d3:0x2d81f3f83c6a37d2!8m2!3d34.6592741!4d-1.902764",
   },
   {
@@ -97,7 +97,7 @@ export const conventions = [
     title: "Gym Corsica",
     logo: "/gym2.jpeg",
     convention: " •	25% de remise pour chaque groupe de 10 personnes",
-    adress: "N°198 quartier belmrah  route universitaire Oujda ",
+    adress: "N°198 Quartier Belmrah  Route Universitaire Oujda ",
     map: "https://www.google.com/maps/place/Gym+corsica/@34.6590805,-1.9047718,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca577fccac3:0x8e61f81d79b4efc3!8m2!3d34.6590805!4d-1.9025755",
   },
   {
@@ -105,6 +105,8 @@ export const conventions = [
     title: "Gym Men Fit",
     logo: "/gym.jpeg",
     convention: "•	25% de remise pour chaque groupe de 10 personnes",
+    adress: "N°109 Lots Amri Route Sidi Maafa , Oujda",
+    map: "https://www.google.com/maps/search/N%C2%B0109+Lots+Amri+Route+Sidi+Maafa+,+Oujda/@34.6549284,-1.8922847,17z",
   },
   {
     id: 12,
