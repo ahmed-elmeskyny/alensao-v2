@@ -84,7 +84,7 @@ function MyEnsao() {
               color: "#0c97b4",
             }}
           >
-            Tarif : 200DH / Année{" "}
+            Tarif : 200 DH / Année{" "}
           </h2>
           <div
             style={{
@@ -136,7 +136,15 @@ function MyEnsao() {
                 <p>{convention.convention4}</p>
                 <p>{convention.convention5}</p>
 
-                <p>{convention.adress ? <span>ADRESSE: </span> : null}</p>
+                <p>
+                  {convention.adress ? (
+                    <p>
+                      {" "}
+                      <span>ADRESSE : </span>
+                      {convention.adress}
+                    </p>
+                  ) : null}
+                </p>
                 {convention.map ? (
                   <a href={convention.map} className={styles.adress}>
                     <FaDirections></FaDirections>
