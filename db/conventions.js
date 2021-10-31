@@ -22,7 +22,7 @@ export const conventions = [
     id: 3,
     title: "Centre de Beauté ' Inass Beauty ' ",
     logo: "/inessbeauty.jpeg",
-    convention: " •	20% de remise ",
+    convention: " •	20% de remise  sur toute la carte",
     map: "https://www.google.com/maps?q=34.659912109375,-1.919247031211853&z=17&hl=en",
   },
   {
@@ -55,7 +55,7 @@ export const conventions = [
     title: "Milli Gusto",
     logo: "/milli.jpg",
     convention: " •	20% de remise sur le ticket (sauf Soda ou Café)",
-    adress: "N°198 QUARTIER BELMRAH  ROUTE UNIVERSITAIRE Oujda ",
+    adress: "N°198 quartier belmrah  route universiatier Oujda",
     map: "https://www.google.com/maps/place/Milli+gusto+caf%C3%A9+restaurant/@34.659425,-1.9055667,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d3c88d4eef9:0xa597e77f8cd60a13!8m2!3d34.6594248!4d-1.9033696",
   },
   {
@@ -63,7 +63,7 @@ export const conventions = [
     title: "Café Espace Jasmin",
     logo: "/jasmin.jpeg",
     convention: "• 15% de remise sur les boissons chaudes et la restauration",
-    adress: "N°198 QUARTIER BELMRAH  ROUTE UNIVERSITAIRE Oujda ",
+    adress: "N°198 quartier belmrah  route universiatier Oujda ",
     map: "https://www.google.com/maps/place/Jasmine+Cafe+Space/@34.6593656,-1.9048361,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca58270f9d3:0x2d81f3f83c6a37d2!8m2!3d34.6592741!4d-1.902764",
   },
   {
@@ -71,7 +71,7 @@ export const conventions = [
     title: "Parapharmacie  El Meskyny",
     logo: "/parapharmacie.jpg",
     convention: " •	15% de remise sur les produits de la parapharmacie",
-    adress: "rte d'Algérie , n°4 lot Al Kawtar , oujda",
+    adress: "N°4 Route d'Algérie ,  lot Al Kawtar , Oujda",
     map: "https://www.google.com/maps/place/Pharmacie+El+Meskyny/@34.6957254,-1.8940684,17z/data=!4m5!3m4!1s0xd78636a50cd2369:0xecbf8c67edaa9585!8m2!3d34.6953686!4d-1.8930887",
   },
   {
@@ -88,7 +88,7 @@ export const conventions = [
     title: "Lunaria",
     logo: "/lunaria.jpeg",
     convention: " •	Soda offert pour tout tacos, burger ou sandwich",
-    adress: "N15 Rue Miraj Hay el Qods  Oujda",
+    adress: "N°15 Rue Miraj Hay el Qods Oujda",
     map: "https://www.google.com/maps/place/LUNARIA,+Restaurant+-+Coffee+club/@34.6578659,-1.9013735,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d9458d46afb:0x6c35c27e6612011!8m2!3d34.6578615!4d-1.8991848",
   },
 
@@ -97,7 +97,7 @@ export const conventions = [
     title: "Gym Corsica",
     logo: "/gym2.jpeg",
     convention: " •	25% de remise pour chaque groupe de 10 personnes",
-    adress: "N°198 QUARTIER BELMRAH  ROUTE UNIVERSITAIRE Oujda ",
+    adress: "N°198 quartier belmrah  route universiatier Oujda ",
     map: "https://www.google.com/maps/place/Gym+corsica/@34.6590805,-1.9047718,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca577fccac3:0x8e61f81d79b4efc3!8m2!3d34.6590805!4d-1.9025755",
   },
   {
@@ -118,7 +118,7 @@ export const conventions = [
     convention4: " • PS4 :7h = 100dh / 14h = 200dh / 21h = 300dh",
     convention5:
       " • 8Ball Pool : 15 parties = 50dh / 33 parties = 100dh / 47 parties = 150dh",
-    adress: "N°198 QUARTIER BELMRAH  ROUTE UNIVERSITAIRE Oujda ",
+    adress: "N°198 quartier belmrah  route universiatier Oujda ",
     map: "https://www.google.com/maps/place/City+Play/@34.6593102,-1.9049695,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d7bed4f5f01:0x6ab599eb0a27a406!8m2!3d34.6592996!4d-1.9027891",
   },
   {
