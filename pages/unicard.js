@@ -67,14 +67,24 @@ function MyEnsao() {
               se conclu par une solution à ce même problème, mais à l'échelle
               universitaire. Il s'agit d'une carte de fidélité, que les deux
               associations fournissent, permettant de bénéficier de divers
-              offres et réductions, chez plusieurs partenaires avec lesquelles
-              des conventions furent signées. Ces partenaires couvrent plusieurs
+              offres et réductions, chez plusieurs partenaires avec lesquels des
+              conventions furent signées. Ces partenaires couvrent plusieurs
               services, tel que des restaurants, des cafés, salles de sport,
-              salon de coiffure, paramédical , librairie, opticien, salle de
-              jeux, conservatoire de musique... Pour plus de détails sur les
-              offres, voir plus bas.
+              salon de coiffure, parapharmacie , librairie, opticien, salle de
+              jeux, conservatoire de musique...
             </p>
+            <p> Pour plus de détails sur les offres, voir plus bas.</p>
           </div>
+          <h2
+            style={{
+              textAlign: "center",
+              width: "100%",
+              marginTop: "20px",
+              fontSize: "35px",
+            }}
+          >
+            200DH / Année{" "}
+          </h2>
         </div>
 
         <div className={styles.conventionsContainer}>
@@ -85,7 +95,16 @@ function MyEnsao() {
               </div>
               <div className={styles.description}>
                 <h3>{convention.title}</h3>
+
                 <p>{convention.convention}</p>
+
+                <p>{convention.convention1}</p>
+
+                <p>{convention.convention2}</p>
+                <p>{convention.convention3}</p>
+                <p>{convention.convention4}</p>
+                <p>{convention.convention5}</p>
+
                 <p>
                   <span>ADRESS :</span>
                   {convention.adress}
