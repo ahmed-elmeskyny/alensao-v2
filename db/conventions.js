@@ -30,6 +30,8 @@ export const conventions = [
     logo: "/libraire.jpeg",
     convention: "•	10% de remise sur les polycopiés ",
     convention1: "•	50% de remise sur la récupération de données sur PC/USB",
+    adress: "Bd Mohammed VI, Oujda",
+    map: "https://www.google.com/maps/place/Bd+Mohammed+VI,+Oujda/@34.6568759,-1.9017688,18z/data=!3m1!4b1!4m12!1m6!3m5!1s0xd787ca52839b5d1:0x728cdb3fb5d98d4c!2sPharmacie+de+l'Universit%C3%A9!8m2!3d34.6571194!4d-1.9007447!3m4!1s0xd787ca4d76691c3:0x9ce01a9bf32d797!8m2!3d34.6568738!4d-1.9006744?hl=fr-MA",
   },
   {
     id: 5,
