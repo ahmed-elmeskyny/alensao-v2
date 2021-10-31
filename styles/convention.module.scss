@@ -146,6 +146,9 @@
       padding: 10px;
       font-family: "Ubuntu", sans-serif;
       border-left: #0c97b4 solid 2px;
+      @media (max-width: 900px) {
+        border-left: none;
+      }
       h3 {
         text-align: center;
         margin-bottom: 10px;

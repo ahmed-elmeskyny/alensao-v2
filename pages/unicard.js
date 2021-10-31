@@ -101,8 +101,8 @@ function MyEnsao() {
               pour plus d'informations sur Unicard , merci de nous contacter sur
               :
             </p>
-            <p>Tel: </p>
-            <p>Whatsapp: </p>
+            <p>Tel: 06 09 02 05 38 </p>
+            <p>Whatsapp: 06 09 02 05 38 </p>
             <p>
               Email :{" "}
               <a href="mailto:contact@alensao.com" style={{ color: "#0c97b4" }}>
@@ -130,14 +130,13 @@ function MyEnsao() {
                 <p>{convention.convention4}</p>
                 <p>{convention.convention5}</p>
 
-                <p>
-                  <span>ADRESS :</span>
-                  {convention.adress}
-                </p>
-                <div className={styles.adress}>
-                  <FaDirections></FaDirections>
-                  <p>Direction</p>
-                </div>
+                <p>{convention.adress ? <span>ADRESS: </span> : null}</p>
+                {convention.map ? (
+                  <a href={convention.map} className={styles.adress}>
+                    <FaDirections></FaDirections>
+                    <p>Direction</p>
+                  </a>
+                ) : null}
               </div>
             </div>
           ))}
