@@ -36,7 +36,7 @@ export const conventions = [
     title: "Café Mr.Smith",
     logo: "/smith.jpeg",
     convention: " •	30% de remise sur la restauration",
-    adress: "M34X+JP4, Oujda",
+    adress: "Bd Mohamed VI Rond Point, Oujda",
     map: "https://www.google.com/maps/place/Mr+SMITH/@34.6565243,-1.9028704,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca4ce2a6323:0xb19013e5b82a0e0b!8m2!3d34.6565231!4d-1.9006764",
   },
   {
@@ -68,7 +68,7 @@ export const conventions = [
     title: "Parapharmacie  El Meskyny",
     logo: "/parapharmacie.jpg",
     convention: " •	15% de remise sur les produits de la parapharmacie",
-    adress: "M4W4+4QF, Oujda",
+    adress: "Rue Zair, Oujda",
     map: "https://www.google.com/maps/place/Pharmacie+El+Meskyny/@34.6957254,-1.8940684,17z/data=!4m5!3m4!1s0xd78636a50cd2369:0xecbf8c67edaa9585!8m2!3d34.6953686!4d-1.8930887",
   },
   {
@@ -94,7 +94,7 @@ export const conventions = [
     title: "Gym Corsica",
     logo: "/gym2.jpeg",
     convention: " •	25% de remise pour chaque groupe de 10 personnes",
-    adress: "M35W+JXM, Oujda",
+    adress: "Bd Mohammed VI, Oujda",
     map: "https://www.google.com/maps/place/Gym+corsica/@34.6590805,-1.9047718,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca577fccac3:0x8e61f81d79b4efc3!8m2!3d34.6590805!4d-1.9025755",
   },
   {
@@ -125,7 +125,7 @@ export const conventions = [
     convention:
       " •	Pack 1 : Sandwich (dinde et fromage) + Salade + Boisson à 32DH ",
     convention1: "•	Pack 2 : ¼ Poulet + riz + boisson à 30DH",
-    adress: "M34W+J9Q, Oujda",
+    adress: "Rue Al Houria, Oujda",
     map: "https://www.google.com/maps/place/Restaurant+Al+Affaf/@34.6565838,-1.9062,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca436479585:0x64fca06d8cf9a17e!8m2!3d34.6565909!4d-1.9040131",
   },
 ];

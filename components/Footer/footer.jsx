@@ -136,7 +136,7 @@ const Footer = () => {
                 <MdEmail
                   style={{ fontSize: "22px", marginRight: "5px" }}
                 ></MdEmail>{" "}
-                : alensao.association@gmail.com
+                : contact@alensao.com
               </a>
             </p>
             <div className={styles.social}>
