@@ -87,7 +87,7 @@ export const conventions = [
     id: 10,
     title: "Lunaria",
     logo: "/lunaria.jpeg",
-    convention: " •	Soda offert pour tout tacos, burger ou sandwich",
+    convention: " •	Soda offert pour  tacos, burger ou sandwich",
     adress: "N°15 Rue Miraj Hay el Qods Oujda",
     map: "https://www.google.com/maps/place/LUNARIA,+Restaurant+-+Coffee+club/@34.6578659,-1.9013735,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d9458d46afb:0x6c35c27e6612011!8m2!3d34.6578615!4d-1.8991848",
   },
