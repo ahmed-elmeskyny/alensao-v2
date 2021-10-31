@@ -156,7 +156,12 @@ function MyEnsao() {
           ))}
 
           <p
-            style={{ fontSize: "35px", padding: "15px", fontFamily: "Ubuntu" }}
+            style={{
+              fontSize: "30px",
+              padding: "15px",
+              fontFamily: "Ubuntu",
+              color: "#0c97b4",
+            }}
           >
             Et d'autres conventions bientôt disponibles...
           </p>
