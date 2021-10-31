@@ -31,7 +31,7 @@ export const conventions = [
     logo: "/libraire.jpeg",
     convention: "•	10% de remise sur les polycopiés ",
     convention1: "•	50% de remise sur la récupération de données sur PC/USB",
-    adress: "Bd Mohammed VI pré de Pharmacie de l'Universitée, Oujda",
+    adress: "Bd Mohammed VI prés de Pharmacie de l'Université, Oujda",
     map: "https://www.google.com/maps/place/Bd+Mohammed+VI,+Oujda/@34.6568759,-1.9017688,18z/data=!3m1!4b1!4m12!1m6!3m5!1s0xd787ca52839b5d1:0x728cdb3fb5d98d4c!2sPharmacie+de+l'Universit%C3%A9!8m2!3d34.6571194!4d-1.9007447!3m4!1s0xd787ca4d76691c3:0x9ce01a9bf32d797!8m2!3d34.6568738!4d-1.9006744?hl=fr-MA",
   },
   {
@@ -39,7 +39,7 @@ export const conventions = [
     title: "Café Mr.Smith",
     logo: "/smith.jpeg",
     convention: " •	30% de remise sur la restauration",
-    adress: "Bd Mohamed VI Rond Point de l'Universitée, Oujda",
+    adress: "Bd Mohamed VI Rond Point de l'Université, Oujda",
     map: "https://www.google.com/maps/place/Mr+SMITH/@34.6565243,-1.9028704,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca4ce2a6323:0xb19013e5b82a0e0b!8m2!3d34.6565231!4d-1.9006764",
   },
   {
@@ -55,7 +55,7 @@ export const conventions = [
     title: "Milli Gusto",
     logo: "/milli.jpg",
     convention: " •	20% de remise sur le ticket (sauf Soda ou Café)",
-    adress: "N°198 quartier belmrah  route universiatier Oujda",
+    adress: "N°198 quartier belmrah  route universitaire Oujda",
     map: "https://www.google.com/maps/place/Milli+gusto+caf%C3%A9+restaurant/@34.659425,-1.9055667,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d3c88d4eef9:0xa597e77f8cd60a13!8m2!3d34.6594248!4d-1.9033696",
   },
   {
@@ -63,7 +63,7 @@ export const conventions = [
     title: "Café Espace Jasmin",
     logo: "/jasmin.jpeg",
     convention: "• 15% de remise sur les boissons chaudes et la restauration",
-    adress: "N°198 quartier belmrah  route universiatier Oujda ",
+    adress: "N°198 quartier belmrah  route universitaire Oujda ",
     map: "https://www.google.com/maps/place/Jasmine+Cafe+Space/@34.6593656,-1.9048361,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca58270f9d3:0x2d81f3f83c6a37d2!8m2!3d34.6592741!4d-1.902764",
   },
   {
@@ -97,7 +97,7 @@ export const conventions = [
     title: "Gym Corsica",
     logo: "/gym2.jpeg",
     convention: " •	25% de remise pour chaque groupe de 10 personnes",
-    adress: "N°198 quartier belmrah  route universiatier Oujda ",
+    adress: "N°198 quartier belmrah  route universitaire Oujda ",
     map: "https://www.google.com/maps/place/Gym+corsica/@34.6590805,-1.9047718,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca577fccac3:0x8e61f81d79b4efc3!8m2!3d34.6590805!4d-1.9025755",
   },
   {
@@ -118,7 +118,7 @@ export const conventions = [
     convention4: " • PS4 :7h = 100dh / 14h = 200dh / 21h = 300dh",
     convention5:
       " • 8Ball Pool : 15 parties = 50dh / 33 parties = 100dh / 47 parties = 150dh",
-    adress: "N°198 quartier belmrah  route universiatier Oujda ",
+    adress: "N°198 quartier belmrah  route universitaire Oujda ",
     map: "https://www.google.com/maps/place/City+Play/@34.6593102,-1.9049695,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d7bed4f5f01:0x6ab599eb0a27a406!8m2!3d34.6592996!4d-1.9027891",
   },
   {
