@@ -37,7 +37,7 @@ function MyEnsao() {
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
             <h1>UniCard </h1>
-            <p>Accueil / Convention </p>
+            <p>Accueil / Conventions </p>
           </div>
         </div>
 
@@ -81,10 +81,35 @@ function MyEnsao() {
               width: "100%",
               marginTop: "20px",
               fontSize: "35px",
+              color: "#0c97b4",
             }}
           >
             200DH / Année{" "}
           </h2>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              marginTop: "30px",
+              fontSize: "20px",
+            }}
+          >
+            <p>
+              pour plus d'informations sur Unicard , merci de nous contacter sur
+              :
+            </p>
+            <p>Tel: </p>
+            <p>Whatsapp: </p>
+            <p>
+              Email :{" "}
+              <a href="mailto:contact@alensao.com" style={{ color: "#0c97b4" }}>
+                contact@alensao.com
+              </a>
+            </p>
+          </div>
         </div>
 
         <div className={styles.conventionsContainer}>

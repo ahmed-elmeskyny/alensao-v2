@@ -17,10 +17,18 @@ export const magdb = [
   },
   {
     id: 3,
-    thumbnail: "/magensao4.png",
+    thumbnail: "/magensao3.png",
     title: "MagEnsao N°3",
     date: "Octobre , 2021",
     pdf: "https://tinyurl.com/magensao-3-pdf",
     read: "https://tinyurl.com/magensao-3-read",
+  },
+  {
+    id: 4,
+    thumbnail: "/magensao4.jpg",
+    title: "MagEnsao N°4",
+    date: "Novembre , 2021",
+    pdf: "https://tinyurl.com/magensao-4-pdf",
+    read: "https://tinyurl.com/magensao-4-read",
   },
 ];
