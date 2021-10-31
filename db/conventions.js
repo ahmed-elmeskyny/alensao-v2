@@ -80,7 +80,7 @@ export const conventions = [
     logo: "/lehlou.jpg",
     convention: " •	Test visuel gratuit ",
     convention1: "• 20% de remise sur (Monture + Verre)",
-    adress: "Magazin N°5, Résidence FARAH, P1, Oujda ",
+    adress: "Magasin N°5, Résidence FARAH, P1, Oujda ",
     map: "https://www.google.com/maps/place/Optique+Lehlou/@34.6779728,-1.9190404,17.44z/data=!4m9!1m2!2m1!1sopticien+lehlou!3m5!1s0xd7865deece3014f:0x36aa1254aecfc346!8m2!3d34.6791232!4d-1.9190612!15sCg9vcHRpY2llbiBsZWhsb3VaESIPb3B0aWNpZW4gbGVobG91kgEIb3B0aWNpYW4",
   },
   {
