@@ -4,9 +4,9 @@ export const conventions = [
     title: "Café Loftin",
     logo: "/loftin.jpeg",
     convention: "•	10% de remise sur la restauration ",
-    convention1: "•	Pack Gouter : Crêpe/Gaufre + Boisson Chaude = 26 dh",
+    convention1: "•	Pack Gouter : Crêpe ou Gaufre + Boisson Chaude = 26 dh",
     convention2:
-      "•	Pack Déjeuner : Poutine/Tacos/Sandwich + Soda + Frite : 30 dh",
+      "•	Pack Déjeuner : Poutine ou Tacos ou Sandwich + Soda + Frite : 30 dh",
     adress: "Boulevard Al Aqssa, Quartier Al Qods, Oujda",
     map: "https://www.google.com/maps/place/Caf%C3%A9+Loft'in/@34.6590471,-1.9000179,17z/data=!3m1!4b1!4m5!3m4!1s0xd787cba8851f971:0x790ae9d549c6b5c2!8m2!3d34.6590997!4d-1.897834",
   },
