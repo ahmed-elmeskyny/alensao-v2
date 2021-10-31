@@ -119,7 +119,7 @@ export const conventions = [
       " • Grand Snooker : 7 parties pour 150dh / 14 parties = 300dh / 22 parties = 400dh",
     convention4: " • PS4 :7h = 100dh / 14h = 200dh / 21h = 300dh",
     convention5:
-      " • 8Ball Pool : 15 parties = 50dh / 33 parties = 100dh / 47 parties = 150dh",
+      " • 8 Ball Pool : 15 parties = 50dh / 33 parties = 100dh / 47 parties = 150dh",
     adress: "N°198 quartier belmrah  route universitaire Oujda ",
     map: "https://www.google.com/maps/place/City+Play/@34.6593102,-1.9049695,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d7bed4f5f01:0x6ab599eb0a27a406!8m2!3d34.6592996!4d-1.9027891",
   },
