@@ -75,17 +75,7 @@ function MyEnsao() {
             </p>
             <p> Pour plus de détails sur les offres, voir plus bas.</p>
           </div>
-          <h2
-            style={{
-              textAlign: "center",
-              width: "100%",
-              marginTop: "20px",
-              fontSize: "35px",
-              color: "#0c97b4",
-            }}
-          >
-            Tarif : 200 DH / Année{" "}
-          </h2>
+
           <div
             style={{
               width: "100%",
@@ -95,8 +85,22 @@ function MyEnsao() {
               flexDirection: "column",
               marginTop: "30px",
               fontSize: "20px",
+              border: "2px #0c97b4 solid",
+              borderRadius: "10px",
+              padding: "20px",
             }}
           >
+            <h2
+              style={{
+                textAlign: "center",
+                width: "100%",
+
+                fontSize: "35px",
+                color: "#0c97b4",
+              }}
+            >
+              Tarif : 200 DH / Année{" "}
+            </h2>
             <p>
               Pour plus d'informations sur Unicard , merci de nous contacter sur
               :
@@ -145,6 +149,7 @@ function MyEnsao() {
                     </p>
                   ) : null}
                 </p>
+
                 {convention.map ? (
                   <a href={convention.map} className={styles.adress}>
                     <FaDirections></FaDirections>
