@@ -47,7 +47,7 @@ export const conventions = [
     title: "Ecole de Musique 'Sami School ' ",
     logo: "/sami.jpeg",
     convention: " •	10% de remise sur l’abonnement mensuel",
-    adress: "شارع المقدس، Oujda 60000",
+    adress: "Boulevard Al Maqdiss, Oujda 60000",
     map: "https://www.google.com/maps/place/Sami+School+Of+Music/@34.6574087,-1.9007595,17z/data=!3m1!4b1!4m5!3m4!1s0xd787cbae47ec719:0x8f87211e27e30402!8m2!3d34.6574047!4d-1.8985646",
   },
   {
