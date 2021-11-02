@@ -129,7 +129,7 @@ export const conventions = [
   },
   {
     id: 16,
-    title: "OrtakÖy Cafe",
+    title: "OrtakÖy Café",
     logo: "/ortakoy.jpeg",
     convention: " •	Pack 1 : Crêpe chocolat + boisson chaude : 28 dh ",
     convention1: "• Pack 2 : Gaufre chocolat + boisson chaude : 30 dh",
