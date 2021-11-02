@@ -18,13 +18,7 @@ export const conventions = [
     adress: "Rue Chouhada, Oujda 60000",
     map: "https://www.google.com/maps/place/Snack+Sa7bi/@34.6545281,-1.9049125,15z/data=!4m9!1m2!2m1!1ssa7bi!3m5!1s0xd787d1b6fdc801f:0xf2a32297baf92b6f!8m2!3d34.6545281!4d-1.8961578!15sCgVzYTdiaVoHIgVzYTdiaZIBCnJlc3RhdXJhbnQ",
   },
-  {
-    id: 3,
-    title: "Centre de Beauté ' Inass Beauty ' ",
-    logo: "/inessbeauty.jpeg",
-    convention: " •	20% de remise  sur toute la carte",
-    map: "https://www.google.com/maps?q=34.659912109375,-1.919247031211853&z=17&hl=en",
-  },
+
   {
     id: 4,
     title: "Librairie Chariqa",
@@ -132,5 +126,18 @@ export const conventions = [
     convention1: "•	Pack 2 : ¼ Poulet + riz + boisson à 30DH",
     adress: "Rue Al Houria, Oujda",
     map: "https://www.google.com/maps/place/Restaurant+Al+Affaf/@34.6565838,-1.9062,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca436479585:0x64fca06d8cf9a17e!8m2!3d34.6565909!4d-1.9040131",
+  },
+  {
+    id: 16,
+    title: "OrtakÖy Cafe",
+    logo: "/ortakoy.jpeg",
+    convention: " •	Pack 1 : Crêpe chocolat + boisson chaude : 28 dh ",
+    convention1: "• Pack 2 : Gaufre chocolat + boisson chaude : 30 dh",
+    convention2: "• Pack 3 : Kunafa + boisson chaude : 35 dh",
+    convention3: "• Pack 4 : Baklava + boisson chaude : 30dh",
+    convention4:
+      "•Pack 5 : Petit déjeuner (omelette fromage + huile d'olive + jus + boisson chaude) : 25 dh",
+    adress: "Rue Al Miskhat, Oujda",
+    map: "https://www.google.com/maps/place/Ortak%C3%B6y+Caf%C3%A9/@34.6564013,-1.892558,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d6102d83df5:0x9521edea1c1208d9!8m2!3d34.6563969!4d-1.8903693",
   },
 ];
