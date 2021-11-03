@@ -12,7 +12,7 @@ import Layout from "../components/Layout/layout";
 import AboutDynamic from "../components/about/about";
 
 //react-icons
-import { FaDirections } from "react-icons/fa";
+import { FaDirections, FaWhatsapp } from "react-icons/fa";
 
 //db
 import { conventions } from "../db/conventions";
@@ -34,6 +34,19 @@ function MyEnsao() {
         setOpenRegister={setOpenRegister}
         openRegister={openRegister}
       >
+        <div className={styles.whatsapp}>
+          <a href="https://wa.me/2120609020538?text=Bonjour,%20je%20suis%20intéressé%20par%20Unicard,%20comment%20procéder%20pour%20souscrire%20?">
+            {" "}
+            Envoyer un message
+            <FaWhatsapp
+              style={{
+                marginLeft: "10px",
+                fontWeight: "800",
+                fontSize: "25px",
+              }}
+            ></FaWhatsapp>
+          </a>
+        </div>
         <div className={styles.aboutHeader}>
           <div className={styles.filter}>
             <h1>UniCard </h1>
