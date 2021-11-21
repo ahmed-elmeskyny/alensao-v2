@@ -23,7 +23,8 @@ const slides = [
   "/remise.jpeg",
   "/nawal.jpeg",
   "/alensaobr.jpeg",
-  "alenslide.jpeg",
+  "/alenslide.jpeg",
+  "/annuel.png",
 ];
 
 const properties = {
@@ -61,6 +62,28 @@ const properties = {
 const Slider = () => {
   return (
     <Slide {...properties}>
+      <div className={styles.eachSlide}>
+        <div
+          className={styles.slide}
+          style={{
+            backgroundImage: `url(${slides[11]})`,
+            backgroundPosition: "center",
+          }}
+        >
+          <div className={styles.filter}>
+            <div className={styles.slideText}>
+              <h1> Annuel des Associations de l'ENSAO</h1>
+              <span>
+                13/11/2021, l'ALENSAO et l'ADE fêtent un an d'activités
+                communes, et rendent hommages aux partenaires qui ont contribué
+                aux projets durant cette année. Un événement plein d'émotions,
+                marquant une fin, certes, mais aussi un grand début pour les
+                événements à venir.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.eachSlide}>
         <div
           className={styles.slide}

@@ -117,16 +117,16 @@ export const conventions = [
     adress: "N°198 quartier belmrah  route universitaire Oujda ",
     map: "https://www.google.com/maps/place/City+Play/@34.6593102,-1.9049695,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d7bed4f5f01:0x6ab599eb0a27a406!8m2!3d34.6592996!4d-1.9027891",
   },
-  {
-    id: 13,
-    title: "Restaurant Al Affaf",
-    logo: "/afaf.jpeg",
-    convention:
-      " •	Pack 1 : Sandwich (dinde et fromage) + Salade + Boisson à 32DH ",
-    convention1: "•	Pack 2 : ¼ Poulet + riz + boisson à 30DH",
-    adress: "Rue Al Houria, Oujda",
-    map: "https://www.google.com/maps/place/Restaurant+Al+Affaf/@34.6565838,-1.9062,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca436479585:0x64fca06d8cf9a17e!8m2!3d34.6565909!4d-1.9040131",
-  },
+  // {
+  //   id: 13,
+  //   title: "Restaurant Al Affaf",
+  //   logo: "/afaf.jpeg",
+  //   convention:
+  //     " •	Pack 1 : Sandwich (dinde et fromage) + Salade + Boisson à 32DH ",
+  //   convention1: "•	Pack 2 : ¼ Poulet + riz + boisson à 30DH",
+  //   adress: "Rue Al Houria, Oujda",
+  //   map: "https://www.google.com/maps/place/Restaurant+Al+Affaf/@34.6565838,-1.9062,17z/data=!3m1!4b1!4m5!3m4!1s0xd787ca436479585:0x64fca06d8cf9a17e!8m2!3d34.6565909!4d-1.9040131",
+  // },
   {
     id: 16,
     title: "OrtakÖy Café",

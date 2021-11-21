@@ -174,13 +174,12 @@ export const galeriedb = [
     photos: [
       "/convention1.jpeg",
       "/convention2.jpeg",
-      "/convention9.png",
+      // "/convention9.png",
       "/convention10.png",
       "/convention4.jpg",
       "/convention6.png",
       "/convention7.png",
       "/convention8.png",
-
       "/convention3.jpg",
     ],
     thumbnail: "/convention.png",
