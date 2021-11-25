@@ -140,4 +140,13 @@ export const conventions = [
     adress: "Rue Al Miskhat, Oujda",
     map: "https://www.google.com/maps/place/Ortak%C3%B6y+Caf%C3%A9/@34.6564013,-1.892558,17z/data=!3m1!4b1!4m5!3m4!1s0xd787d6102d83df5:0x9521edea1c1208d9!8m2!3d34.6563969!4d-1.8903693",
   },
+  {
+    id: 17,
+    title: "Sushi King",
+    logo: "/king.png",
+    convention: " • 20% de remise sur le ticket ",
+    convention1: "  https://www.sushikingoujda.com/",
+    adress: "N°13,BD Elhansali (en face lacoste) , Oujda",
+    map: "https://www.google.com/maps/dir/34.6601483,-1.8806247/sushi+king/@34.6688393,-1.9188018,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd786577ee89bddf:0x60928cb6d882e1da!2m2!1d-1.9220384!2d34.6786771",
+  },
 ];
