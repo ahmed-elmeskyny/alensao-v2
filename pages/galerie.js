@@ -54,7 +54,7 @@ function Galerie() {
                 }}
                 onClick={() => router.push(`galerie/${event.id}`)}
               ></div>
-              <p style={{ color: "black" }}>
+              <p style={{ color: "black", width: "40%", marginBottom: "5px" }}>
                 <strong>{event.eventName}</strong>
               </p>
               <p>Lieu : {event.lieu}</p>
