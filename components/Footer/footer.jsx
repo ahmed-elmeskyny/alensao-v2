@@ -121,8 +121,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/galerie/8">
-                  <a>Don du sang / 26 mai 2021</a>
+                <Link href="/galerie/11">
+                  <a>Annuel des Associations de l'ENSAO / 13 novembre 2021</a>
                 </Link>
               </li>
             </ul>
