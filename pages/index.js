@@ -37,6 +37,7 @@ function Home() {
           <img src="/soft.png"></img>
           <img src="/sohaper.png"></img>
           <img src="/cecogel.png"></img>
+          <img src="/colaimo.png"></img>
         </div>
         <div className={styles.speachContainer}>
           <h1>Mot du Président de l'ALENSAO </h1>
