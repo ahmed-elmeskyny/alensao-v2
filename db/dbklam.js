@@ -39,4 +39,14 @@ export const klam = [
     link: "https://www.youtube.com/watch?v=uwvs5JeJNcg",
     production: "Ihab Biziz & folks box",
   },
+  {
+    id: 5,
+    episode: "Episode 5",
+    guest: "M. Samir Ouamassi",
+    description:
+      "Edition 5 pour K-LAM 2.0. Notre invité du jour, Monsieur Samir Ouamassi, Directeur Général de SOFT-INNOVATION Paris. Nous abordons avec lui la question de l'avènement des CRMs dans divers milieux, et les perspectives de développement de SOFT-INNOVATION. Nous vous souhaitons un bon visionnage, et à bientôt pour un nouvel épisode de K-LAM 2.0.",
+    thumbnail: "/thumbnail.png",
+    link: "https://youtu.be/EJOYoxhGYKA",
+    production: "Ihab Biziz & folks box",
+  },
 ];

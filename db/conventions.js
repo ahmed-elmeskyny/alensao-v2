@@ -149,4 +149,15 @@ export const conventions = [
     adress: "N°13,BD Elhansali (en face lacoste) , Oujda",
     map: "https://www.google.com/maps/dir/34.6601483,-1.8806247/sushi+king/@34.6688393,-1.9188018,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd786577ee89bddf:0x60928cb6d882e1da!2m2!1d-1.9220384!2d34.6786771",
   },
+  {
+    id: 18,
+    title: "L'Korssa",
+    logo: "/korssa.jpeg",
+    convention: " • Tacos Mixte + Soda (35dh normal/ 45dh maxi)",
+    convention1: " • Sandwich Special + Salade de riz (40dh)",
+    convention2: " • Gratin Dinde + Soda (28dh)",
+    convention3: " • Pasticcio Dinde + Soda (28dh)",
+    adress: "Rue Chatila Hay El Qods , Oujda",
+    map: "https://www.google.com/maps/dir//Lkorssa/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd787dbce4ea90d1:0xba37ec50259b7a28?sa=X&ved=2ahUKEwi9rLHKk9r0AhWE8eAKHUcsCi8Q9Rd6BAgzEAU",
+  },
 ];
