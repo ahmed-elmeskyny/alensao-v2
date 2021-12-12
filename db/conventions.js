@@ -160,4 +160,16 @@ export const conventions = [
     adress: "Rue Chatila Hay El Qods , Oujda",
     map: "https://www.google.com/maps/dir//Lkorssa/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xd787dbce4ea90d1:0xba37ec50259b7a28?sa=X&ved=2ahUKEwi9rLHKk9r0AhWE8eAKHUcsCi8Q9Rd6BAgzEAU",
   },
+  {
+    id: 19,
+    title: "Myspace Coworking",
+    logo: "/coworking.jpeg",
+    convention:
+      " • Un mois d'accès pour une personne à 350dh (au lieu de 400dh)",
+    convention1: " • 30 jours étalés sur 2 mois pour une personne à 390dh",
+    convention2: " • 40dh par jour pour 2 personnes (au lieu de 50dh)",
+    adress:
+      "46 BD SABRA Immeuble Karbach (à côté de mistral ), 3eme Etage, Oujda",
+    map: "https://www.google.com/maps/dir/34.6644425,-1.9183207/myspace+coworking/@34.6606029,-1.9166384,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd787d05f7b0c745:0xa19da8da87a2ebec!2m2!1d-1.8974122!2d34.6571037",
+  },
 ];
