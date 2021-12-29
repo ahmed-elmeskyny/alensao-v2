@@ -39,4 +39,12 @@ export const magdb = [
     pdf: "https://www.tinyurl.com/magensao-5-pdf",
     read: "https://tinyurl.com/magensao-5-read",
   },
+  {
+    id: 6,
+    thumbnail: "/magensao6.jpg",
+    title: "MagEnsao N°6",
+    date: "Javnvier , 2021",
+    pdf: "https://www.tinyurl.com/magensao-6-pdf",
+    read: "https://tinyurl.com/magensao-6-read",
+  },
 ];
