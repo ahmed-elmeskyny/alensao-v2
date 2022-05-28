@@ -44,6 +44,22 @@
   }
 }
 
+.siteweb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+  a {
+    color: #0c97b4;
+    text-decoration: underline #0c97b4;
+    margin-left: 10px;
+  }
+}
+
 .magContainer {
   padding: 20px;
   display: flex;

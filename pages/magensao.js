@@ -54,6 +54,9 @@ function About() {
         <h1 className={styles.title}>
           <div></div>Le Premier Magazine de l'ENSAO<div></div>
         </h1>
+        <h2 className={styles.siteweb}>
+          Notre site web: <a href="https://magensao.com/"> MAGENSAO </a>
+        </h2>
         <div className={styles.magContainer}>
           {magdb.map((mag) => (
             <a href={mag.read} target="_blank">
