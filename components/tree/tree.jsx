@@ -173,7 +173,7 @@ const Tree = () => {
           ></div>
           <div className={styles.name}>
             <h3>EL MESKYNY Ahmed</h3>
-            <p>Etudiant ENSAO</p>
+            <p>Membre de l'ADE</p>
           </div>
         </div>
         <div className={styles.profile}>
