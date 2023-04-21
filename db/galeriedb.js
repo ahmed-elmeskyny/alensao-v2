@@ -216,4 +216,13 @@ export const galeriedb = [
     lieu: "ENSAO",
     video: ["https://www.youtube.com/watch?v=Wp5T-KHtn-c"],
   },
+  {
+    id: 12,
+    eventName:
+      "Conférence sous le titre : Quel impact de la médecine 4.0 sur l'écosystéme de santé ",
+    date: "11 avril 2023",
+    thumbnail: "/conf1.jpg",
+    lieu: "ENSAO",
+    video: ["https://www.youtube.com/watch?v=SLDSdKofUHE"],
+  },
 ];
