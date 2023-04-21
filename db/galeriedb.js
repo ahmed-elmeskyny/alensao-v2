@@ -221,6 +221,7 @@ export const galeriedb = [
     eventName:
       "Conférence sous le titre : Quel impact de la médecine 4.0 sur l'écosystéme de santé ",
     date: "11 avril 2023",
+    photos: ["/conf1.jpg"],
     thumbnail: "/conf1.jpg",
     lieu: "ENSAO",
     video: ["https://www.youtube.com/watch?v=SLDSdKofUHE"],
@@ -230,6 +231,7 @@ export const galeriedb = [
     eventName:
       "Conférence sous le titre : Le sport et les études universitaires, quelle corrélation en termes de performance",
     date: "14 avril 2023",
+    photos: ["/conf2.jpg"],
     thumbnail: "/conf2.jpg",
     lieu: "ENSAO",
     video: ["https://youtu.be/NMoQvZGBdUo"],
