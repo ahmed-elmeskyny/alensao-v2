@@ -225,4 +225,13 @@ export const galeriedb = [
     lieu: "ENSAO",
     video: ["https://www.youtube.com/watch?v=SLDSdKofUHE"],
   },
+  {
+    id: 13,
+    eventName:
+      "Conférence sous le titre : Le sport et les études universitaires, quelle corrélation en termes de performance",
+    date: "14 avril 2023",
+    thumbnail: "/conf2.jpg",
+    lieu: "ENSAO",
+    video: ["https://youtu.be/NMoQvZGBdUo"],
+  },
 ];
