@@ -68,7 +68,7 @@ const Slider = () => {
           className={styles.slide}
           style={{
             backgroundImage: `url(${slides[12]})`,
-            backgroundPosition: "center",
+            backgroundPosition: "top",
           }}
         >
           <div className={styles.filter}>
