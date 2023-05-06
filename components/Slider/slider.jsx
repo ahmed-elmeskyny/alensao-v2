@@ -25,6 +25,7 @@ const slides = [
   "/alensaobr.jpeg",
   "/alenslide.jpeg",
   "/annuel.png",
+  "/slidee.jpg",
 ];
 
 const properties = {
@@ -62,6 +63,28 @@ const properties = {
 const Slider = () => {
   return (
     <Slide {...properties}>
+      <div className={styles.eachSlide}>
+        <div
+          className={styles.slide}
+          style={{
+            backgroundImage: `url(${slides[12]})`,
+            backgroundPosition: "center",
+          }}
+        >
+          <div className={styles.filter}>
+            <div className={styles.slideText}>
+              <h1>Conférence</h1>
+              <span>
+                Conférence sous le thème « Le sport et les études
+                universitaires, quelle corrélation en termes de performance »
+                animée le 14 Avril 2023 par M.El Hebil Abdelmalek , conférencier
+                et expert international au sein de la fédération
+                internationale d’athlétisme.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.eachSlide}>
         <div
           className={styles.slide}
